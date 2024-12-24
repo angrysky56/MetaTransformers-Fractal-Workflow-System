@@ -1,4 +1,5 @@
 # MetaTransformers-Fractal-Workflow-System
+![image](https://github.com/user-attachments/assets/05889a4e-96d2-4605-9726-54478166da7c)
 
 ![image](https://github.com/user-attachments/assets/0b573068-bd51-4d50-9499-ad5660cdfec3)
 
