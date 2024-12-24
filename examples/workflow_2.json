@@ -1,0 +1,17 @@
+{
+  "name": "Process Customer Order",
+  "description": "Workflow for processing a customer's order.",
+  "steps": [
+    {"name": "Receive Order", "description": "Receive the customer's order details."},
+    {"name": "Validate Order", "description": "Validate the order information."},
+    {"name": "Process Payment", "description": "Process the payment for the order."},
+    {"name": "Fulfill Order", "description": "Fulfill the order by shipping the products."},
+    {"name": "Send Confirmation", "description": "Send an order confirmation to the customer."}
+  ],
+  "links": [
+    {"from": "Receive Order", "to": "Validate Order"},
+    {"from": "Validate Order", "to": "Process Payment"},
+    {"from": "Process Payment", "to": "Fulfill Order"},
+    {"from": "Fulfill Order", "to": "Send Confirmation"}
+  ]
+}

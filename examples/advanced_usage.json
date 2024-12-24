@@ -1,0 +1,49 @@
+{
+	"workflow_definitions": [
+		{
+			"name": "Dynamic Task Assignment",
+			"description": "Workflow for dynamically assigning tasks to agents based on availability.",
+			"steps": [
+				{
+					"name": "Receive Task Request",
+					"description": "Receive a new task request."
+				},
+				{
+					"name": "Identify Available Agents",
+					"description": "Identify agents available to perform the task."
+				},
+				{
+					"name": "Assign Task",
+					"description": "Assign the task to the most suitable available agent."
+				},
+				{
+					"name": "Notify Agent",
+					"description": "Notify the assigned agent about the new task."
+				}
+			],
+			"links": [
+				{
+					"from": "Receive Task Request",
+					"to": "Identify Available Agents"
+				},
+				{
+					"from": "Identify Available Agents",
+					"to": "Assign Task"
+				},
+				{
+					"from": "Assign Task",
+					"to": "Notify Agent"
+				}
+			]
+		}
+	],
+	"meta_workflow_updates": [
+		{
+			"name": "Agent Management Meta-Workflow",
+			"description": "Meta-workflow for managing AI agents and their tasks.",
+			"includes": [
+				"Dynamic Task Assignment"
+			]
+		}
+	]
+}

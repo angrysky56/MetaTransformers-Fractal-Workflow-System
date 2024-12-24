@@ -1,0 +1,36 @@
+{
+	"name": "Onboarding New User",
+	"description": "Workflow for onboarding a new user to the platform.",
+	"steps": [
+		{
+			"name": "Create User Account",
+			"description": "Create a new user account in the system."
+		},
+		{
+			"name": "Send Welcome Email",
+			"description": "Send a welcome email to the new user."
+		},
+		{
+			"name": "Assign Initial Tasks",
+			"description": "Assign initial tasks to the new user."
+		},
+		{
+			"name": "Schedule Training",
+			"description": "Schedule a training session for the new user."
+		}
+	],
+	"links": [
+		{
+			"from": "Create User Account",
+			"to": "Send Welcome Email"
+		},
+		{
+			"from": "Send Welcome Email",
+			"to": "Assign Initial Tasks"
+		},
+		{
+			"from": "Assign Initial Tasks",
+			"to": "Schedule Training"
+		}
+	]
+}
