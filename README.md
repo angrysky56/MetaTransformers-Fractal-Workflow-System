@@ -10,6 +10,14 @@ The MetaTransformers Fractal Workflow System is currently in active development,
 - Claude-driven workflow orchestration and management
 - Functional examples implemented in Neo4j database
 
+# *You will currently only need*:
+https://github.com/mark3labs/mcp-filesystem-server
+
+- Neo4j Desktop and
+
+https://github.com/neo4j-contrib/mcp-neo4j
+
+#
 ### Future Goals
 - Automated initialization process
 - Self-generating workflow templates
@@ -284,7 +292,7 @@ CREATE (calc)-[:INGESTS]->(ingest)
 
 ---
 
-DotFlow_Workflow_System/
+Example-Directory/
 ├── README.md                  # Project overview and setup guide
 ├── cypher/
 │   ├── initialize.cypher      # Core database schema setup (constraints, indexes)
