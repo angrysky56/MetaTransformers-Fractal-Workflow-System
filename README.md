@@ -1,4 +1,5 @@
 # MetaTransformers-Fractal-Workflow-System
+![image](https://github.com/user-attachments/assets/0b573068-bd51-4d50-9499-ad5660cdfec3)
 
 ## Current Status & Future Development
 
