@@ -54,6 +54,8 @@ a Neo4j graph database and dynamically expand workflows.
    ```bash
    pip install neo4j
 
+---
+
 To achieve a robust system that allows dynamic **data attachment** (e.g., equations, scripts, repositories, structured directions, etc.), we can enhance the workflow model with **data-driven nodes** and **context-aware ingestion mechanisms**. The following approach ensures structured ingestion, modular reusability, and context-driven execution.
 
 ---
