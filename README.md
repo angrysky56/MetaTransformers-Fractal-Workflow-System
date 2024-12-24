@@ -1,7 +1,34 @@
-# DotFlow Workflow System
+# MetaTransformers-Fractal-Workflow-System
+
+## Current Status & Future Development
+
+The MetaTransformers Fractal Workflow System is currently in active development, operating as a manually-initialized system through Neo4j Desktop and MCP server integration. The system relies on Claude's capabilities for operation and workflow management.
+
+### Current Implementation
+- Manual initialization and management via Neo4j Desktop
+- Integration with MCP server for tool and workflow execution
+- Claude-driven workflow orchestration and management
+- Functional examples implemented in Neo4j database
+
+### Future Goals
+- Automated initialization process
+- Self-generating workflow templates
+- Code generation from existing database structures
+- Automated tool integration and workflow composition
+- Enhanced error handling and recovery mechanisms
+
+The system will evolve towards greater automation while maintaining its core fractal workflow principles.
+
+---
 
 ## Overview
-The **DotFlow Workflow System** is a modular, fractal, and AI-driven workflow management system.
+The **MetaTransformers Fractal Workflow System** is a modular, fractal, and AI-driven workflow management system.
+Designed to support dynamic, extensible workflows, it integrates structured data ingestion,
+multi-agent execution, and recursive process expansion.
+
+
+## Overview
+The **MetaTransformers-Fractal-Workflow-System** is a modular, fractal, and AI-driven workflow management system.
 Designed to support dynamic, extensible workflows, it integrates structured data ingestion,
 multi-agent execution, and recursive process expansion.
 
