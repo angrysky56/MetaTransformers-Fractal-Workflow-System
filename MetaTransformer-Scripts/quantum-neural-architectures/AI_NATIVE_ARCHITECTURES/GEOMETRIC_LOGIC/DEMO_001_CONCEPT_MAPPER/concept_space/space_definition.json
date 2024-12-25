@@ -1,0 +1,34 @@
+{
+    "id": "concept_space_001",
+    "type": "geometric_concept_space",
+    "dimensions": {
+        "spatial": 3,
+        "conceptual": 5
+    },
+    "metrics": {
+        "distance": "euclidean",
+        "similarity": "cosine",
+        "relationship_weight": "exponential_decay"
+    },
+    "visualization": {
+        "default_view": "3d",
+        "color_scheme": {
+            "core": "#FF4444",
+            "related": "#44FF44",
+            "connected": "#4444FF"
+        },
+        "node_size": "weight_based"
+    },
+    "navigation": {
+        "methods": [
+            "spatial_proximity",
+            "relationship_following",
+            "conceptual_similarity"
+        ],
+        "constraints": {
+            "max_distance": 2.0,
+            "min_relationship_strength": 0.3,
+            "max_branching": 5
+        }
+    }
+}

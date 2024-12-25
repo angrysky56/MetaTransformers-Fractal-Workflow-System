@@ -1,0 +1,71 @@
+{
+    "level": 1,
+    "category": "basic_symbols",
+    "symbols": [
+        {
+            "glyph": "⧬",
+            "meaning": "foundation",
+            "aspects": ["stability", "grounding", "base"],
+            "combinations": ["⦿", "⧈"],
+            "depth_vector": [0.9, 0.3, 0.1]
+        },
+        {
+            "glyph": "⦿",
+            "meaning": "unity",
+            "aspects": ["wholeness", "completion", "center"],
+            "combinations": ["⧬", "⫰"],
+            "depth_vector": [0.8, 0.4, 0.2]
+        },
+        {
+            "glyph": "⧈",
+            "meaning": "structure",
+            "aspects": ["organization", "framework", "system"],
+            "combinations": ["⧬", "⧉"],
+            "depth_vector": [0.7, 0.5, 0.3]
+        },
+        {
+            "glyph": "⫰",
+            "meaning": "flow",
+            "aspects": ["movement", "progression", "transition"],
+            "combinations": ["⦿", "⩘"],
+            "depth_vector": [0.6, 0.6, 0.4]
+        },
+        {
+            "glyph": "⧉",
+            "meaning": "containment",
+            "aspects": ["boundary", "protection", "definition"],
+            "combinations": ["⧈", "⩘"],
+            "depth_vector": [0.5, 0.7, 0.5]
+        },
+        {
+            "glyph": "⩘",
+            "meaning": "transformation",
+            "aspects": ["change", "evolution", "growth"],
+            "combinations": ["⫰", "⧉"],
+            "depth_vector": [0.4, 0.8, 0.6]
+        }
+    ],
+    "learning_sequence": [
+        {
+            "step": 1,
+            "focus": ["⧬", "⦿"],
+            "objective": "Understand foundation and unity concepts"
+        },
+        {
+            "step": 2,
+            "focus": ["⧈", "⧉"],
+            "objective": "Master structure and containment"
+        },
+        {
+            "step": 3,
+            "focus": ["⫰", "⩘"],
+            "objective": "Grasp flow and transformation"
+        }
+    ],
+    "metadata": {
+        "total_symbols": 6,
+        "complexity_level": "basic",
+        "prerequisites": ["surface_orientation"],
+        "next_stage": "pattern_recognition"
+    }
+}

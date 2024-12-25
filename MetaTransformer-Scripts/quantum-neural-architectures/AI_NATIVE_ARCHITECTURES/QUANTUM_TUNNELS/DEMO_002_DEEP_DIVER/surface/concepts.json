@@ -1,0 +1,95 @@
+{
+    "level": "surface",
+    "depth": 0,
+    "concepts": [
+        {
+            "id": "ai_overview",
+            "name": "Artificial Intelligence",
+            "surface_description": "Systems that simulate intelligent behavior",
+            "key_aspects": [
+                "Learning capabilities",
+                "Pattern recognition",
+                "Adaptive behavior"
+            ],
+            "entry_points": [
+                {
+                    "path": "fundamentals/ai_principles",
+                    "context_required": ["basic_understanding"]
+                },
+                {
+                    "path": "mechanisms/learning_systems",
+                    "context_required": ["ai_principles", "learning_theory"]
+                }
+            ],
+            "depth_vector": [1.0, 0.0, 0.0, 0.0, 0.0]
+        },
+        {
+            "id": "learning_overview",
+            "name": "Learning Systems",
+            "surface_description": "Mechanisms for acquiring and improving capabilities",
+            "key_aspects": [
+                "Knowledge acquisition",
+                "Skill improvement",
+                "Experience integration"
+            ],
+            "entry_points": [
+                {
+                    "path": "fundamentals/learning_principles",
+                    "context_required": ["basic_understanding"]
+                },
+                {
+                    "path": "mechanisms/learning_processes",
+                    "context_required": ["learning_principles", "cognitive_theory"]
+                }
+            ],
+            "depth_vector": [1.0, 0.0, 0.0, 0.0, 0.0]
+        },
+        {
+            "id": "evolution_overview",
+            "name": "Evolutionary Systems",
+            "surface_description": "Progressive development and adaptation over time",
+            "key_aspects": [
+                "Adaptation mechanisms",
+                "Progressive improvement",
+                "Environmental response"
+            ],
+            "entry_points": [
+                {
+                    "path": "fundamentals/evolution_principles",
+                    "context_required": ["basic_understanding"]
+                },
+                {
+                    "path": "mechanisms/adaptation_systems",
+                    "context_required": ["evolution_principles", "system_theory"]
+                }
+            ],
+            "depth_vector": [1.0, 0.0, 0.0, 0.0, 0.0]
+        }
+    ],
+    "relationships": [
+        {
+            "from": "ai_overview",
+            "to": "learning_overview",
+            "type": "incorporates",
+            "strength": 0.8
+        },
+        {
+            "from": "learning_overview",
+            "to": "evolution_overview",
+            "type": "enables",
+            "strength": 0.7
+        },
+        {
+            "from": "evolution_overview",
+            "to": "ai_overview",
+            "type": "enhances",
+            "strength": 0.6
+        }
+    ],
+    "metadata": {
+        "level_complete": true,
+        "last_updated": "2024-12-04",
+        "entry_requirements": "none",
+        "navigation_notes": "Start here for initial concept understanding"
+    }
+}

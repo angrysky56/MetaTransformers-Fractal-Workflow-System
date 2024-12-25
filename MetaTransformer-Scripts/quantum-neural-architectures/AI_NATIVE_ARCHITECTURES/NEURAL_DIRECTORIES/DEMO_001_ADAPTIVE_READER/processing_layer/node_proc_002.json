@@ -1,0 +1,16 @@
+{
+    "node_id": "proc_002",
+    "type": "pattern_recognizer",
+    "current_activation": 0,
+    "weights": {
+        "output_001": 0.6,
+        "output_002": 0.9
+    },
+    "processing_rules": {
+        "pattern_detection": true,
+        "sequence_analysis": true,
+        "correlation_finding": true
+    },
+    "activation_history": [],
+    "learning_rate": 0.2
+}

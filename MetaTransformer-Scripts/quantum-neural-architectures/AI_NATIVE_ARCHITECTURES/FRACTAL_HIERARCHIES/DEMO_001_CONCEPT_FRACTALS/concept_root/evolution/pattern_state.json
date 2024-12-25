@@ -1,0 +1,81 @@
+{
+    "node_id": "evolution",
+    "scale": 0.8,
+    "concept": {
+        "name": "Adaptive Growth",
+        "type": "branch_concept",
+        "definition": "Patterns of system development and evolution"
+    },
+    "branches": [
+        {
+            "id": "growth",
+            "scale": 0.64,
+            "concept": "Growth Patterns",
+            "leaves": [
+                {
+                    "id": "organic_expansion",
+                    "scale": 0.384,
+                    "example": "Natural pattern-based system growth"
+                },
+                {
+                    "id": "controlled_scaling",
+                    "scale": 0.384,
+                    "example": "Managed expansion of system capabilities"
+                },
+                {
+                    "id": "emergent_complexity",
+                    "scale": 0.384,
+                    "example": "Development of higher-order patterns"
+                }
+            ]
+        },
+        {
+            "id": "optimization",
+            "scale": 0.64,
+            "concept": "Optimization Patterns",
+            "leaves": [
+                {
+                    "id": "self_tuning",
+                    "scale": 0.384,
+                    "example": "Automatic parameter optimization"
+                },
+                {
+                    "id": "pattern_refinement",
+                    "scale": 0.384,
+                    "example": "Iterative improvement of system patterns"
+                },
+                {
+                    "id": "efficiency_evolution",
+                    "scale": 0.384,
+                    "example": "Progressive performance enhancement"
+                }
+            ]
+        },
+        {
+            "id": "innovation",
+            "scale": 0.64,
+            "concept": "Innovation Patterns",
+            "leaves": [
+                {
+                    "id": "pattern_discovery",
+                    "scale": 0.384,
+                    "example": "Identification of novel organizational patterns"
+                },
+                {
+                    "id": "creative_synthesis",
+                    "scale": 0.384,
+                    "example": "Combination of existing patterns into new forms"
+                },
+                {
+                    "id": "emergent_innovation",
+                    "scale": 0.384,
+                    "example": "Spontaneous development of new capabilities"
+                }
+            ]
+        }
+    ],
+    "self_similarity": {
+        "measure": 0.8,
+        "verification": "complete"
+    }
+}

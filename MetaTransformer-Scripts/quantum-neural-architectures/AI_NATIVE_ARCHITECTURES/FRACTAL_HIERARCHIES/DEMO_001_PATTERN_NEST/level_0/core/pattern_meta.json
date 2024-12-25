@@ -1,0 +1,16 @@
+{
+    "node_type": "core",
+    "depth": 0,
+    "pattern_role": "root",
+    "contains": {
+        "concept": "fractal_organization",
+        "definition": "Self-similar pattern-based structure",
+        "scale": 1.0
+    },
+    "children": {
+        "allowed": true,
+        "pattern": "core/details/examples",
+        "current_count": 0,
+        "max_count": 3
+    }
+}

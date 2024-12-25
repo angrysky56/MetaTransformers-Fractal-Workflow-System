@@ -1,0 +1,29 @@
+{
+    "level": "surface",
+    "state": {
+        "depth": 0,
+        "context_vector": [1.0, 0.0, 0.0],
+        "accessibility": 1.0
+    },
+    "concepts": [
+        {
+            "id": "ai_architecture",
+            "surface_representation": "High-level system design",
+            "dive_vectors": [
+                {
+                    "direction": "implementation",
+                    "strength": 0.8
+                },
+                {
+                    "direction": "theory",
+                    "strength": 0.7
+                }
+            ]
+        }
+    ],
+    "navigation_options": {
+        "dive_deeper": ["fundamentals", "mechanisms"],
+        "surface": null,
+        "lateral": ["related_concepts"]
+    }
+}

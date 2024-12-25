@@ -1,0 +1,26 @@
+{
+    "vertex_id": "C",
+    "position": [0.866, -0.5, 0],
+    "concept": {
+        "name": "Implementation",
+        "type": "technical",
+        "weight": 0.7
+    },
+    "edges": [
+        {
+            "to": "A",
+            "relationship": "realizes",
+            "weight": 0.7
+        },
+        {
+            "to": "B",
+            "relationship": "collaborates",
+            "weight": 0.6
+        }
+    ],
+    "properties": {
+        "stability": 0.8,
+        "influence": 0.7,
+        "connectivity": 0.8
+    }
+}

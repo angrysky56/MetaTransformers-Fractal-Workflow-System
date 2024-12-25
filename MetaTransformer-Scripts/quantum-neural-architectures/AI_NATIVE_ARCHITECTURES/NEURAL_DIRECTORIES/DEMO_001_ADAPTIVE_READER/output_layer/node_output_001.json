@@ -1,0 +1,40 @@
+{
+    "node_id": "out_001",
+    "type": "categorizer",
+    "activation_threshold": 0.7,
+    "category": "technical_content",
+    "category_patterns": [
+        {
+            "value": "artificial intelligence",
+            "weight": 1.2,
+            "subcategories": ["AI", "machine learning", "neural networks"]
+        },
+        {
+            "value": "technical implementation",
+            "weight": 1.0,
+            "subcategories": ["system", "architecture", "framework"]
+        },
+        {
+            "value": "research content",
+            "weight": 0.9,
+            "subcategories": ["study", "analysis", "investigation"]
+        }
+    ],
+    "similarity_threshold": 0.6,
+    "confidence_calculation": {
+        "pattern_match_weight": 0.6,
+        "context_weight": 0.4
+    },
+    "activation_history": [
+        {
+            "timestamp": "2024-12-04T00:00:00Z",
+            "activation_value": 0.0,
+            "category_matches": []
+        }
+    ],
+    "metadata": {
+        "creation_date": "2024-12-04",
+        "last_modified": "2024-12-04",
+        "version": "1.0"
+    }
+}

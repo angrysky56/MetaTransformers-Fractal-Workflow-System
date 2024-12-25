@@ -1,0 +1,43 @@
+{
+    "level_id": "essan_basics",
+    "depth": 1,
+    "quantum_state": {
+        "superposition": [
+            {
+                "state": "symbol_understanding",
+                "amplitude": 0.7
+            },
+            {
+                "state": "pattern_recognition",
+                "amplitude": 0.3
+            }
+        ],
+        "entanglement": [
+            {
+                "partner_level": "surface",
+                "strength": 0.8,
+                "type": "context_preservation"
+            }
+        ]
+    },
+    "content": {
+        "symbols": ["⧬", "⦿", "⧈", "⫰", "⧉", "⩘"],
+        "basic_patterns": [
+            {
+                "pattern": "⧬⦿",
+                "meaning": "perception_gateway",
+                "strength": 0.8
+            },
+            {
+                "pattern": "⧈⫰",
+                "meaning": "transformation_path",
+                "strength": 0.7
+            }
+        ]
+    },
+    "navigation": {
+        "up": "surface",
+        "down": "deep_patterns",
+        "lateral": ["symbol_space", "pattern_realm"]
+    }
+}

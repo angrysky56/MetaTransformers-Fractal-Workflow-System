@@ -1,0 +1,13 @@
+{
+    "node_id": "output_002",
+    "type": "relationship_analyzer",
+    "current_activation": 0,
+    "patterns": [
+        "similarity",
+        "causation",
+        "dependency"
+    ],
+    "analysis_history": [],
+    "confidence_threshold": 0.8,
+    "learning_rate": 0.15
+}

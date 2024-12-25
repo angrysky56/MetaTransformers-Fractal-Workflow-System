@@ -1,0 +1,32 @@
+{
+    "metric_id": "concept_distances_001",
+    "space_type": "semantic",
+    "distance_types": {
+        "conceptual": {
+            "weight": 0.5,
+            "measure": "cosine_similarity"
+        },
+        "functional": {
+            "weight": 0.3,
+            "measure": "interaction_frequency"
+        },
+        "structural": {
+            "weight": 0.2,
+            "measure": "pattern_similarity"
+        }
+    },
+    "metric_rules": {
+        "normalization": "min_max",
+        "aggregation": "weighted_average",
+        "threshold": 0.1
+    },
+    "distance_matrix": {
+        "quantum_tunnels": {
+            "neural_networks": 0.3,
+            "fractal_patterns": 0.5
+        },
+        "neural_networks": {
+            "fractal_patterns": 0.4
+        }
+    }
+}

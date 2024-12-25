@@ -1,0 +1,19 @@
+{
+    "network_id": "adaptive_reader_001",
+    "description": "Simple document processing neural directory",
+    "creation_date": "2024-12-04",
+    "layers": {
+        "input": {
+            "max_nodes": 5,
+            "activation_threshold": 0.3
+        },
+        "processing": {
+            "max_nodes": 3,
+            "activation_threshold": 0.5
+        },
+        "output": {
+            "max_nodes": 2,
+            "activation_threshold": 0.7
+        }
+    }
+}

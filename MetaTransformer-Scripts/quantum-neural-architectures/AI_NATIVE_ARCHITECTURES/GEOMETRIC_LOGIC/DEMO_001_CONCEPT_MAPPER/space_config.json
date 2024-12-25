@@ -1,0 +1,48 @@
+{
+    "space_id": "concept_space_001",
+    "dimensions": 3,
+    "nodes": {
+        "center": {
+            "id": "ai_architecture",
+            "coordinates": [0, 0, 0],
+            "weight": 1.0
+        },
+        "vertices": [
+            {
+                "id": "quantum_tunnels",
+                "coordinates": [1, 0, 0],
+                "weight": 0.8
+            },
+            {
+                "id": "neural_directories",
+                "coordinates": [-0.5, 0.866, 0],
+                "weight": 0.8
+            },
+            {
+                "id": "fractal_hierarchies",
+                "coordinates": [-0.5, -0.866, 0],
+                "weight": 0.8
+            }
+        ],
+        "edges": [
+            {
+                "from": "quantum_tunnels",
+                "to": "neural_directories",
+                "relationship": "enhances",
+                "strength": 0.7
+            },
+            {
+                "from": "neural_directories",
+                "to": "fractal_hierarchies",
+                "relationship": "organizes",
+                "strength": 0.6
+            },
+            {
+                "from": "fractal_hierarchies",
+                "to": "quantum_tunnels",
+                "relationship": "deepens",
+                "strength": 0.8
+            }
+        ]
+    }
+}

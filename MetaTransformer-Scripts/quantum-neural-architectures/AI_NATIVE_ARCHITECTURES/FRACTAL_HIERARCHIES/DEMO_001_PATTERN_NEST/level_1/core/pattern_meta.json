@@ -1,0 +1,20 @@
+{
+    "node_type": "core",
+    "depth": 1,
+    "pattern_role": "refinement",
+    "contains": {
+        "concept": "pattern_replication",
+        "definition": "Process of creating self-similar structures",
+        "scale": 0.75
+    },
+    "children": {
+        "allowed": true,
+        "pattern": "core/details/examples",
+        "current_count": 0,
+        "max_count": 3
+    },
+    "parent": {
+        "path": "../level_0/core",
+        "relationship": "elaboration"
+    }
+}

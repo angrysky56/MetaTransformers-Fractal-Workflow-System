@@ -1,0 +1,29 @@
+{
+    "level": "fundamentals",
+    "state": {
+        "depth": 1,
+        "context_vector": [0.8, 0.2, 0.0],
+        "accessibility": 0.9
+    },
+    "concepts": [
+        {
+            "id": "quantum_principles",
+            "description": "Basic quantum-inspired information organization",
+            "connections": [
+                {
+                    "to": "superposition",
+                    "type": "implements"
+                },
+                {
+                    "to": "entanglement",
+                    "type": "utilizes"
+                }
+            ]
+        }
+    ],
+    "navigation_options": {
+        "dive_deeper": ["mechanisms"],
+        "surface": "surface",
+        "lateral": ["related_fundamentals"]
+    }
+}

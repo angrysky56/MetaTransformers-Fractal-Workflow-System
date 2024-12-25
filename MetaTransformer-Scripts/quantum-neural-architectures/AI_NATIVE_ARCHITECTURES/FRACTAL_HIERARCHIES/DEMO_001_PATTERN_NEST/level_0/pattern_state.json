@@ -1,0 +1,55 @@
+{
+    "level_id": "0",
+    "scale": 1.0,
+    "pattern": {
+        "name": "Knowledge Organization Pattern",
+        "type": "root_pattern",
+        "description": "Base pattern for organizing and accessing knowledge structures"
+    },
+    "components": {
+        "core": {
+            "concept_definition": "Fractal knowledge organization system",
+            "principles": [
+                "Self-similarity across scales",
+                "Natural information clustering",
+                "Intuitive navigation patterns"
+            ]
+        },
+        "details": {
+            "elaboration": [
+                {
+                    "topic": "Pattern Structure",
+                    "content": "Three-part organization with core, details, and examples"
+                },
+                {
+                    "topic": "Scale Relations",
+                    "content": "Consistent scaling with preserved relationships"
+                },
+                {
+                    "topic": "Navigation Methods",
+                    "content": "Pattern-based traversal and exploration"
+                }
+            ]
+        },
+        "examples": {
+            "practical_application": [
+                {
+                    "name": "Knowledge Base Organization",
+                    "implementation": "Self-similar documentation structure"
+                },
+                {
+                    "name": "Learning System Design",
+                    "implementation": "Fractal curriculum organization"
+                },
+                {
+                    "name": "Information Retrieval",
+                    "implementation": "Pattern-based search and navigation"
+                }
+            ]
+        }
+    },
+    "verification": {
+        "self_similarity": 1.0,
+        "pattern_completeness": true
+    }
+}

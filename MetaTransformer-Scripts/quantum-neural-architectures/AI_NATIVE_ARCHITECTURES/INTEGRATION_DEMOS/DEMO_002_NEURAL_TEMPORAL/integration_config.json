@@ -1,0 +1,42 @@
+{
+    "integration_id": "neural_temporal_bridge",
+    "description": "Combines Neural Directories with Temporal Stacks for learning over time",
+    "components": {
+        "neural_net": {
+            "network_id": "adaptive_learner_001",
+            "layers": ["input", "processing", "output"],
+            "learning_rate": 0.1
+        },
+        "temporal_stack": {
+            "timeline_id": "learning_evolution_001",
+            "tracking_interval": "1h",
+            "prediction_horizon": "24h"
+        }
+    },
+    "integration_points": [
+        {
+            "type": "weight_evolution",
+            "neural_component": "weights",
+            "temporal_tracking": "state_changes",
+            "prediction_enabled": true
+        },
+        {
+            "type": "learning_history",
+            "neural_component": "activation_patterns",
+            "temporal_tracking": "pattern_evolution",
+            "analysis_enabled": true
+        }
+    ],
+    "learning_rules": {
+        "weight_adjustment": {
+            "trigger": "performance_change",
+            "temporal_analysis": "trend_based",
+            "adaptation_rate": "dynamic"
+        },
+        "pattern_evolution": {
+            "trigger": "new_pattern_learned",
+            "temporal_storage": "versioned",
+            "prediction_enabled": true
+        }
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "level": "fundamentals",
+    "depth": 1,
+    "principles": [
+        {
+            "id": "ai_principles",
+            "name": "AI Fundamentals",
+            "core_concepts": [
+                {
+                    "name": "Intelligence Simulation",
+                    "description": "Basic mechanisms of simulating intelligent behavior",
+                    "key_elements": [
+                        "Pattern Recognition",
+                        "Decision Making",
+                        "Problem Solving"
+                    ]
+                },
+                {
+                    "name": "Learning Systems",
+                    "description": "Fundamental approaches to machine learning",
+                    "key_elements": [
+                        "Supervised Learning",
+                        "Unsupervised Learning",
+                        "Reinforcement Learning"
+                    ]
+                },
+                {
+                    "name": "Knowledge Representation",
+                    "description": "Methods for storing and organizing information",
+                    "key_elements": [
+                        "Data Structures",
+                        "Semantic Networks",
+                        "Ontologies"
+                    ]
+                }
+            ],
+            "depth_vector": [0.2, 0.8, 0.0, 0.0, 0.0]
+        },
+        {
+            "id": "learning_principles",
+            "name": "Learning Fundamentals",
+            "core_concepts": [
+                {
+                    "name": "Knowledge Acquisition",
+                    "description": "Basic principles of learning and knowledge gathering",
+                    "key_elements": [
+                        "Information Processing",
+                        "Pattern Identification",
+                        "Knowledge Integration"
+                    ]
+                },
+                {
+                    "name": "Skill Development",
+                    "description": "Fundamental processes of capability improvement",
+                    "key_elements": [
+                        "Practice Mechanisms",
+                        "Feedback Systems",
+                        "Performance Optimization"
+                    ]
+                },
+                {
+                    "name": "Adaptation Mechanisms",
+                    "description": "Basic principles of system adaptation",
+                    "key_elements": [
+                        "Environmental Response",
+                        "Behavior Modification",
+                        "Performance Tuning"
+                    ]
+                }
+            ],
+            "depth_vector": [0.2, 0.8, 0.0, 0.0, 0.0]
+        },
+        {
+            "id": "evolution_principles",
+            "name": "Evolution Fundamentals",
+            "core_concepts": [
+                {
+                    "name": "Progressive Development",
+                    "description": "Basic principles of systematic improvement",
+                    "key_elements": [
+                        "Incremental Change",
+                        "Selection Mechanisms",
+                        "Fitness Evaluation"
+                    ]
+                },
+                {
+                    "name": "Adaptation Systems",
+                    "description": "Fundamental approaches to system adaptation",
+                    "key_elements": [
+                        "Environmental Sensing",
+                        "Response Mechanisms",
+                        "Fitness Optimization"
+                    ]
+                },
+                {
+                    "name": "Growth Patterns",
+                    "description": "Basic patterns of system development",
+                    "key_elements": [
+                        "Expansion Mechanisms",
+                        "Integration Patterns",
+                        "Optimization Cycles"
+                    ]
+                }
+            ],
+            "depth_vector": [0.2, 0.8, 0.0, 0.0, 0.0]
+        }
+    ],
+    "relationships": [
+        {
+            "from": "ai_principles",
+            "to": "learning_principles",
+            "type": "implements",
+            "strength": 0.9
+        },
+        {
+            "from": "learning_principles",
+            "to": "evolution_principles",
+            "type": "enables",
+            "strength": 0.8
+        },
+        {
+            "from": "evolution_principles",
+            "to": "ai_principles",
+            "type": "enhances",
+            "strength": 0.7
+        }
+    ],
+    "learning_paths": [
+        {
+            "name": "AI Understanding",
+            "sequence": ["ai_principles", "learning_principles", "evolution_principles"],
+            "description": "Comprehensive path through fundamental principles"
+        },
+        {
+            "name": "Learning Focus",
+            "sequence": ["learning_principles", "ai_principles", "evolution_principles"],
+            "description": "Learning-centric approach to principles"
+        },
+        {
+            "name": "Evolution First",
+            "sequence": ["evolution_principles", "learning_principles", "ai_principles"],
+            "description": "Evolution-based approach to understanding"
+        }
+    ],
+    "metadata": {
+        "level_complete": true,
+        "last_updated": "2024-12-04",
+        "required_context": ["surface"],
+        "next_levels": ["mechanisms", "implications"]
+    }
+}

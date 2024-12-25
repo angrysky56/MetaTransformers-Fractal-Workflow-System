@@ -1,0 +1,30 @@
+{
+    "node_id": "root",
+    "scale": 1.0,
+    "concept": {
+        "name": "AI Architecture",
+        "type": "root_concept",
+        "definition": "Foundational patterns for AI system organization"
+    },
+    "branches": [
+        {
+            "id": "structure",
+            "scale": 0.8,
+            "concept": "Organizational Patterns"
+        },
+        {
+            "id": "behavior",
+            "scale": 0.8,
+            "concept": "System Behaviors"
+        },
+        {
+            "id": "evolution",
+            "scale": 0.8,
+            "concept": "Adaptive Growth"
+        }
+    ],
+    "self_similarity": {
+        "measure": 1.0,
+        "verification": "complete"
+    }
+}

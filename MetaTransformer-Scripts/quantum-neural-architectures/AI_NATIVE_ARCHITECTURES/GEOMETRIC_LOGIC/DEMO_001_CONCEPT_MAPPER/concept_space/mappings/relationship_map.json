@@ -1,0 +1,46 @@
+{
+    "mapping_id": "concept_relationships_001",
+    "mapping_type": "semantic_spatial",
+    "relationship_types": {
+        "enhances": {
+            "visual": "solid_line",
+            "direction": "bidirectional",
+            "color": "blue",
+            "thickness_scale": "strength"
+        },
+        "implements": {
+            "visual": "dashed_line",
+            "direction": "unidirectional",
+            "color": "green",
+            "thickness_scale": "strength"
+        },
+        "contains": {
+            "visual": "dotted_line",
+            "direction": "unidirectional",
+            "color": "purple",
+            "thickness_scale": "strength"
+        }
+    },
+    "active_relationships": [
+        {
+            "type": "enhances",
+            "from": "quantum_tunnels",
+            "to": "neural_networks",
+            "strength": 0.8,
+            "metadata": {
+                "description": "Quantum concepts enhance neural processing",
+                "examples": ["state superposition", "pattern entanglement"]
+            }
+        },
+        {
+            "type": "implements",
+            "from": "neural_networks",
+            "to": "fractal_patterns",
+            "strength": 0.7,
+            "metadata": {
+                "description": "Neural networks implement fractal organization",
+                "examples": ["self-similar structures", "recursive patterns"]
+            }
+        }
+    ]
+}

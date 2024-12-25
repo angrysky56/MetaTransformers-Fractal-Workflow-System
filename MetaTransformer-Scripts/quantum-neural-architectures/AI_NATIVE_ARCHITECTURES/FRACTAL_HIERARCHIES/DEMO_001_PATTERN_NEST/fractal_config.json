@@ -1,0 +1,31 @@
+{
+    "pattern_id": "knowledge_fractal_001",
+    "base_pattern": {
+        "components": [
+            "core",
+            "details",
+            "examples"
+        ],
+        "scaling_factor": 0.75,
+        "max_depth": 3
+    },
+    "replication_rules": {
+        "core": {
+            "must_contain": "concept_definition",
+            "max_children": 3
+        },
+        "details": {
+            "must_contain": "elaboration",
+            "max_children": 5
+        },
+        "examples": {
+            "must_contain": "practical_application",
+            "max_children": 4
+        }
+    },
+    "navigation_patterns": {
+        "dive_deeper": "core_first",
+        "explore_breadth": "level_scan",
+        "find_similar": "pattern_match"
+    }
+}

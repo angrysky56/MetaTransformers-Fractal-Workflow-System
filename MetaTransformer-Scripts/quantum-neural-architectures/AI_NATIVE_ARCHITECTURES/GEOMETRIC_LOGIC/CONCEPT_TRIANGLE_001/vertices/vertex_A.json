@@ -1,0 +1,26 @@
+{
+    "vertex_id": "A",
+    "position": [0, 1, 0],
+    "concept": {
+        "name": "Core Principle",
+        "type": "fundamental",
+        "weight": 1.0
+    },
+    "edges": [
+        {
+            "to": "B",
+            "relationship": "specializes",
+            "weight": 0.8
+        },
+        {
+            "to": "C",
+            "relationship": "implements",
+            "weight": 0.7
+        }
+    ],
+    "properties": {
+        "stability": 0.9,
+        "influence": 1.0,
+        "connectivity": 0.85
+    }
+}

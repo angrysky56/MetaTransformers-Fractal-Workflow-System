@@ -1,0 +1,24 @@
+{
+    "space_id": "triangle_space_001",
+    "dimensions": 3,
+    "origin": [0, 0, 0],
+    "scale": 1.0,
+    "geometry": {
+        "type": "triangle",
+        "vertices": [
+            {"id": "A", "coords": [0, 1, 0]},
+            {"id": "B", "coords": [-0.866, -0.5, 0]},
+            {"id": "C", "coords": [0.866, -0.5, 0]}
+        ],
+        "edges": [
+            {"from": "A", "to": "B"},
+            {"from": "B", "to": "C"},
+            {"from": "C", "to": "A"}
+        ]
+    },
+    "navigation_rules": {
+        "movement": "euclidean",
+        "path_finding": "shortest_path",
+        "edge_traversal": "weighted"
+    }
+}

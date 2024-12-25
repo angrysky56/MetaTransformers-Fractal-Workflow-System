@@ -1,0 +1,45 @@
+{
+    "tunnel_id": "concept_diver_001",
+    "max_depth": 5,
+    "surface_concepts": ["AI", "Learning", "Evolution"],
+    "levels": [
+        {
+            "depth": 0,
+            "name": "surface",
+            "description": "High-level overview",
+            "required_context": []
+        },
+        {
+            "depth": 1,
+            "name": "fundamentals",
+            "description": "Basic principles",
+            "required_context": ["surface"]
+        },
+        {
+            "depth": 2,
+            "name": "mechanisms",
+            "description": "Detailed workings",
+            "required_context": ["fundamentals"]
+        },
+        {
+            "depth": 3,
+            "name": "implications",
+            "description": "Deeper meaning",
+            "required_context": ["mechanisms"]
+        },
+        {
+            "depth": 4,
+            "name": "synthesis",
+            "description": "Integration and creation",
+            "required_context": ["implications"]
+        }
+    ],
+    "navigation": {
+        "entry_points": ["surface", "fundamentals"],
+        "exit_points": ["synthesis", "implications"],
+        "shortcuts": {
+            "quick_dive": "mechanisms",
+            "emergency_surface": "surface"
+        }
+    }
+}

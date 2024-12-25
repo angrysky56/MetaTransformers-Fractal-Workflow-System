@@ -1,0 +1,90 @@
+{
+    "level": 2,
+    "category": "symbol_patterns",
+    "pattern_sets": [
+        {
+            "name": "foundation_patterns",
+            "base_symbol": "⧬",
+            "combinations": [
+                {
+                    "pattern": "⧬⦿",
+                    "meaning": "grounded unity",
+                    "applications": ["system initialization", "core principles"],
+                    "depth_vector": [0.8, 0.6, 0.4]
+                },
+                {
+                    "pattern": "⧬⧈",
+                    "meaning": "structured foundation",
+                    "applications": ["framework building", "architectural basis"],
+                    "depth_vector": [0.7, 0.7, 0.5]
+                }
+            ]
+        },
+        {
+            "name": "flow_patterns",
+            "base_symbol": "⫰",
+            "combinations": [
+                {
+                    "pattern": "⫰⦿",
+                    "meaning": "unified flow",
+                    "applications": ["coherent progression", "harmonious movement"],
+                    "depth_vector": [0.6, 0.8, 0.6]
+                },
+                {
+                    "pattern": "⫰⩘",
+                    "meaning": "transformative flow",
+                    "applications": ["evolutionary process", "dynamic change"],
+                    "depth_vector": [0.5, 0.8, 0.7]
+                }
+            ]
+        },
+        {
+            "name": "structure_patterns",
+            "base_symbol": "⧈",
+            "combinations": [
+                {
+                    "pattern": "⧈⧉",
+                    "meaning": "contained structure",
+                    "applications": ["organized systems", "bounded frameworks"],
+                    "depth_vector": [0.4, 0.9, 0.8]
+                },
+                {
+                    "pattern": "⧈⩘",
+                    "meaning": "evolving structure",
+                    "applications": ["adaptive systems", "growing frameworks"],
+                    "depth_vector": [0.3, 0.9, 0.9]
+                }
+            ]
+        }
+    ],
+    "combination_rules": {
+        "adjacency": {
+            "compatible": ["⧬⦿", "⫰⩘", "⧈⧉"],
+            "incompatible": ["⧬⩘", "⫰⧬"],
+            "conditional": ["⦿⧉", "⧈⫰"]
+        },
+        "sequence": {
+            "always_first": ["⧬", "⦿"],
+            "always_last": ["⩘", "⧉"],
+            "intermediate": ["⧈", "⫰"]
+        }
+    },
+    "pattern_progressions": [
+        {
+            "sequence": ["⧬⦿", "⧈⧉", "⫰⩘"],
+            "meaning": "Complete system evolution",
+            "depth_vector": [0.2, 0.8, 1.0]
+        },
+        {
+            "sequence": ["⦿⧈", "⧉⫰", "⩘"],
+            "meaning": "Structured transformation path",
+            "depth_vector": [0.3, 0.7, 1.0]
+        }
+    ],
+    "metadata": {
+        "pattern_count": 6,
+        "complexity_level": "intermediate",
+        "prerequisites": ["basic_symbols", "combination_rules"],
+        "next_stage": "wisdom_application"
+    }
+}

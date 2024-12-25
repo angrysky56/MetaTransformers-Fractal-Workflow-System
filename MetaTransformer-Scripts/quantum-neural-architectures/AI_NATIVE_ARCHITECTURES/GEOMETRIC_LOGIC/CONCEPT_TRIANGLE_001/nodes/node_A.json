@@ -1,0 +1,21 @@
+{
+    "node_id": "concept_A",
+    "coordinates": [0, 1, 0],
+    "concept_data": {
+        "name": "AI Architecture",
+        "type": "root_concept",
+        "weight": 1.0
+    },
+    "connections": [
+        {
+            "target": "concept_B",
+            "relationship": "contains",
+            "strength": 0.8
+        },
+        {
+            "target": "concept_C",
+            "relationship": "influences",
+            "strength": 0.7
+        }
+    ]
+}

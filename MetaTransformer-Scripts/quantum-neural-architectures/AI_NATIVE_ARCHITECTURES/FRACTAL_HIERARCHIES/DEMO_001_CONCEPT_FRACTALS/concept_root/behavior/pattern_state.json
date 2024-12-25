@@ -1,0 +1,81 @@
+{
+    "node_id": "behavior",
+    "scale": 0.8,
+    "concept": {
+        "name": "System Behaviors",
+        "type": "branch_concept",
+        "definition": "Dynamic patterns of AI system operation"
+    },
+    "branches": [
+        {
+            "id": "learning",
+            "scale": 0.64,
+            "concept": "Learning Patterns",
+            "leaves": [
+                {
+                    "id": "pattern_recognition",
+                    "scale": 0.384,
+                    "example": "Self-similar pattern detection across scales"
+                },
+                {
+                    "id": "adaptive_learning",
+                    "scale": 0.384,
+                    "example": "Dynamic adjustment of learning parameters"
+                },
+                {
+                    "id": "transfer_learning",
+                    "scale": 0.384,
+                    "example": "Cross-domain knowledge application"
+                }
+            ]
+        },
+        {
+            "id": "processing",
+            "scale": 0.64,
+            "concept": "Processing Models",
+            "leaves": [
+                {
+                    "id": "parallel_processing",
+                    "scale": 0.384,
+                    "example": "Multi-scale concurrent operations"
+                },
+                {
+                    "id": "recursive_processing",
+                    "scale": 0.384,
+                    "example": "Self-referential computation patterns"
+                },
+                {
+                    "id": "distributed_processing",
+                    "scale": 0.384,
+                    "example": "Scale-invariant processing distribution"
+                }
+            ]
+        },
+        {
+            "id": "adaptation",
+            "scale": 0.64,
+            "concept": "Adaptive Responses",
+            "leaves": [
+                {
+                    "id": "environmental_adaptation",
+                    "scale": 0.384,
+                    "example": "Context-sensitive behavior adjustment"
+                },
+                {
+                    "id": "self_modification",
+                    "scale": 0.384,
+                    "example": "Internal structure optimization"
+                },
+                {
+                    "id": "emergent_behavior",
+                    "scale": 0.384,
+                    "example": "Complex behavior from simple rules"
+                }
+            ]
+        }
+    ],
+    "self_similarity": {
+        "measure": 0.8,
+        "verification": "complete"
+    }
+}

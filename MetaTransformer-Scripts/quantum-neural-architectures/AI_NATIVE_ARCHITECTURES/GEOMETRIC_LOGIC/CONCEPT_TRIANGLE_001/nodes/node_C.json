@@ -1,0 +1,21 @@
+{
+    "node_id": "concept_C",
+    "coordinates": [0.866, -0.5, 0],
+    "concept_data": {
+        "name": "System Behavior",
+        "type": "component_concept",
+        "weight": 0.8
+    },
+    "connections": [
+        {
+            "target": "concept_A",
+            "relationship": "influences",
+            "strength": 0.7
+        },
+        {
+            "target": "concept_B",
+            "relationship": "interacts_with",
+            "strength": 0.6
+        }
+    ]
+}

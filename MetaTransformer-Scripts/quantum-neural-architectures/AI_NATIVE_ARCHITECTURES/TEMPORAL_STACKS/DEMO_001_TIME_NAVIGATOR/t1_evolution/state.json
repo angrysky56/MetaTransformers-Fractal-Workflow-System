@@ -1,0 +1,32 @@
+{
+    "timestamp": "2024-12-04T06:00:00Z",
+    "state_id": "evolution_1",
+    "content_hash": "def456ghi789",
+    "state_vector": [0.8, 0.2, 0.0],
+    "changes": [
+        {
+            "type": "pattern_emergence",
+            "description": "First learning patterns detected",
+            "confidence": 0.7
+        }
+    ],
+    "components": {
+        "knowledge": {
+            "level": "pattern_recognition",
+            "confidence": 0.8
+        },
+        "connections": [
+            {
+                "type": "temporal_link",
+                "to": "initial_state",
+                "strength": 0.9
+            }
+        ],
+        "patterns": [
+            {
+                "id": "learning_pattern_001",
+                "confidence": 0.7
+            }
+        ]
+    }
+}

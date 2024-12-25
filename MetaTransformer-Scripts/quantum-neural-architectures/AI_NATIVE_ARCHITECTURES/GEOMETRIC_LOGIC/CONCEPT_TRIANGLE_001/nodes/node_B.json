@@ -1,0 +1,21 @@
+{
+    "node_id": "concept_B",
+    "coordinates": [-0.866, -0.5, 0],
+    "concept_data": {
+        "name": "System Structure",
+        "type": "component_concept",
+        "weight": 0.8
+    },
+    "connections": [
+        {
+            "target": "concept_A",
+            "relationship": "part_of",
+            "strength": 0.8
+        },
+        {
+            "target": "concept_C",
+            "relationship": "interacts_with",
+            "strength": 0.6
+        }
+    ]
+}

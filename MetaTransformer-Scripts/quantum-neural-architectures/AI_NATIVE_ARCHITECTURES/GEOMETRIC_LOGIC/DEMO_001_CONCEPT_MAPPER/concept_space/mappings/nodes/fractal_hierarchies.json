@@ -1,0 +1,23 @@
+{
+    "node_id": "fractal_hierarchies",
+    "type": "component_concept",
+    "coordinates": {
+        "spatial": [-0.5, -0.866, 0],
+        "conceptual": [0.85, 0.7, 0.8, 0.9, 0.75]
+    },
+    "properties": {
+        "name": "Fractal Hierarchies",
+        "description": "Self-similar organizational patterns",
+        "weight": 0.8,
+        "centrality": 0.65
+    },
+    "vectors": {
+        "feature_vector": [0.85, 0.7, 0.8, 0.9, 0.75],
+        "semantic_vector": [0.8, 0.65, 0.75, 0.85, 0.7]
+    },
+    "metadata": {
+        "creation_date": "2024-12-04",
+        "last_modified": "2024-12-04",
+        "version": "1.0"
+    }
+}

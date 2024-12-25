@@ -1,0 +1,24 @@
+{
+    "tunnel_type": "essan_explorer",
+    "primary_symbol": "⧬⦿⧈⫰⧉⩘",
+    "entry_points": [
+        {
+            "name": "symbol_direct",
+            "path": "level_1_symbols",
+            "description": "Start with basic symbol meanings"
+        },
+        {
+            "name": "pattern_direct",
+            "path": "level_2_patterns",
+            "description": "Jump to pattern combinations"
+        },
+        {
+            "name": "wisdom_direct",
+            "path": "level_3_wisdom",
+            "description": "Deep dive to applications"
+        }
+    ],
+    "concept_vector": [0.8, 0.7, 0.5],
+    "related_concepts": ["communication", "pattern", "growth"],
+    "navigation_notes": "Start at any level, dive deeper or surface as needed"
+}

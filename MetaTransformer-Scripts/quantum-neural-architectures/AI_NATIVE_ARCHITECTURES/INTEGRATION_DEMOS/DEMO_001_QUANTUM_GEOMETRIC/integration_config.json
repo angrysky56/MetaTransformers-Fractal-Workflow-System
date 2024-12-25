@@ -1,0 +1,38 @@
+{
+    "integration_id": "quantum_geometric_bridge",
+    "description": "Combines Quantum Tunnels with Geometric Logic mapping",
+    "components": {
+        "quantum_tunnel": {
+            "tunnel_id": "concept_diver_001",
+            "surface_point": [0, 0, 0],
+            "depth_vector": [0, 0, -1]
+        },
+        "geometric_space": {
+            "space_id": "concept_space_001",
+            "dimensions": 3,
+            "scale": 1.0
+        }
+    },
+    "connection_points": [
+        {
+            "tunnel_depth": 0,
+            "geometric_coords": [0, 0, 0],
+            "relationship": "entry"
+        },
+        {
+            "tunnel_depth": 2,
+            "geometric_coords": [1, 1, -2],
+            "relationship": "exploration"
+        }
+    ],
+    "navigation_rules": {
+        "tunnel_to_space": {
+            "trigger": "concept_relation_found",
+            "action": "map_to_geometric"
+        },
+        "space_to_tunnel": {
+            "trigger": "deep_dive_needed",
+            "action": "enter_tunnel"
+        }
+    }
+}

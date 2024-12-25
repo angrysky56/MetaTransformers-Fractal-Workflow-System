@@ -1,0 +1,29 @@
+{
+    "pattern_id": "concept_fractal_001",
+    "pattern_type": "knowledge_organization",
+    "base_structure": {
+        "core": {
+            "type": "concept_definition",
+            "scaling_factor": 0.8
+        },
+        "branches": {
+            "count": 3,
+            "type": "elaboration",
+            "scaling_factor": 0.7
+        },
+        "leaves": {
+            "count": 5,
+            "type": "example",
+            "scaling_factor": 0.6
+        }
+    },
+    "replication_rules": {
+        "depth_limit": 3,
+        "minimum_scale": 0.2,
+        "similarity_threshold": 0.75
+    },
+    "navigation": {
+        "methods": ["dive", "surface", "traverse"],
+        "constraints": ["scale_appropriate", "context_aware"]
+    }
+}

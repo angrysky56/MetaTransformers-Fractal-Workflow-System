@@ -1,0 +1,32 @@
+{
+    "node_id": "input_001",
+    "type": "text_processor",
+    "activation_threshold": 0.3,
+    "recognition_patterns": [
+        "\\b[A-Z][a-z]+\\b",
+        "\\b\\d+\\b",
+        "\\b[A-Z]{2,}\\b",
+        "\\b[a-z]+ing\\b"
+    ],
+    "weight_matrix": {
+        "proc_001": 0.8,
+        "proc_002": 0.6
+    },
+    "pattern_weights": {
+        "proper": 1.2,
+        "numeric": 1.0,
+        "abbreviation": 1.1,
+        "verb": 0.9
+    },
+    "activation_history": [
+        {
+            "timestamp": "2024-12-04T00:00:00Z",
+            "activation_value": 0.0
+        }
+    ],
+    "metadata": {
+        "creation_date": "2024-12-04",
+        "last_modified": "2024-12-04",
+        "version": "1.0"
+    }
+}

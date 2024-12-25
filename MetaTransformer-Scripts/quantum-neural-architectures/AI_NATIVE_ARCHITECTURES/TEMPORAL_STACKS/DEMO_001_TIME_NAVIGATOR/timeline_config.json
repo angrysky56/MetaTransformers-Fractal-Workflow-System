@@ -1,0 +1,37 @@
+{
+    "timeline_id": "concept_evolution_001",
+    "start_time": "2024-12-04T00:00:00Z",
+    "current_version": 1,
+    "states": {
+        "genesis": {
+            "timestamp": "2024-12-04T00:00:00Z",
+            "state_id": "initial",
+            "content_hash": "abc123",
+            "changes": []
+        },
+        "current": {
+            "timestamp": "2024-12-04T12:00:00Z",
+            "state_id": "v1",
+            "content_hash": "def456",
+            "changes": [
+                {
+                    "type": "addition",
+                    "description": "Added neural pathways",
+                    "affected_paths": ["/neural/connections"]
+                }
+            ]
+        },
+        "projected": {
+            "timestamp": "2024-12-05T00:00:00Z",
+            "state_id": "v2_projected",
+            "confidence": 0.8,
+            "predicted_changes": [
+                {
+                    "type": "optimization",
+                    "description": "Neural weight adjustment",
+                    "probability": 0.9
+                }
+            ]
+        }
+    }
+}

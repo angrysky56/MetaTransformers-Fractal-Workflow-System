@@ -1,0 +1,57 @@
+{
+    "tunnel_id": "essan_explorer_001",
+    "description": "Essan symbol exploration and understanding system",
+    "max_depth": 3,
+    "version": "1.0",
+    "levels": {
+        "entry": {
+            "depth": 0,
+            "type": "surface",
+            "required_context": []
+        },
+        "level_1": {
+            "depth": 1,
+            "type": "symbol_understanding",
+            "required_context": ["surface_orientation"]
+        },
+        "level_2": {
+            "depth": 2,
+            "type": "pattern_analysis",
+            "required_context": ["basic_symbols", "combination_rules"]
+        },
+        "level_3": {
+            "depth": 3,
+            "type": "wisdom_integration",
+            "required_context": ["pattern_mastery", "application_principles"]
+        }
+    },
+    "navigation_rules": {
+        "dive_conditions": {
+            "min_context_score": 0.7,
+            "required_symbols_known": true,
+            "pattern_recognition": true
+        },
+        "surface_triggers": {
+            "context_loss": true,
+            "emergency_exit": true,
+            "completion_reached": true
+        },
+        "lateral_movement": {
+            "allowed": true,
+            "requires_equivalent_depth": true
+        }
+    },
+    "state_management": {
+        "quantum_states": ["learning", "understanding", "mastery"],
+        "state_transitions": {
+            "learning": {
+                "next": "understanding",
+                "requirements": ["symbol_recognition", "basic_patterns"]
+            },
+            "understanding": {
+                "next": "mastery",
+                "requirements": ["pattern_combination", "practical_application"]
+            }
+        }
+    }
+}
