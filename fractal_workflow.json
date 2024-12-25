@@ -1,0 +1,68 @@
+{
+	"name": "Complex Data Processing",
+	"description": "A complex workflow demonstrating fractal composition for processing data.",
+	"steps": [
+		{
+			"name": "Initiate Data Ingestion",
+			"description": "Start the process of ingesting data."
+		},
+		{
+			"name": "Process Data Sub-Workflow",
+			"description": "Execute the sub-workflow for data processing."
+		},
+		{
+			"name": "Validate Results",
+			"description": "Validate the results after processing."
+		}
+	],
+	"includes": [
+		{
+			"name": "Clean and Transform Data",
+			"description": "Sub-workflow for cleaning and transforming data.",
+			"steps": [
+				{
+					"name": "Clean Data",
+					"description": "Cleanse the ingested data."
+				},
+				{
+					"name": "Transform Data",
+					"description": "Transform the data into the required format."
+				}
+			]
+		},
+		{
+			"name": "Analyze Data",
+			"description": "Sub-workflow for analyzing the processed data.",
+			"steps": [
+				{
+					"name": "Perform Statistical Analysis",
+					"description": "Perform statistical analysis on the data."
+				},
+				{
+					"name": "Generate Report",
+					"description": "Generate a report based on the analysis."
+				}
+			]
+		}
+	],
+	"links": [
+		{
+			"from": "Initiate Data Ingestion",
+			"to": "Process Data Sub-Workflow"
+		},
+		{
+			"from": "Process Data Sub-Workflow",
+			"to": "Validate Results"
+		}
+	],
+	"inclusion_links": [
+		{
+			"from": "Process Data Sub-Workflow",
+			"includes": "Clean and Transform Data"
+		},
+		{
+			"from": "Process Data Sub-Workflow",
+			"includes": "Analyze Data"
+		}
+	]
+}

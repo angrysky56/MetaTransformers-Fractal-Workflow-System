@@ -1,0 +1,12 @@
+neo4j==5.14.1
+torch==2.2.0
+numpy==1.26.4
+pandas==2.2.0
+scipy==1.12.0
+networkx==3.2.1
+matplotlib==3.8.2
+seaborn==0.13.2
+python-dotenv==1.0.0
+tensorboard==2.15.1
+tqdm==4.66.1
+pytest==8.0.0
