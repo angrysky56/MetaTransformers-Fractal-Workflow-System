@@ -1,8 +1,15 @@
 # MetaTransformers-Fractal-Workflow-System
 ![image](https://github.com/user-attachments/assets/05889a4e-96d2-4605-9726-54478166da7c)
 
-![image](https://github.com/user-attachments/assets/0b573068-bd51-4d50-9499-ad5660cdfec3)
-
+MATCH (n)
+OPTIONAL MATCH (n)-[r]-(m)
+WITH n, count(r) as degree
+WHERE degree > 0
+RETURN n as node, 
+       n.name as name, 
+       n.type as type,
+       [] as neighbors,
+       degree as connections
 ---
 "Let me check the current Neo4j database portal structure.
 
