@@ -1,0 +1,17 @@
+# Core GPU Acceleration
+cupy-cuda12x>=13.3.0  # For CUDA 12.x
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Deep Learning Integration
+mamba-ssm>=1.0.0
+torch>=2.1.0
+
+# Database and Infrastructure
+neo4j>=4.4.0
+pandas>=2.0.0
+
+# Development and Testing
+pytest>=7.4.0
+black>=23.9.1
+mypy>=1.5.1

@@ -1,0 +1,49 @@
+lab_configuration:
+  name: AI ML Laboratory
+  version: '1.0.0'
+  base_path: F:/MetaTransformers-Fractal-Workflow-System/MetaTransformer-Scripts/ai_ml_lab
+
+environments:
+  scale_agnostic:
+    name: scale_agnostic_env
+    python_version: '3.10'
+    cuda_version: '11.8'
+    dependencies:
+      - pytorch>=2.1.0
+      - torch-geometric>=2.4.0
+      - wandb>=0.15.0
+    path: ./scale_agnostic_env
+
+modules:
+  scale_agnostic_generation:
+    name: Scale-Agnostic Generation
+    path: ../scale_agnostic_unconditional_generation
+    entry_points:
+      - train: src.models.trainer:ScaleAgnosticTrainer
+      - generate: src.models.diffusion.sampler:ScaleAgnosticSampler
+    configurations:
+      - config.py
+      - model_configs/
+    artifacts:
+      save_dir: ./artifacts/scale_agnostic
+
+database:
+  type: neo4j
+  module_node_label: MLModule
+  environment_node_label: MLEnvironment
+  relationships:
+    - CONTAINS
+    - IMPLEMENTS
+    - USES
+
+monitoring:
+  enabled: true
+  metrics:
+    - memory_usage
+    - gpu_utilization
+    - training_progress
+  logging:
+    level: INFO
+    handlers:
+      - console
+      - file

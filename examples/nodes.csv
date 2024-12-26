@@ -1,0 +1,9 @@
+id,type,name,description
+1,Concept,Geometric Logic,Organizes concepts using geometric patterns and mathematical relationships.
+2,Pattern,Triangle Pattern,A triangular concept structure with points representing concepts.
+3,Pattern,Hexagonal Pattern,A hexagonal layout with a core and vertices representing related concepts.
+4,Layer,Input Layer,Processes input in the Neural Directory system.
+5,Layer,Output Layer,Aggregates results in the Neural Directory system.
+6,Structure,Quantum Tunnel,A pathway for deep concept exploration and interconnection.
+7,Structure,Neural Directory,Mimics neural networks with activation-based navigation.
+8,Component,Activation State,Tracks and propagates activation in a neural directory.

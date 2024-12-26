@@ -1,0 +1,7 @@
+source,target,relationship_type,description
+1,2,contains,Geometric Logic contains the Triangle Pattern.
+1,3,contains,Geometric Logic contains the Hexagonal Pattern.
+7,4,has_layer,Neural Directory has the Input Layer.
+7,5,has_layer,Neural Directory has the Output Layer.
+4,6,connected_to,Input Layer is connected to the Quantum Tunnel for deeper exploration.
+7,8,uses_component,Neural Directory uses the Activation State to manage concept propagation.
