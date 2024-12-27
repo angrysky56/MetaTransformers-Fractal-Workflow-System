@@ -51,7 +51,7 @@ The MetaTransformers Fractal Workflow System is currently in active development,
 
 # *You will currently only need*:
 https://github.com/mark3labs/mcp-filesystem-server
-- (Place the MetaTransformer repo in Claude's allowed filesystem durectories)
+- (Place the MetaTransformer repo in Claude's allowed filesystem directories)
 
 - Neo4j Desktop and
 
