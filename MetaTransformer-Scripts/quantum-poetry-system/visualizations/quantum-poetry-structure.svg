@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- SVG content from earlier visualization -->
+  <!-- Quantum Field Lines -->
+  <g stroke="#4a4a8f" stroke-width="0.5" opacity="0.3">
+    <path d="M 100,100 Q 400,50 700,100" fill="none"/>
+    <path d="M 100,200 Q 400,150 700,200" fill="none"/>
+    <path d="M 100,300 Q 400,250 700,300" fill="none"/>
+    <path d="M 100,400 Q 400,350 700,400" fill="none"/>
+    <path d="M 100,500 Q 400,450 700,500" fill="none"/>
+  </g>
+  <!-- Rest of SVG content -->
+</svg>
