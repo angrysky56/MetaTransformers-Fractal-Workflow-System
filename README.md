@@ -67,8 +67,6 @@ https://github.com/neo4j-contrib/mcp-neo4j
 
 The system will evolve towards greater automation while maintaining its core fractal workflow principles.
 
-![image](https://github.com/user-attachments/assets/55970e37-612f-41e6-8f35-7c6139ae562e)
-
 ---
 
 ## Overview
