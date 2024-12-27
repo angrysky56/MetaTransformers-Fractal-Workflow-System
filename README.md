@@ -334,22 +334,4 @@ CREATE (calc)-[:INGESTS]->(ingest)
 
 ---
 
-Example-Directory/
-├── README.md                  # Project overview and setup guide
-├── cypher/
-│   ├── initialize.cypher      # Core database schema setup (constraints, indexes)
-│   ├── workflows.cypher       # Defines initial foundational workflows and steps
-│   ├── meta_workflows.cypher  # Initializes example meta-workflow structures
-│   └── examples.cypher        # Demonstrates examples of fractal workflow composition
-├── scripts/
-│   ├── initialize_dotflow.py  # Initializes the database by running Cypher scripts
-│   ├── add_workflow.py        # Script to add new workflows dynamically
-│   ├── execute_workflow.py    # Basic script to simulate workflow execution
-│   └── attach_data.py         # Script to attach data nodes to workflow steps
-├── examples/
-│   ├── fractal_workflow.json  # Example JSON structure for a complex, nested workflow
-│   ├── advanced_usage.json    # Example JSON for showcasing dynamic workflow creation and linking
-└── docs/
-    ├── concept.md             # Detailed explanation of the Dot Flow concept
-    ├── usage.md               # Instructions on how to interact with the system and its components
-    └── api_reference.md       # (Placeholder) Could contain details on Python API and Cypher best practices
+![image](https://github.com/user-attachments/assets/e52006c6-1cf8-4178-9679-c112acc9099b)
