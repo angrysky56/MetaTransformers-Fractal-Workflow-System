@@ -1,0 +1,27 @@
+2024-12-27 03:44:55,595 - bionn_automated - INFO - Configuration loaded successfully
+2024-12-27 03:44:55,596 - bionn_automated - INFO - Quantum monitor initialized
+2024-12-27 03:44:55,597 - bionn_automated - INFO - Initialized AutomatedSTDPRunner
+2024-12-27 03:44:55,597 - bionn_automated - INFO - Starting automated STDP experiment
+2024-12-27 03:44:55,794 - bionn_automated - ERROR - Error in experiment: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument mat2 in method wrapper_CUDA_mm)
+2024-12-27 03:57:27,646 - bionn_automated - INFO - Configuration loaded successfully
+2024-12-27 03:57:27,647 - bionn_automated - INFO - Quantum monitor initialized
+2024-12-27 03:57:27,658 - bionn_automated - INFO - Using device: cuda
+2024-12-27 03:57:27,658 - bionn_automated - INFO - Initialized AutomatedSTDPRunner
+2024-12-27 03:57:27,658 - bionn_automated - INFO - Starting automated STDP experiment
+2024-12-27 03:57:27,808 - bionn_automated - INFO - STDP Layer device: cuda:0
+2024-12-27 03:57:27,808 - bionn_automated - INFO - Input data device: cuda:0
+2024-12-27 03:57:27,808 - bionn_automated - INFO - Edge index device: cuda:0
+2024-12-27 03:57:28,063 - bionn_automated - ERROR - Error in experiment: Unknown format code 'f' for object of type 'str'
+2024-12-27 03:57:28,063 - bionn_automated - ERROR - Traceback (most recent call last):
+  File "F:\MetaTransformers-Fractal-Workflow-System\MetaTransformer-Scripts\bioNN\automated_runner.py", line 115, in run_experiment
+    self.monitor.log_measurement_event(metrics)
+  File "F:\MetaTransformers-Fractal-Workflow-System\MetaTransformer-Scripts\ai_ml_lab\quantum_monitor.py", line 92, in log_measurement_event
+    f"Measurement Event | "
+ValueError: Unknown format code 'f' for object of type 'str'
+
+2024-12-27 03:57:58,255 - bionn_automated - INFO - Initialized AutomatedSTDPRunner
+2024-12-27 03:58:33,594 - bionn_automated - INFO - Initialized AutomatedSTDPRunner
+2024-12-27 03:59:38,492 - bionn_automated - INFO - Initialized AutomatedSTDPRunner
+2024-12-27 04:00:07,583 - bionn_automated - INFO - Initialized AutomatedSTDPRunner
+2024-12-27 04:06:19,223 - bionn_automated - INFO - Initialized AutomatedSTDPRunner
+2024-12-27 04:07:54,375 - bionn_automated - INFO - Initialized AutomatedSTDPRunner

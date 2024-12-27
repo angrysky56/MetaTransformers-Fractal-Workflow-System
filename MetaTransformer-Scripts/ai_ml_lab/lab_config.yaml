@@ -13,6 +13,19 @@ environments:
       - torch-geometric>=2.4.0
       - wandb>=0.15.0
     path: ./scale_agnostic_env
+    
+  bionn:
+    name: bionn_env
+    python_version: '3.11'
+    cuda_version: '11.8'
+    dependencies:
+      - torch==2.5.1
+      - torch-geometric
+      - torch-scatter
+      - torch-sparse
+      - torch-cluster
+      - numpy>=1.24.0
+    path: ./bionn_env
 
 modules:
   scale_agnostic_generation:
@@ -26,6 +39,31 @@ modules:
       - model_configs/
     artifacts:
       save_dir: ./artifacts/scale_agnostic
+
+  bioNN:
+    name: Biological Neural Network
+    path: ../bioNN
+    entry_points:
+      - train: modules.stdp.quantum_stdp:QuantumSTDPLayer
+      - monitor: modules.hybrid_processor:HybridBioQuantumProcessor
+      - run: automated_runner:AutomatedSTDPRunner
+    configurations:
+      - modules/stdp/quantum_stdp.py
+      - modules/hybrid_processor.py
+    artifacts:
+      save_dir: ./artifacts/bionn
+    monitoring:
+      metrics:
+        - spike_rate
+        - quantum_entanglement
+        - synaptic_weights
+        - coherence_level
+      intervals:
+        measurement: 10  # steps
+        logging: 100     # steps
+      thresholds:
+        min_coherence: 0.8
+        min_entanglement: 0.6
 
 database:
   type: neo4j

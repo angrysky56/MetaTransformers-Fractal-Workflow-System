@@ -7,7 +7,7 @@ Active monitoring system for entropic uncertainty measurements and neural mesh e
 import sys
 import time
 from datetime import datetime
-from typing import Dict, Optional, List
+from typing import Dict, Optional, List, Union
 import logging
 from neo4j import GraphDatabase
 import numpy as np
@@ -38,62 +38,39 @@ class QuantumMonitor:
         self.logger.addHandler(fh)
         self.logger.addHandler(ch)
 
-    def get_system_state(self) -> Dict:
-        """Get current state of quantum measurement system"""
-        with self.driver.session() as session:
-            result = session.run("""
-                MATCH (lab:QuantumLearningLab)-[:PROCESSES]->(mesh:NeuralMesh)
-                WHERE lab.name = 'EntropicUncertaintyLab'
-                WITH lab, mesh
-                MATCH (mesh)-[:EVOLVES_THROUGH]->(nexus:TemporalNexus)
-                MATCH (instance:WorkflowInstance)-[:IMPLEMENTS]->(lab)
-                MATCH (qstate:QuantumState)<-[:CURRENT_STATE]-(instance)
-                RETURN lab.state as lab_state,
-                       mesh.pattern_synthesis as pattern_type,
-                       instance.status as workflow_status,
-                       nexus.state_persistence as temporal_state,
-                       qstate.coherence as coherence,
-                       qstate.timestamp as measurement_time
-            """)
-            return result.single()
-
-    def monitor_learning_progress(self) -> Dict:
-        """Track reinforcement learning system progress"""
-        with self.driver.session() as session:
-            result = session.run("""
-                MATCH (rl:ReinforcementLearningSystem {name: 'EntropicRL'})
-                MATCH (rl)-[:EVALUATES_WITH]->(reward:RewardSystem)
-                MATCH (rl)-[:USES]->(policy:PolicyNetwork)
-                MATCH (session:ActiveLearningSession)-[:TARGETS]->(target:LearningTarget)
-                WHERE session.status = 'active'
-                RETURN rl.learning_rate as learning_rate,
-                       reward.base_reward as base_reward,
-                       policy.state_size as state_size,
-                       target.status as target_status,
-                       target.priority as priority
-            """)
-            return result.single()
-
-    def check_coherence_metrics(self) -> Dict:
-        """Analyze quantum coherence and measurement stability"""
-        with self.driver.session() as session:
-            result = session.run("""
-                MATCH (bridge:QuantumBridge)-[:SYNCHRONIZES_WITH]->(mesh:NeuralMesh)
-                WHERE mesh.substrate = 'quantum_measurement'
-                RETURN bridge.coherence_level as coherence_level,
-                       bridge.stability_index as stability,
-                       bridge.dimension_depth as dimensions
-            """)
-            return result.single()
+    def format_metric_value(self, value: Union[str, float, int, None]) -> str:
+        """Safely format metric values for logging."""
+        if value is None:
+            return 'N/A'
+        try:
+            if isinstance(value, str):
+                # Try to convert string to float for formatting
+                return f"{float(value):.3f}"
+            return f"{float(value):.3f}"
+        except (ValueError, TypeError):
+            # If conversion fails, return as is
+            return str(value)
 
     def log_measurement_event(self, metrics: Dict):
         """Log key measurement metrics"""
-        self.logger.info(
-            f"Measurement Event | "
-            f"Coherence: {metrics.get('coherence_level', 'N/A'):.3f} | "
-            f"Stability: {metrics.get('stability', 'N/A'):.3f} | "
-            f"Learning Rate: {metrics.get('learning_rate', 'N/A')}"
+        coherence = self.format_metric_value(metrics.get('coherence_level'))
+        stability = self.format_metric_value(metrics.get('stability'))
+        learning_rate = self.format_metric_value(metrics.get('learning_rate'))
+        spike_rate = self.format_metric_value(metrics.get('spike_rate'))
+        entanglement = self.format_metric_value(metrics.get('entanglement'))
+        
+        log_msg = (
+            "Measurement Event | "
+            f"Coherence: {coherence} | "
+            f"Stability: {stability} | "
+            f"Learning Rate: {learning_rate}"
         )
+        
+        # Add optional STDP metrics if present
+        if spike_rate != 'N/A' or entanglement != 'N/A':
+            log_msg += f" | Spike Rate: {spike_rate} | Entanglement: {entanglement}"
+            
+        self.logger.info(log_msg)
 
     def monitor_cycle(self, interval: int = 60):
         """Run continuous monitoring cycle"""
