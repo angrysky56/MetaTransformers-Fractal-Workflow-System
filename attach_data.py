@@ -18,7 +18,7 @@ class DataAttacher:
 if __name__ == "__main__":
     uri = "bolt://localhost:7687"  # Replace with your Neo4j URI
     user = "neo4j"              # Replace with your Neo4j username
-    password = "password"          # Replace with your Neo4j password
+    password = "00000000"          # Replace with your Neo4j password
 
     attacher = DataAttacher(uri, user, password)
     step_name = "Greet User"  # Replace with the step you want to attach data to

@@ -1,0 +1,1276 @@
+2024-12-26 16:19:44,296 - INFO - Initializing Logic Library structure...
+2024-12-26 16:19:46,581 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,597 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,613 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,626 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,637 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,647 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,660 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,672 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,683 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,696 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,708 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,718 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,730 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,743 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,755 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,761 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,780 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,790 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,802 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,812 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,823 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,834 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,844 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,854 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,864 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,874 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,881 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,892 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,901 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,911 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,923 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,934 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,944 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,956 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,966 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,976 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,986 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:46,997 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,007 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,017 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,027 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,036 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,045 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,055 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,072 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,081 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,090 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,099 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,109 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,116 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,125 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,133 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,141 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,149 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,158 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,166 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,175 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,181 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,192 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,200 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,208 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,217 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,225 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,233 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,241 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,250 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,257 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,267 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,275 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,283 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,290 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,298 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,305 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,313 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,321 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,329 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,337 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,345 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,353 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,361 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,368 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,376 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,381 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,391 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,399 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,407 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,415 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,422 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,430 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,438 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,445 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,453 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,460 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,469 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,477 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,484 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,491 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,499 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,507 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,514 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,523 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,530 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,539 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,548 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,556 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,564 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,572 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,581 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,588 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,596 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,604 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,612 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,620 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,627 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,635 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,642 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,649 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,657 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,664 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,671 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,679 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,686 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,693 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,701 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,708 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,715 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,724 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,731 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,739 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,746 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,752 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,758 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,765 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,771 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,777 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,781 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,792 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,798 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,806 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,812 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,819 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,826 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,831 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,840 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,847 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,854 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,861 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,867 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,875 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,882 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,889 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,895 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,903 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,909 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,917 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,923 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,930 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,937 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,943 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,950 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,957 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,962 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,969 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,977 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,981 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,992 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:47,999 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,005 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,010 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,018 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,024 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,031 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,038 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,044 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,050 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,057 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,064 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,072 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,078 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,086 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,092 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,098 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,105 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,111 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,118 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,126 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,133 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,140 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,146 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,153 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,159 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,166 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,173 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,177 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,186 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,192 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,199 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,206 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,212 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,219 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,226 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,232 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,240 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,247 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,254 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,260 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,266 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,273 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,277 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,281 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,294 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,301 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,307 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,314 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,320 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,327 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,335 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,342 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,349 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,357 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,363 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,370 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,377 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,381 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,391 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,399 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,405 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,412 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,419 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,437 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,443 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,450 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,458 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,464 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,472 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,477 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,485 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,494 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,501 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,507 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,514 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,520 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,526 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,534 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,540 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,548 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,556 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,563 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,570 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,577 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,581 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,592 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,599 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,607 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,614 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,623 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,631 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,639 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,647 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,653 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,662 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,669 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,676 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,683 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,689 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,696 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,701 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,708 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,715 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,721 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,727 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,734 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,740 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,745 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,751 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,757 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,763 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,769 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,776 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,781 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,787 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,794 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,799 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,805 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,811 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,817 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,822 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,828 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,834 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,839 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,845 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,852 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,857 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,863 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,868 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,874 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,877 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,881 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,892 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,898 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,903 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,909 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,914 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,920 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,927 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,932 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,938 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,944 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,950 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,956 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,963 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,969 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,975 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,982 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,989 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:48,996 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,001 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,007 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,014 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,020 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,030 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,038 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,045 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,051 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,078 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,084 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,092 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,100 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,107 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,115 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,122 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,129 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,137 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,144 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,151 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,158 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,164 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,170 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,177 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,182 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,187 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,194 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,199 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,205 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,212 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,217 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,222 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,228 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,233 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,239 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,245 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,251 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,256 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,263 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,268 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,274 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,280 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,286 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,292 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,300 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,306 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,313 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,319 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,324 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,330 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,336 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,342 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,348 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,353 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,359 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,365 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,371 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,376 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,381 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,387 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,394 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,399 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,406 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,411 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,417 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,423 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,428 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,434 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,439 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,445 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,450 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,455 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,460 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,465 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,470 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,475 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,481 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,487 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,492 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,496 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,502 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,507 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,512 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,517 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,522 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,527 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,533 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,538 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,543 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,548 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,552 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,557 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,562 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,567 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,571 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,576 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,582 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,588 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,593 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,598 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,603 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,609 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,614 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,620 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,626 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,632 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,637 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,643 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,648 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}
+2024-12-26 16:19:49,653 - ERROR - Failed to store concept: {code: Neo.ClientError.Statement.SyntaxError} {message: The property existence syntax `... exists(variable.property)` is no longer supported. Please use `variable.property IS NOT NULL` instead. (line 9, column 50 (offset: 291))
+"                    c.created_at = CASE WHEN NOT EXISTS(c.created_at)"
+                                                  ^}

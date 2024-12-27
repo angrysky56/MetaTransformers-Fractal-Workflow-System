@@ -1,0 +1,36 @@
+{
+  "title": "Classical Logic Foundations",
+  "url": "test_url",
+  "sections": [
+    {
+      "heading": "Basic Concepts",
+      "content": [
+        "Propositional Logic is the foundational system of formal logic dealing with propositions and their relationships.",
+        "The Law of Non-Contradiction states that a statement and its negation cannot both be true at the same time.",
+        "The Principle of Excluded Middle establishes that either a proposition or its negation must be true.",
+        "A logical inference is the process of deriving conclusions from premises through valid reasoning steps.",
+        "The method of Natural Deduction provides a systematic approach to constructing formal proofs."
+      ]
+    },
+    {
+      "heading": "Formal Systems",
+      "content": [
+        "A formal system consists of an alphabet, formation rules, axioms, and inference rules.",
+        "The concept of Well-Formed Formula defines the syntactically correct expressions in a logical system.",
+        "An axiom schema is a pattern for generating specific axioms within a formal system.",
+        "The technique of Resolution provides a complete method for automated theorem proving.",
+        "The principle of Soundness ensures that only valid conclusions can be derived from true premises."
+      ]
+    },
+    {
+      "heading": "Semantics",
+      "content": [
+        "The notion of Truth Value assigns a semantic interpretation to logical expressions.",
+        "A Truth Table provides a systematic method for evaluating compound propositions.",
+        "The concept of Validity determines whether an argument preserves truth from premises to conclusion.",
+        "The method of Semantic Tableaux offers an alternative approach to proving logical validity.",
+        "A Model Theory provides the mathematical framework for understanding logical semantics."
+      ]
+    }
+  ]
+}
