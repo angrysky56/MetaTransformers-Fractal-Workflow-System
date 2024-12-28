@@ -1,0 +1,10 @@
+
+# Virtual Environment
+venv/
+env/
+.env/
+.venv/
+
+# Conda environments
+envs/
+conda-env/

@@ -1,0 +1,16 @@
+{
+	"editor.formatOnPaste": true,
+	"diffEditor.codeLens": true,
+	"files.autoGuessEncoding": true,
+	"workbench.editor.preferHistoryBasedLanguageDetection": true,
+	"powershell.developer.setExecutionPolicy": false,
+	"powershell.codeFormatting.autoCorrectAliases": true,
+	"powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+	"powershell.codeFormatting.trimWhitespaceAroundPipe": true,
+	"powershell.codeFormatting.useCorrectCasing": true,
+	"powershell.codeFormatting.useConstantStrings": true,
+	"powershell.codeFormatting.whitespaceBetweenParameters": true,
+	"powershell.developer.bundledModulesPath": "",
+	"powershell.enableProfileLoading": false,
+	"powershell.pester.useLegacyCodeLens": false
+}

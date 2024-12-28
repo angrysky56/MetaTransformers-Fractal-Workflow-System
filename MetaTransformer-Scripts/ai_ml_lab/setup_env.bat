@@ -1,14 +1,15 @@
 @echo off
 ECHO Setting up Scale-Agnostic ML Environment...
 
-:: Initialize Mambaforge if available
-IF EXIST "%UserProfile%\mambaforge\Scripts\activate.bat" (
-    CALL %UserProfile%\mambaforge\Scripts\activate.bat
-) ELSE (
-    IF EXIST "%UserProfile%\miniconda3\Scripts\activate.bat" (
-        CALL %UserProfile%\miniconda3\Scripts\activate.bat
+:: Initialize miniconda if available
+IF EXIST "F:\miniconda3\Scripts\activate.bat" (
+    CALL F:\miniconda3\Scripts\activate.bat)
+
+     ELSE (
+    IF EXIST "%UserProfile%\Scripts\activate.bat" (
+        CALL F:\miniconda3\Scripts\activate.bat
     ) ELSE (
-        ECHO Error: Neither Mambaforge nor Miniconda found.
+        ECHO Error: Miniconda not found.
         EXIT /B 1
     )
 )

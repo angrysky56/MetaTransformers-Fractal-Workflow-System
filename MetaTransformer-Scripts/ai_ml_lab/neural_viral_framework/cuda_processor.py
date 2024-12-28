@@ -32,3 +32,6 @@ class CUDAProcessor:
 
             # Print device information
             logging.info(f"Using CUDA Device {self.config.device_id}: {self.device.attributes['name']}")
+        except Exception as e:
+            logging.error(f"Error setting up CUDA environment: {str(e)}")
+            raise
