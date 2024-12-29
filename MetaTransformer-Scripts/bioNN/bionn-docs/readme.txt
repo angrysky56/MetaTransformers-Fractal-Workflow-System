@@ -1,3 +1,9 @@
+Update- I made a conda environment.yml for this project you can just run it from the base directory with:
+conda env create -f environment.yml
+conda activate metatransformers
+
+The following is just historical notes.
+
 conda create -n bionn python=3.11
 
 # check here for current torch https://pytorch.org/

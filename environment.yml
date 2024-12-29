@@ -1,0 +1,35 @@
+name: metatransformers
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.10
+  - conda-forge::neo4j-python-driver>=5.0
+  - numpy>=2.0
+  - scipy>=1.14
+  - pytorch::pytorch>=2.0
+  - pytorch::pytorch-cuda=11.8
+  - conda-forge::matplotlib>=3.8
+  - conda-forge::networkx>=3.0
+  - conda-forge::sympy>=1.10
+  - ipython>=8.0
+  - conda-forge::tqdm>=4.60
+  - conda-forge::pyyaml>=6.0
+  - pip>=23.0
+  - pip:
+    - arxiv>=2.0.0
+    - attr>=0.3.0
+    - beautifulsoup4>=4.12.0
+    - configparser>=7.0.0
+    - py2neo>=2021.2.0
+    - openai>=1.0.0
+    - torch-geometric>=2.6.0
+    - transformers>=4.30.0
+    - wandb>=0.19.0
+    - loguru>=0.7.0
+    - python-dotenv>=1.0.0
+    - redis>=5.0.0
+    - urllib3-secure-extra>=0.1.0
+    - z3>=0.2.0

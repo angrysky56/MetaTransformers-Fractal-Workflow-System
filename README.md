@@ -95,6 +95,13 @@ a Neo4j graph database and dynamically expand workflows.
 ---
 
 ## Setup Instructions
+Update- I made a conda environment.yml for the BioNN project. This should allow the tests to run project wide.
+You can install all packages from the base directory with:
+````bash
+conda env create -f environment.yml
+conda activate metatransformers
+
+---
 
 ### Prerequisites
 1. Install Neo4j and set up a database instance.

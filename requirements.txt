@@ -29,6 +29,7 @@ thread==2.0.5
 torch==2.5.1
 torch_geometric==2.6.1
 tqdm==4.67.1
+transformers==4.47.1
 urllib3_secure_extra==0.1.0
 wandb==0.19.1
 PyYAML==6.0.2

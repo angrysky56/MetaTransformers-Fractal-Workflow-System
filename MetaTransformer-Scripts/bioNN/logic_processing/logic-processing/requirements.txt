@@ -1,0 +1,30 @@
+# Core dependencies
+numpy>=1.21.0
+torch>=2.0.0
+transformers>=4.30.0
+openai>=0.27.0
+
+# Logic Processing
+z3-solver>=4.12.0
+sympy>=1.12
+prolog>=0.3.1
+
+# Quantum Integration
+qiskit>=0.43.0
+pennylane>=0.31.0
+
+# Validation & Testing
+pytest>=7.4.0
+hypothesis>=6.82.0
+
+# Utilities
+tqdm>=4.65.0
+loguru>=0.7.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+
+# Development
+black>=23.7.0
+isort>=5.12.0
+mypy>=1.5.0
+pylint>=2.17.5
