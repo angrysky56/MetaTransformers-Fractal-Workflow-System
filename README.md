@@ -1,9 +1,15 @@
 # MetaTransformers-Fractal-Workflow-System
 ![image](https://github.com/user-attachments/assets/a953d377-081d-4c86-bf60-1c3cf4a09bad)
 
+#
+
 I am working on including concepts from GraphAny and Logic-LLM repositories.
+
 [GraphAny Repository](https://github.com/DeepGraphLearning/GraphAny)
+
 [Logic-LLM Repository](https://github.com/teacherpeterpan/Logic-LLM)
+
+#
 MATCH (n)
 OPTIONAL MATCH (n)-[r]-(m)
 WITH n, count(r) as degree
@@ -14,6 +20,7 @@ RETURN n as node,
        [] as neighbors,
        degree as connections
 ---
+
 "Let me check the current Neo4j database portal structure.
 
 I'm not seeing any Portal nodes in the database. Let me try a broader query:
