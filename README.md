@@ -71,11 +71,6 @@ The system will evolve towards greater automation while maintaining its core fra
 
 ---
 
-## Overview
-The **MetaTransformers Fractal Workflow System** is a modular, fractal, and AI-driven workflow management system.
-Designed to support dynamic, extensible workflows, it integrates structured data ingestion,
-multi-agent execution, and recursive process expansion.
-
 
 ## Overview
 The **MetaTransformers-Fractal-Workflow-System** is a modular, fractal, and AI-driven workflow management system.
@@ -341,4 +336,5 @@ CREATE (calc)-[:INGESTS]->(ingest)
 
 ---
 
-![image](https://github.com/user-attachments/assets/e52006c6-1cf8-4178-9679-c112acc9099b)
+![Screenshot 2024-12-29 060856](https://github.com/user-attachments/assets/a8b74f75-dbf3-4b05-ba8d-7781c9242113)
+
