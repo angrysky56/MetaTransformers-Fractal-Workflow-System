@@ -43,7 +43,7 @@ def test_database_connection():
             config = yaml.safe_load(f)
 
         # Connect to Neo4j
-        graph = Graph("bolt://localhost:7687", auth=("neo4j", "password"))
+        graph = Graph("bolt://localhost:7687", auth=("neo4j", "00000000"))
 
         # Verify ML Lab structure
         query = """

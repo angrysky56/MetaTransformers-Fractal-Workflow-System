@@ -6,7 +6,7 @@ lab_configuration:
 environments:
   scale_agnostic:
     name: scale_agnostic_env
-    python_version: '3.10'
+    python_version: '3.11'
     cuda_version: '11.8'
     dependencies:
       - pytorch>=2.1.0

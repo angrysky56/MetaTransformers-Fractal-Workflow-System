@@ -30,7 +30,7 @@ graph TD
 #### **1. Environment Preparation**
 ```python
 # Required Dependencies
-- Python 3.12+
+- Python 3.11+
 - PyTorch 2.5+
 - Neo4j Database
 - CUDA-compatible GPU (recommended)

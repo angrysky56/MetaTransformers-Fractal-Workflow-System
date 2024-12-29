@@ -13,7 +13,7 @@ def main():
         'uri': "bolt://localhost:7687",
         'user': "neo4j",
         'password': "00000000", # Replace with users Neo4j password
-        'monitor_interval': 30  # seconds
+        'monitor_interval': 60  # seconds
     }
 
     print("""

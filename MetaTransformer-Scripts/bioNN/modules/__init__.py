@@ -1,8 +1,3 @@
 """
-Core modules for bioNN framework
+BioNN Modules Package
 """
-
-from . import stdp
-from . import hybrid_processor
-
-__all__ = ['stdp', 'hybrid_processor']

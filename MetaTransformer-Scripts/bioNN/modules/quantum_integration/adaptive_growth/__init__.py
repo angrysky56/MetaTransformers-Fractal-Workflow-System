@@ -1,0 +1,3 @@
+"""
+Adaptive Growth System Initialization
+"""
