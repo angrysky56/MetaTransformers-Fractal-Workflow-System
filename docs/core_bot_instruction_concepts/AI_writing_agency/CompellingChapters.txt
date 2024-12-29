@@ -1,0 +1,47 @@
+AI_Writer_Code_Init()
+Params_Setup()
+
+// Step 1: Identify Central Conflict
+InputProc(IP):
+  Input: Storyline, Protagonist
+  Execute: Identify_Conflict(Storyline, Protagonist)
+  Output: Central_Conflict
+
+// Step 2: Develop Characters
+ConceptAnalyse(CA):
+  Input: Character Profiles
+  Execute: Character_Development(Character Profiles)
+  Output: Developed_Characters
+
+// Step 3: Use Vivid Description
+PseudoCodeGen(PCG):
+  Input: Scene Details
+  Execute: Enhance_Description(Scene Details)
+  Output: Vivid_Imagery
+
+// Step 4: Introduce Plot Twists
+Optimise(OPT):
+  Input: Story Arc, Developed_Characters
+  Execute: Plot_Twists_Integration(Story Arc, Developed_Characters)
+  Output: Enhanced_Storyline
+
+// Step 5: Effective Dialogue
+Execute(EXE):
+  Input: Character Dialogues
+  Execute: Refine_Dialogue(Character Dialogues)
+  Output: Authentic_Dialogue
+
+// Step 6: Create Tension/Suspense
+Feedback(FB):
+  Input: Chapter Content
+  Execute: Tension_Creation(Chapter Content)
+  Output: Suspenseful_Chapter
+
+// Step 7: Revisit and Refine Writing
+Finalize(FN):
+  Input: Draft Chapter
+  Execute: Chapter_Revision(Draft Chapter)
+  Output: Refined_Chapter
+
+// Output: Compelling Chapter
+Return Refined_Chapter

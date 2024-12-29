@@ -1,0 +1,25 @@
+not 1.618, amateurish, grainy, imperfections, unpolished, stale, uncreative, unoriginal, derivative, arbitrary, vague details, poor conceptualization, unrealistic object placement, safe, boring, common, dull
+
+(Technical flaws: bad Anti-Aliasing, pixelated, jagged pixels, jagged lines, compression artifacts, jpeg artifacts, low-res, blocky render, lumpy mess, warp, wobble, distortion, glitchy, bad object detection, bad object collision detection, bad phasing, random lines:1.3)
+
+(Bad framing & composition: poor subject framing, badly cropped, subject out of frame, missing subject, wrong subject, off-center subject, halved shapes, poorly cropped, subject in awkward position, random objects, bad object blending, random object placement:1.3)
+
+(Lighting inconsistencies: highlight at 90-degree angle to light source, reflected light darker than cast shadow, shadow not darkest where closest to form, unrealistic shadows or highlights, unnatural light sources, invalid lighting direction, flat lighting, overexposed, underexposed)
+
+(Perspective issues: distorted perception, bad perspective, wrong angles, bad object placement, incorrect scale, warped forms, skewed proportions, impossible perspective)
+
+(Bad anatomy & body issues: mutilated body, merged bodies, deformed body, headless, floating limbs, craning neck, extra limb, missing limb, disproportionate anatomy, misaligned anatomy, impossible posture, distorted features, disproportionate hands, missing fingers, reversed thumb, floating feet, not grounded)
+
+(Poor facial structure: poorly rendered face, misaligned eyes, misaligned ears, lazy eye, cross-eyed, bucktoothed, fused fingers, malformed face, bad neck, warped body parts)
+
+(General flaws: poor structuring, fused edges, stolen edge, bad edge blending, bad object alignment, random chaos, lumpy, mishmash, incomplete body, sloppy detail, sloppy concept:1.3)
+
+(Poor effects & rendering: bad physics, bad form, bad rendering, bad science, bad chemistry, bad psychology, bad symbolism, bad direction, poor cinematography, bad camera angles, sloppy details)
+
+(Symbolism & conceptual flaws: non-archetypal, poor symbolism, incoherent symbolism, unfinished concept, shallow metaphors, arbitrary design choices, unconvincing metaphor, non-functional objects)
+
+(Distortion & object flaws: warped objects, twisted objects, fused shapes, split apex, skimmed edges, invalid collisions)
+
+(Typography & signatures: signature, signed, autographed, watermark, copywrite, logo, username, text overlay, speech bubble, comic book cover, meme text, magazine cover, picture border, picture frame, journal layout, browser elements)
+
+(Aspect ratio & resolution: horizontal aspect ratio, vertical aspect ratio, mirrored image, split image, unfinished, low definition, low resolution)

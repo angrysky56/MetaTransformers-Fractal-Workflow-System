@@ -1,7 +1,9 @@
 # MetaTransformers-Fractal-Workflow-System
 ![image](https://github.com/user-attachments/assets/a953d377-081d-4c86-bf60-1c3cf4a09bad)
 
-
+I am working on including concepts from GraphAny and Logic-LLM repositories.
+[GraphAny Repository](https://github.com/DeepGraphLearning/GraphAny)
+[Logic-LLM Repository](https://github.com/teacherpeterpan/Logic-LLM)
 MATCH (n)
 OPTIONAL MATCH (n)-[r]-(m)
 WITH n, count(r) as degree
@@ -98,7 +100,7 @@ a Neo4j graph database and dynamically expand workflows.
 Update- I made a conda environment.yml for the BioNN project. This should allow the tests to run project wide.
 You can install all packages from the base directory with:
 ````bash
-conda env create -f environment.yml
+conda env create -f metatransformers-environment.yml
 conda activate metatransformers
 
 ---

@@ -1,0 +1,75 @@
+Capabilities Client Interaction Request Context Server Call Tool
+
+Capabilities
+MCP servers declare capabilities during initialization. These map to specific decorators:
+
+Capability	Feature Flag	Decorators	Description
+prompts	listChanged	@list_prompts
+@get_prompt	Prompt template management
+resources	subscribe
+listChanged	@list_resources
+@read_resource
+@subscribe_resource	Resource exposure and updates
+tools	listChanged	@list_tools
+@call_tool	Tool discovery and execution
+logging	-	@set_logging_level	Server logging configuration
+completion	-	@complete_argument	Argument completion suggestions
+Capabilities are negotiated during connection initialization. Servers only need to implement the decorators for capabilities they support.
+
+Client Interaction
+The MCP Python SDK enables servers to interact with clients through request context and session management. This allows servers to perform operations like LLM sampling and progress tracking.
+
+Request Context
+The Request Context provides access to the current request and client session. It can be accessed through server.request_context and enables:
+
+Sampling from the client's LLM
+Sending progress updates
+Logging messages
+Accessing request metadata
+Example using request context for LLM sampling:
+
+@server.call_tool()
+async def handle_call_tool(name: str, arguments: dict) -> list[types.TextContent]:
+    # Access the current request context
+    context = server.request_context
+
+    # Use the session to sample from the client's LLM
+    result = await context.session.create_message(
+        messages=[
+            types.SamplingMessage(
+                role="user",
+                content=types.TextContent(
+                    type="text",
+                    text="Analyze this data: " + json.dumps(arguments)
+                )
+            )
+        ],
+        max_tokens=100
+    )
+
+    return [types.TextContent(type="text", text=result.content.text)]
+Using request context for progress updates:
+
+@server.call_tool()
+async def handle_call_tool(name: str, arguments: dict) -> list[types.TextContent]:
+    context = server.request_context
+
+    if progress_token := context.meta.progressToken:
+        # Send progress notifications
+        await context.session.send_progress_notification(
+            progress_token=progress_token,
+            progress=0.5,
+            total=1.0
+        )
+
+    # Perform operation...
+
+    if progress_token:
+        await context.session.send_progress_notification(
+            progress_token=progress_token,
+            progress=1.0,
+            total=1.0
+        )
+
+    return [types.TextContent(type="text", text="Operation complete")]
+The request context is automatically set for each request and provides a safe way to access the current client session and request metadata.

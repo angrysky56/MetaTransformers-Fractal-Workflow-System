@@ -1,0 +1,4 @@
+FUNCTION select_best_thought(thoughts):
+    # Use Argmax to select the thought with the highest quality score
+    best_thought = MAX(thoughts, key=lambda thought: thought.quality_score)
+    RETURN best_thought

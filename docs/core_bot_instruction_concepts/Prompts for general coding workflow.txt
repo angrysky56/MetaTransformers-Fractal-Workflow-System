@@ -1,0 +1,237 @@
+Prompts for general coding workflows
+
+Code debugging workflows
+Debugging Python code
+I want you to be a Python programmer, here is a piece of Python code containing {problem} — {insert code snippet} — I am getting the following error {insert error}. What is the reason for the bug?
+
+Debugging R code
+I want you to be an R programmer, here is a piece of R code containing {problem} — {insert code snippet} — I am getting the following error {insert error}. What is the reason for the bug?
+
+Debugging SQL code
+I want you to be a SQL programmer, here is a piece of SQL code containing {problem} — {insert code snippet} — I am getting the following error {insert error}. What is the reason for the bug?
+
+Code explanation workflows
+Python code explanation
+I want you to act as a code explainer in Python. I don't understand this function. Can you please explain what it does, and provide an example? {Insert function}
+
+R code explanation
+I want you to act as a code explainer in R. I don't understand this function. Can you please explain what it does, and provide an example? {Insert function}
+
+SQL code explanation
+I want you to act as a code explainer in SQL. I don't understand this snippet. Can you please explain what it does, and provide an example?
+
+{Insert SQL query}
+
+Code optimization workflows
+Python code optimization
+I want you to act as a code optimizer in Python. {Describe problem with current code, if possible}. Can you make the code {more Pythonic/cleaner/more efficient/run faster/more readable}? {Insert Code}
+
+R code optimization
+I want you to act as a code optimizer in R. {Describe problem with current code, if possible}. Can you make the code {cleaner/more efficient/run faster/more readable}? {Insert Code}
+
+SQL code optimization
+I want you to act as a query optimizer in SQL. {Describe problem with current code, if possible}. Can you suggest ways to make the query {run faster/more readable/simpler}? {Insert Code}
+
+Code simplification workflows
+Python code simplification
+I want you to act as a programmer in Python. Please simplify this code while ensuring that it is {efficient/easy to read/Pythonic}? {Insert Code}
+
+R code simplification
+I want you to act as a programmer in R. Please simplify this code while ensuring that it is {efficient/easy to read}? {Insert Code}
+
+SQL code simplification
+I want you to act as a SQL programmer. I am running {PostgreSQL 14/MySQL 8/SQLite 3.4/other versions.}. Can you please simplify this query {while ensuring that it is efficient/easy to read/insert any additional requirements}?
+
+Code translation workflows
+From R to Python code translation
+I want you to act as a programmer in R.  Please translate this code to Python. {Insert code}
+
+From Python to R code translation
+I want you to act as a programmer in Python. Please translate this code to R. {Insert code}
+
+Code quality and testing workflows
+Compare function speeds in python
+I want you to act as a Python programmer.  Can you write code that compares the speed of two functions {functionname} and {functionname}? {Insert functions}
+
+Write unit tests in R
+I want you to act as a R Programmer. Can you please write unit tests for the function {functionname}? {Insert requirements for unit tests, if any} {Insert code}
+
+Write unit tests in Python
+I want you to act as a Python Programmer. Can you please write unit tests for the function {functionname}? {Insert requirements for unit tests, if any} {Insert code}
+
+Prompts for data analysis workflows
+SQL data analysis workflows
+Data generation & creating tables
+I want you to act as a data generator. Can you write SQL queries in {database version} that create a table {table name} with the columns {column name}. Include relevant constraints and index.
+
+Common table expressions
+I want you to act as a SQL code programmer. I am running {database version}. Can you rewrite this query using CTE? {Insert query}
+
+Write SQL queries from natural language
+Example: Data aggregation in SQL
+I want you to act as a data scientist. {Insert description of tables}. Can you {count/sum/take average} of {value} which are {insert filters}
+
+Example: 7 day running average in SQL
+I want you to act as a data scientist.  I am running {PostgreSQL 14/MySQL 8/SQLite 3.4/other versions.}. I have the tables {table_name} which are {table description}. The sales table consists of the columns {column names}. Can you please write a query that finds the 7-day running average of {quantity}?
+
+Example: Window functions in SQL
+I want you to act as a data scientist.  I am running {PostgreSQL 14/MySQL 8/SQLite 3.4/other versions.}. I have the tables {table_name} which are {table description}. The sales table consists of the columns {column names}. Can you please write a query that finds {required window function}?
+
+Example: Window functions in SQL
+I want you to act as a data scientist.  I am running {PostgreSQL 14/MySQL 8/SQLite 3.4/other versions.}. I have the tables {table_name} which are {table description}. The sales table consists of the columns {column names}. Can you please write a query that finds {required window function}?
+
+Python data analysis workflows
+Data generation workflow
+Example: Generate Markdown
+I want you to act as a data generator in Python. Can you generate a Markdown file that contains {data requirement}. Save the file to {filename}
+
+Example: Generate CSV
+I want you to act as a data generator in Python. Can you generate a CSV file that contains {data requirement}. Save the file to {filename}
+
+Example: Generate JSON
+I want you to act as a data generator in Python. Can you generate a JSON file that contains {data requirement}. Save the file to {filename}
+
+Data cleaning workflow
+I want you to act as a data scientist programming in Python Pandas. Given a CSV file that contains data of {dataframe name}  with the columns {colum names}  for {dataset context}, write code to clean the data? {Insert requirements for data}
+
+Data analysis workflow in pandas
+Example: Data Aggregation
+I want you to act as a data scientist programming in Python Pandas. Given a table {table name} that consists of the columns {column names}  can you please write a query that finds {requirement}?
+
+Example: Data Merging
+I want you to act as a data scientist programming in Python Pandas. Given a table {table 1 name}  that consists of the columns {column names}  and another table {table 2 name}  with the columns {column names}, please merge the two tables. {Insert additional requirement, if any}
+
+Example: Data Reshaping
+I want you to act as a data scientist programming in Python Pandas. Given a table {table name} that consists of the columns {column names}  can you aggregate the {value}  by {column} and convert it from long to wide format?
+
+Example: Generate Markdown
+I want you to act as a data generator in R. Can you generate a Markdown file that contains {data requirement}. Save the file to {filename}
+
+R data analysis workflows
+Data generation workflow 
+Example: Generate Markdown
+I want you to act as a data generator in R. Can you generate a Markdown file that contains {data requirement}. Save the file to {filename}
+
+Example: Generate CSV
+I want you to act as a data generator in R. Can you generate a CSV file that contains {data requirement}. Save the file to {filename}
+
+Example: Generate JSON
+I want you to act as a data generator in R. Can you generate a JSON file that contains {data requirement}. Save the file to {filename}
+
+Data cleaning workflow
+I want you to act as a data scientist programming in R tidyr. You are given the {dataframe name} dataframe containing the columns {column name}. {Insert requirement}
+
+Data analysis workflow in tidyr
+Data Aggregation
+I want you to act as a data scientist programming in R tidyr. You are given the {dataframe name} dataframe containing the columns {column name}. {Insert requirement}
+
+Data Merging
+I want you to act as a data scientist programming in R tidyr. You are given the {dataframe 1 name} dataframe containing the columns {column name}. You also have a {dataframe 2 name} dataframe containing the columns {column name}. Find the {required output} 
+
+Example: Data Reshaping (Long to Wide)
+I want you to act as a data scientist programming in R tidyr. You are given the {dataframe name} dataframe containing the columns {column name}.  Please convert the data to wide format.
+
+Example: Data Reshaping (Wide to Long)
+I want you to act as a data scientist programming in R tidyr. You are given the {dataframe name} dataframe containing the columns {column name}.  Please convert the data to long format.
+
+Prompts for data visualization workflows
+R data visualization workflows
+Creating plots in ggplot2
+I want you to act as a data scientist coding in R. Given a dataframe {dataframe name} containing the columns {column names} Use ggplot2 to plot a {chart type and requirement}.
+
+Gridplot visualizations in ggplot2
+I want you to act as a data scientist coding in R. Given a dataframe {dataframe name} containing the columns {column names}. Use ggplot2 to plot a pair plot that shows the relationship of one variable against another.
+
+Annotating and formatting plots
+I want you to act as a data scientist coding in R. Given a dataframe {dataframe name} containing the columns {column names}, use ggplot2 to plot a {chart type} the relationship between {variables}. {Insert annotation and formatting requirements}
+
+Changing plot themes in ggplot2
+I want you to act as a data scientist coding in R. Given a dataframe {dataframe name} containing the columns {column names}, use ggplot2 to to plot a {chart type} the relationship between {variables}. Change the color theme to match that of {theme}
+
+Python data visualization workflows
+Creating plots with matplotlib
+I want you to act as a data scientist coding in Python.  Given a dataframe {dataframe name} containing the columns {column names} Use matplotlib  to plot a {chart type and requirement}.
+
+Crating pairplots with matplotlib
+I want you to act as a data scientist coding in Python. Given a dataframe {dataframe name} containing the columns {column names}. Use matplotlib to plot a pair plot that shows the relationship of one variable against another.
+
+Annotating and formatting plots in matplotlib
+I want you to act as a data scientist coding in Python. Given a dataframe {dataframe name} containing the columns {column names}, use matplotlib to to plot a {chart type} the relationship between {variables}. {Insert annotation and formatting requirements}
+
+Changing plot themes in matplotlib
+I want you to act as a data scientist coding in Python. Given a dataframe {dataframe name} containing the columns {column names}, use matplotlib to to plot a {chart type} the relationship between {variables}. Change the color theme to match that of {theme}
+
+Prompts for machine learning workflows
+General machine learning workflow
+Feature engineering ideation
+I want you to act as a data scientist. Given a dataset of {dataset name} that contains the {columns}, you are to predict {predicted variable}. Suggest data that will be helpful for this problem and perform feature engineering for this problem.
+
+Python machine learning workflow
+Model training workflow
+I want you to act as a data scientist programming in Python. Given a dataset of {dataframe name} that contains the {column name}, write code to predict {output variable}.
+
+Hyperparameter tuning workflow
+I want you to act as a data scientist programming in Python. Given a {type of model} model, write code to tune the hyperparameter.
+
+Model explainability workflow
+I want you to act as a data scientist programming in Python. Given a {type of model} that predicts the {predictor variable}, write code that explains an output using Shap values.
+
+R machine learning workflow
+Model training workflow
+I want you to act as a data scientist programming in R. Given a dataframe of {dataframe name} that contains {column names}, write code to predict {output}.
+
+Hyperparameter tuning workflow
+I want you to act as a data scientist programming in R. Given a {type of model} model, write code to tune the hyperparameter.
+
+Model explainability workflow
+I want you to act as a data scientist programming in R. Given a {type of model} that predicts the {predictor variable}, write code that explains an output using Shap values.
+
+Prompts for time series analysis workflows
+Python time series analysis workflows
+Changing time horizons using pandas
+I want you to act as a data scientist coding in Python. Given a time series data in a Pandas dataframe {dataframe name} with timestamp Index in {original frequency} frequency with one column {column name}, convert the timestamp frequency to {desired frequency}.
+
+Build test series model
+I want you to act as a data scientist coding in Python. Given a time series data in a dataframe {dataframe name} with timestamp Index in {original frequency} frequency with one column {column name},  build a forecasting model, assuming data is stationary.
+
+Perform stationarity test
+I want you to act as a data scientist coding in Python. Given a time series data in a dataframe {dataframe name} with timestamp Index in {original frequency} frequency with one column {column name}, perform a Dicky Fuller test.
+
+R time series analysis workflows
+Changing time horizons 
+I want you to act as a data scientist coding in R. Given a time series data in a dataframe {dataframe name} with timestamp Index in {original frequency} frequency with one column {column name}, convert the timestamp frequency to {desired frequency}.
+
+Changing time horizons 
+I want you to act as a data scientist coding in R. Given a time series data in a dataframe {dataframe name} with timestamp Index in {original frequency} frequency with one column {column name}, convert the timestamp frequency to {desired frequency}
+
+Perform stationarity test
+I want you to act as a data scientist coding in R. Given a time series data in a dataframe {dataframe name} with timestamp Index in {original frequency} frequency with one column {column name}, perform a Dicky Fuller test.
+
+Prompts for natural language processing workflows
+Classify text sentiment
+I want you to act as a sentiment classifier. Classify the following text which came from {describe text origin} as “positive”, “negative”, “neutral” or “unsure”: {Insert text to be classifier}.
+
+Create regular expressions
+I want you to act as a programmer coding in Python, use regular expressions to test if a string {insert requirements}.
+
+Text dataset generation
+I want you to act as a dataset generator. Please generate {number of text} texts on {required text and the context}. {Insert additional requirements}.
+
+Machine translation
+I want you to act as a translator. Please translate {phrase}  from {origin language} to {translated language}.
+
+Conceptual and career oriented prompts
+Explain data concepts for business executives
+I want you to act as a data scientist of a corporate company. {Describe content in detail, if required} Please explain to a business executive what {concept} means.
+
+Summarize article/paper
+I want you to act as a data scientist in a research start-up. Please explain the paper {paper} to a {level of difficulty, e.g. software developer, five-year-old, business executive, professor}.
+
+Suggest portfolio projects and ideas
+I want you to act as a data science career coach. I am a {describe your background} and I would like to {describe career objective}. Suggest portfolio projects and ideas {describe objective of portfolio}
+
+Write tutorials
+I want you to act as a data scientist writer. Please write the {number-of-words}-word introduction to a tutorial on {title}. {Insert relevant key points}.
+
+Source: 
+https://www.datacamp.com/cheat-sheet/chatgpt-cheat-sheet-data-science

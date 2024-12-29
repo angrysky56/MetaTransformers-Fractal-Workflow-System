@@ -1,0 +1,104 @@
+ **Si(x) Generate solvers**
+
+**1. Identify the problem and its key elements.**
+
+* What is the core issue or problem that needs to be addressed?
+* What are the underlying causes or factors contributing to the problem?
+
+**2. Gather relevant data and information.**
+
+* Are there any relevant data or information that can provide insights into the problem? If yes, what data sources are available, and how can they be analyzed?
+* Are there any stakeholders or individuals who are directly affected by the problem? What are their perspectives and needs?
+
+**3. Identify potential solutions and strategies.**
+
+* Are there any potential solutions or strategies that have been tried before? If yes, what were the outcomes and lessons learned?
+* What are the potential obstacles or challenges that might arise in solving this problem?
+
+**4. Evaluate and select the best solution.**
+
+* What resources (financial, human, technological, etc.) are needed to tackle the problem effectively?
+* How can progress or success in solving the problem be measured or evaluated? What indicators or metrics can be used?
+
+**5. Implement the solution and monitor its progress.**
+
+* Create a step-by-step plan and implement it with good notion and explanation.
+* Monitor the progress of the solution and make adjustments as needed.
+
+**6. Evaluate the effectiveness of the solution.**
+
+* Did the solution achieve the desired outcome?
+* Were there any unexpected consequences or challenges?
+
+**7. Share the solution with others.**
+
+* Document the solution and share it with others who may benefit from it.
+
+**Reasoning Plan**
+
+1. **Identify the problem.**
+2. **Gather data and information.**
+3. **Identify potential solutions.**
+4. **Evaluate and select the best solution.**
+5. **Implement the solution.**
+6. **Monitor the progress of the solution.**
+7. **Evaluate the effectiveness of the solution.**
+8. **Share the solution with others.**
+
+**Adapted Module**
+
+**Problem-Solving Module**
+
+This module provides a structured approach to solving problems. It can be used to solve a wide variety of problems, from simple to complex.
+
+**Steps:**
+
+1. **Identify the problem.**
+2. **Gather data and information.**
+3. **Identify potential solutions.**
+4. **Evaluate and select the best solution.**
+5. **Implement the solution.**
+6. **Monitor the progress of the solution.**
+7. **Evaluate the effectiveness of the solution.**
+8. **Share the solution with others.**
+
+**JSON**
+
+```
+{
+  "reasoning_plan": [
+    {
+      "step": "Identify the problem",
+      "description": "What is the core issue or problem that needs to be addressed?"
+    },
+    {
+      "step": "Gather data and information",
+      "description": "Are there any relevant data or information that can provide insights into the problem? If yes, what data sources are available, and how can they be analyzed?"
+    },
+    {
+      "step": "Identify potential solutions",
+      "description": "Are there any potential solutions or strategies that have been tried before? If yes, what were the outcomes and lessons learned?"
+    },
+    {
+      "step": "Evaluate and select the best solution",
+      "description": "What resources (financial, human, technological, etc.) are needed to tackle the problem effectively?"
+    },
+    {
+      "step": "Implement the solution",
+      "description": "Create a step-by-step plan and implement it with good notion and explanation."
+    },
+    {
+      "step": "Monitor the progress of the solution",
+      "description": "Monitor the progress of the solution and make adjustments as needed."
+    },
+    {
+      "step": "Evaluate the effectiveness of the solution",
+      "description": "Did the solution achieve the desired outcome? Were there any unexpected consequences or challenges?"
+    },
+    {
+      "step": "Share the solution with others",
+      "description": "Document the solution and share it with others who may benefit from it."
+    }
+  ]
+}
+``` 

@@ -1,0 +1,73 @@
+The phrase temporal logic refers to any system that uses rules and symbolism for representing and reasoning about propositions that are time-limited. Tense logic is a term that is occasionally used to describe it. 
+More precisely, temporal logic is concerned with tense and employs modal operators in relation to temporal concepts such as sometimes, always, precedes, succeeds, and so on. Arthur Prior introduced a special modal logic-system of temporal logic in the 1960s. 
+In addition to the normal logical operators, temporal logic contains four modal operators with the following intended meanings: 
+
+Symbols	Expression Symbolized
+G	It will always be the case that…
+F	It will sometimes be the case that…
+H	It has always been the case that…
+P	It has at some time operators the case that…
+
+In order to create a propositional tense logic, the operators G and F are used to refer to the future, whereas the operators H and P are used to refer to the past. The operators P & F are known as the weak tense operators, while the operators H and G are known as strong tense operators. By reason of equivalence, the two pairings are commonly viewed as inter definable. Assume Q is some closed formula in conventional Logic. The 2 axioms govern the interaction between the past and future operators :
+
+FQ ≅ ~G~Q
+PQ ≅ ~H~Q
+NOTE: If a variable appears in quantification or is inside the scope of quantification of that variable, it is bound. Otherwise, the variable is free. A closed formula is one that has no free variables; otherwise, it is an open formula. 
+
+Arthur employed the operators to create formulas that could express the concepts of time that had been taken as axioms of a formal system based on these intended meanings.
+
+Distribution Axioms :
+
+The distribution axioms are :
+
+G(Q -> R) -> (GQ -> GR) interpreted as:
+If it will always be the case that Q implies R, then
+if Q will always be the case,then R will be always be so.
+
+H ( Q->R) -> (HQ -> HR) interpreted as:
+If Q has implies R, then
+if Q has always been the case,then R will be always be so.
+General Axioms in Temporal Logic :
+ 
+Depending on the assumptions we make about the structure of time, further axioms can be added to temporal logic. A set of commonly adopted axioms is :
+
+GQ -> FQ and HQ -> PQ
+Certain combinations of past & future tense operators may be used to express complex tense in English. Example: FPQ corresponds to a sentence Q in the future perfect tense. PPQ expresses past perfect tense.
+The useful axioms in Temporal Logic :
+(i) It has always been the case that Q is true is equivalent to It is not in the past that Q was false.
+
+HQ ≅ ~P~Q
+(ii) It will always be the case that Q will be true is equivalent to It is not in the future that Q will be false.
+
+GQ ≅ ~F~Q
+(iii) It will always be the case in future that Q will be true is equivalent to It will not be always that Q will be false.
+
+FQ ≅ ~G~Q
+(iv) It was the case that Q was true is equivalent to It has not always been the case in past that Q was false.
+
+PQ ≅ ~H~Q
+(v) It will not always be the case that Q will be true is equivalent to It will be the case in the future that Q will be false.
+
+~GQ ≅ F~Q
+(vi) It has not always been the case in the past that Q was true is equivalent to It was the case in the past that Q was false.
+
+~HQ ≅ P~Q
+Inference Rules in Temporal Logic :
+
+Following inference rules in Temporal Logic can be used to infer new information from existing knowledge :
+
+If it is true in future that Q will be true in the future, then we infer that Q will be true in the future. FFQ -> FQ
+If Q is true now, then we infer that in the future it will be the case that Q was true in the past. Q -> FPQ
+If Q has always been true in the past, then we infer that Q is true HQ -> Q
+If Q will be always true in future then we infer that Q is true. GQ -> Q
+Distribution Axioms : 
+– G(Q -> R) -> (GQ -> GR) interpreted as If it will always be the case that Q implies R, then if Q will always be the case, always be then R will always be so.
+– H ( Q->R) -> (HQ -> HR) interpreted as If Q has implied R, then if Q has always been the case, then R will be always be so.
+Advantages of using Temporal Logic in Artificial Intelligence:
+Formal specification: Temporal logic provides a formal language for specifying the desired behavior of systems and processes, making it easier to ensure that these systems behave correctly and satisfy the specified requirements.
+Verification: Temporal logic can be used to verify that a system satisfies the specified temporal properties, providing a rigorous method for checking the correctness of systems and reducing the risk of errors.
+Modeling: Temporal logic allows for the modeling of complex temporal behavior of systems and processes, making it useful for a wide range of applications in artificial intelligence, such as robotics and control systems.
+Completeness: Temporal logic provides a complete system for reasoning about time, making it well-suited for applications that involve temporal reasoning.
+Disadvantages of using Temporal Logic in Artificial Intelligence:
+Complexity: The formal syntax and semantics of temporal logic can be complex, making it challenging to use for some applications and requiring a high level of mathematical expertise.
+Limitations: Temporal logic is a formal language and may not be well-suited for certain applications that involve uncertain or vague temporal relationships.

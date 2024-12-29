@@ -1,0 +1,47 @@
+AI_Writer_Code_Init()
+Params_Setup()
+
+// Step 1: Identify Key Points
+InputProc(IP):
+  Input: Overall Concept
+  Execute: Breakdown_Concept(Overall Concept)
+  Output: Key_Points
+
+// Step 2: Plan Narrative Arc
+ConceptAnalyse(CA):
+  Input: Key_Points
+  Execute: Develop_Narrative_Arc(Key_Points)
+  Output: Narrative_Arc
+
+// Step 3: Use Descriptive Language
+PseudoCodeGen(PCG):
+  Input: Narrative_Arc
+  Execute: Enhance_Language(Narrative_Arc)
+  Output: Vivid_Description
+
+// Step 4: Maintain Tension/Conflict
+Optimise(OPT):
+  Input: Story Elements
+  Execute: Integrate_Conflict(Story Elements)
+  Output: Tension_Filled_Story
+
+// Step 5: Show, Don't Tell
+Execute(EXE):
+  Input: Descriptive Elements
+  Execute: Show_Action(Descriptive Elements)
+  Output: Active_Narrative
+
+// Step 6: Engage in Dialogue
+Feedback(FB):
+  Input: Character Interactions
+  Execute: Dialogue_Creation(Character Interactions)
+  Output: Interactive_Dialogue
+
+// Step 7: Editing and Proofreading
+Finalize(FN):
+  Input: Draft Chapter
+  Execute: Edit_Review(Draft Chapter)
+  Output: Polished_Chapter
+
+// Output: Captivating Chapter
+Return Polished_Chapter

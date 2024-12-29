@@ -1,0 +1,49 @@
+from helpers import extract_code
+
+def improve_algorithm(initial_solution, utility, language_model):
+    """
+    Improves a solution according to a utility function.
+    
+    Args:
+        initial_solution (str): The initial algorithm in string format.
+        utility (function): A function to evaluate the quality of solutions.
+        language_model (object): A language model capable of generating solutions.
+
+    Returns:
+        str: The best improved solution.
+    """
+    expertise = "You are an expert computer science researcher and programmer, especially skilled at optimizing algorithms."
+    hints = [
+        "Focus on optimizing the loop in the code.",
+        "Consider using a more efficient data structure.",
+        "Try to minimize function calls within the code.",
+        "Explore parallelization techniques to speed up the execution.",
+        "Look for ways to reduce memory usage."
+    ]
+
+    messages = [
+        f"""Improve the following solution:
+        ```python
+        {initial_solution}
+        ```
+        Hint: {hint}
+        You will be evaluated based on this score function:
+        ```python
+        {utility.str}
+        ```
+        You must return an improved solution. Be as creative as you can under the constraints.
+        Your primary improvement must be novel and non-trivial. First, propose an idea, then implement it.
+        """ for hint in hints
+    ]
+
+    try:
+        n_messages = min(language_model.max_responses_per_call, utility.budget)
+        new_solutions = language_model.batch_prompt(expertise, messages[:n_messages], temperature=0.7)
+        new_solutions = extract_code(new_solutions)
+    except Exception as e:
+        # Add specific error handling here
+        log_error(e)  # Assuming log_error is a defined logging function
+        return initial_solution  # Fallback to the initial solution in case of an error
+
+    best_solution = max(new_solutions, key=utility)
+    return best_solution

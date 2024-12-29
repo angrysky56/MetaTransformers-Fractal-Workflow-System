@@ -1,0 +1,4 @@
+FUNCTION prune_thoughts(thoughts, threshold):
+    # Remove thoughts below the quality score threshold
+    pruned_thoughts = [thought FOR thought IN thoughts IF thought.quality_score >= threshold]
+    RETURN pruned_thoughts

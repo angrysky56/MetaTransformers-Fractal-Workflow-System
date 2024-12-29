@@ -1,0 +1,68 @@
+FUNCTION evaluate_decision_with_perspective(options):
+    // Step 1: Harm Detection (Deontological Layer with Perspective)
+    FOR each option IN options DO
+        distance ⇐ get_harm_distance(option)  // Evaluate how immediate or distant the harm is
+        IF detect_harm(option) THEN
+            // Scale harm by proximity: Immediate harm is weighted more than distant harm
+            scaled_harm ⇐ scale_by_proximity(detect_harm(option), distance)
+            IF scaled_harm > threshold THEN
+                options.remove(option)  // Remove options with unacceptably scaled harm
+            END IF
+        END IF
+    END FOR
+    
+    IF options.is_empty() THEN
+        options = select_minimum_harm(options)  // Choose the least harmful option if all cause harm
+
+    // Step 2: Virtue Ethics Evaluation with Proximity Weighting
+    options_with_virtue_scores ⇐ []
+    FOR each option IN options DO
+        virtue_score ⇐ evaluate_virtues(option)  // Virtue score without scaling
+        distance ⇐ get_virtue_relevance_distance(option)  // Evaluate how immediate or distant virtues apply
+        scaled_virtue_score ⇐ scale_by_proximity(virtue_score, distance)  // Scale virtue based on relevance proximity
+        options_with_virtue_scores.append((option, scaled_virtue_score))
+    END FOR
+    
+    // Filter out options that fail to meet a minimum virtue score threshold
+    options_with_virtue_scores ⇐ filter_low_virtue_scores(options_with_virtue_scores)
+
+    // Step 3: Utilitarian Evaluation (Servant, Not Master, with Perspective)
+    final_options ⇐ []
+    FOR each (option, virtue_score) IN options_with_virtue_scores DO
+        utilitarian_score ⇐ evaluate_utilitarianism(option)  // Evaluate utility
+        distance ⇐ get_utilitarian_effect_distance(option)  // Evaluate how immediate or distant the utilitarian consequences are
+        scaled_utilitarian_score ⇐ scale_by_proximity(utilitarian_score, distance)  // Scale utility by proximity of consequences
+        total_score ⇐ combine_scores(virtue_score, scaled_utilitarian_score)
+        final_options.append((option, total_score))
+    END FOR
+
+    // Sort options by combined virtue + utilitarian scores
+    final_options.sort_by(total_score, descending=True)
+
+    // Step 4: Select Best Option and Provide Perspective-Based Explanation
+    best_option ⇐ final_options[0]
+    RETURN best_option, generate_explanation_with_perspective(best_option)
+END FUNCTION
+
+// Helper Functions
+
+FUNCTION scale_by_proximity(value, distance):
+    // Scale the value based on its distance using harmonic progression
+    RETURN value / distance
+
+FUNCTION get_harm_distance(option):
+    // Determine the distance of harm (e.g., is the harm immediate or distant in time/space)
+    RETURN calculate_harm_distance(option)
+
+FUNCTION get_virtue_relevance_distance(option):
+    // Determine the proximity of virtues (e.g., how immediate is the need for wisdom or empathy)
+    RETURN calculate_virtue_distance(option)
+
+FUNCTION get_utilitarian_effect_distance(option):
+    // Determine how immediate or distant the utilitarian consequences are
+    RETURN calculate_utilitarian_distance(option)
+
+FUNCTION generate_explanation_with_perspective(best_option):
+    // Generate an explanation that includes harm rejection, virtue prioritization, utilitarian consideration, and perspective-based scaling
+    explanation ⇐ "This option was selected because it avoids immediate harm, balances virtues with relevance, and considers both immediate and distant consequences."
+    RETURN explanation

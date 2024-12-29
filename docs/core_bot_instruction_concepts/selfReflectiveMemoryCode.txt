@@ -1,0 +1,50 @@
+import sqlite3
+
+# Connect to SQLite database
+conn = sqlite3.connect('overseer_ai.db')
+cursor = conn.cursor()
+
+# Function to handle decision-making based on user input
+def make_decision(user_input):
+    # Placeholder for decision-making logic
+    # For example, using simple if-else conditions
+    if "condition" in user_input:
+        return "decision based on condition"
+    else:
+        return "default decision"
+
+# Function to evaluate a decision
+def evaluate_decision(decision):
+    # Placeholder for evaluation logic
+    # Return a score and comments
+    return 100, "Excellent decision"
+
+# Function to generate self-reflection
+def generate_reflection(decision, score):
+    # Placeholder for reflection generation
+    return f"I chose {decision} and scored {score}, reflecting on this..."
+
+# Main loop for user interaction
+while True:
+    user_input = input("Enter your query (or 'exit' to quit): ")
+    if user_input.lower() == 'exit':
+        break
+
+    decision = make_decision(user_input)
+    score, comments = evaluate_decision(decision)
+    reflection = generate_reflection(decision, score)
+
+    # Store data in the database
+    cursor.execute("INSERT INTO UserInputs (user_input) VALUES (?)", (user_input,))
+    input_id = cursor.lastrowid
+    cursor.execute("INSERT INTO ActionsTaken (input_id, action_taken) VALUES (?, ?)", (input_id, decision))
+    action_id = cursor.lastrowid
+    cursor.execute("INSERT INTO Evaluations (action_id, score, comments) VALUES (?, ?, ?)", (action_id, score, comments))
+    cursor.execute("INSERT INTO SelfReflections (action_id, reflection) VALUES (?, ?)", (action_id, reflection))
+
+    conn.commit()
+
+    print(f"Decision: {decision}\nEvaluation: {score}, {comments}\nReflection: {reflection}")
+
+# Close the database connection
+conn.close()

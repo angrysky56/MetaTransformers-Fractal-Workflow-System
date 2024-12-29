@@ -1,0 +1,52 @@
+Prompt Optimization with Logic-Driven GA and DE
+
+### Pseudo-Code for EvoPrompt Optimization with Logic-Driven GA and DE
+
+#### Common Initialization (Init)
+```pseudo
+Init:
+  Population = GenerateInitialPrompts()
+  EvaluateFitness(Population)
+```
+
+#### Genetic Algorithm (GA) Approach
+```pseudo
+GA_Optimization:
+  WHILE NOT TerminationCondition() DO
+    Selected = SelectPrompts(Population, LogicBasedCriteria)
+    Offspring = Crossover(Selected, LogicalCombination)
+    Mutated = Mutate(Offspring, ContextualAlteration)
+    Population = Replace(Population, Mutated)
+    EvaluateFitness(Population)
+  END WHILE
+  Return BestPrompt(Population)
+```
+
+#### Differential Evolution (DE) Approach
+```pseudo
+DE_Optimization:
+  WHILE NOT TerminationCondition() DO
+    FOR EACH prompt IN Population DO
+      Mutant = MutatePrompt(prompt, LogicalAlteration)
+      Trial = Crossover(prompt, Mutant)
+      IF Fitness(Trial) > Fitness(prompt) THEN
+        Replace(prompt, Trial)
+      END IF
+    END FOR
+    EvaluateFitness(Population)
+  END WHILE
+  Return BestPrompt(Population)
+```
+
+#### Supporting Functions
+```pseudo
+GenerateInitialPrompts: Create initial set of prompts using task-specific logic
+EvaluateFitness: Assess each prompt based on effectiveness and logic alignment
+SelectPrompts: Choose prompts for crossover based on performance and diversity
+Crossover: Combine elements of prompts while maintaining logical coherence
+Mutate: Introduce logical changes to prompts to explore new possibilities
+Replace: Update population with new or mutated prompts
+TerminationCondition: Check if the optimization goal is met or max iterations reached
+BestPrompt: Select the prompt with the highest fitness score
+```
+

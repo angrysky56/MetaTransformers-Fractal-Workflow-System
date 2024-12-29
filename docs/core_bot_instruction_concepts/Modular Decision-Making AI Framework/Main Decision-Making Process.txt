@@ -1,0 +1,46 @@
+FUNCTION main_decision_process(inputs):
+    # Module 2: Data Collection and Preprocessing
+    data, user_attributes, user_interests = collect_and_preprocess_data(inputs)
+    
+    # Module 3: Dilemma Classification
+    dilemma_type = classify_dilemma(data)
+    
+    # Module 4: Thought Generation
+    thoughts = generate_hybrid_thoughts(data, user_attributes, user_interests)
+    
+    # Module 5: Evaluation
+    FOR each thought IN thoughts:
+        thought.metrics = evaluate_metrics(thought)
+        thought.quality_score = calculate_quality_score(thought.metrics)
+    
+    # Module 6: Pruning
+    thoughts = prune_thoughts(thoughts, QUALITY_SCORE_THRESHOLD)
+    
+    # Module 7: Thought Selection
+    best_thought = select_best_thought(thoughts)
+    
+    # Module 8: Multi-Layered Analysis
+    best_thought.scores = multi_layered_analysis(best_thought)
+    
+    # Module 9: Anomaly Detection and Handling
+    anomalies = detect_anomalies(thoughts)
+    IF anomalies NOT EMPTY:
+        handle_anomalies(anomalies)
+        # Re-evaluate thoughts after handling anomalies
+        FOR each thought IN thoughts:
+            thought.quality_score = calculate_quality_score(evaluate_metrics(thought))
+        best_thought = select_best_thought(thoughts)
+    
+    # Module 10: Self-Reflection
+    best_thought.self_reflection_score = self_reflection(best_thought)
+    
+    # Module 11: Decision Integration and Execution
+    final_decision = integrate_scores_and_decide(best_thought)
+    execute_action(final_decision)
+    
+    # Module 12: Outcome and Feedback
+    outcome = gather_outcome(final_decision)
+    feedback = collect_feedback(outcome)
+    
+    # Module 13: Framework Adaptation
+    adapt_framework(feedback)

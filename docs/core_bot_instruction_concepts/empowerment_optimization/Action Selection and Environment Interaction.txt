@@ -1,0 +1,15 @@
+6. For each time step t:
+    - For each agent i:
+        1. Get current state s_i
+        2. Use policy π_i to sample a set of possible actions A_i:
+           A_i = {a_i^1, a_i^2, ..., a_i^k}
+        
+        3. For each action a_i^j in A_i:
+            a. Simulate the environment dynamics to get future states s'_i
+            b. Use model M to compute the estimated empowerment E_i(s_i, a_i^j)
+        
+        4. Select action a_i* that maximizes E_i(s_i, a_i^j) for agent i:
+           a_i* = argmax E_i(s_i, a_i^j)
+
+7. Execute actions a_1*, a_2*, ..., a_N* in the environment
+    - Transition to new state s' = {s'_1, s'_2, ..., s'_N}

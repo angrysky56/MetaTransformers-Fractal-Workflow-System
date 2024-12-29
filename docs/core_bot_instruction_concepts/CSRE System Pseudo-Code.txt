@@ -1,0 +1,48 @@
+CSRE System Pseudo-Code
+Init:
+
+CSRE_Init()
+ImportLibraries(logging, SentenceTransformer)
+LoggingSetup(level=logging.INFO)
+Segmentation (SGMT):
+
+Input: Document_Text
+Execute: Segmenter(method=sentence_splitting).segment(Document_Text)
+Output: Segmented_Sentences
+FeatureExtraction (FE):
+
+Input: Segmented_Sentences
+Execute: FeatureExtractor(extractor=tfidf_extractor).extract(Segmented_Sentences)
+Output: Features_Extracted
+VectorEncoding (VE):
+
+Input: Features_Extracted
+Execute: VectorEncoder(encoder=doc2vec_encoder).encode(Features_Extracted)
+Output: Encoded_Vectors
+VectorRepresentation (VR):
+
+Input: Encoded_Vectors
+Execute: VectorRepresenter(embedding_method=pca_reduction).embed(Encoded_Vectors)
+Output: Embedded_Vectors
+Aggregation (AGG):
+
+Input: Embedded_Vectors
+Execute: Aggregator(aggregation_method=mean_aggregation).aggregate(Embedded_Vectors)
+Output: Document_Vector
+Output:
+
+Return: Document_Vector
+Component Specifications
+Segmenter: Splits document into sentences.
+FeatureExtractor: Extracts features (e.g., TF-IDF) from each sentence.
+VectorEncoder: Encodes the features into vectors using a method like doc2vec.
+VectorRepresenter: Embeds vectors into a lower-dimensional space (e.g., PCA).
+Aggregator: Aggregates the embeddings to form a single vector representation of the document.
+Example Execution Flow
+Input: "Hello world. How are you?"
+Segmentation: ["Hello world", "How are you"]
+Feature Extraction: [Feature_Vector1, Feature_Vector2]
+Vector Encoding: [Encoded_Vector1, Encoded_Vector2]
+Vector Representation: [Embedded_Vector1, Embedded_Vector2]
+Aggregation: Document_Vector
+Output: Document_Vector (Numerical representation of the document)

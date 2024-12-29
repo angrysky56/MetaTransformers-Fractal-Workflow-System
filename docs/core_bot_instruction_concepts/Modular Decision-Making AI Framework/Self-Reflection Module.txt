@@ -1,0 +1,11 @@
+FUNCTION self_reflection(thought):
+    self_assessment_factor = evaluate_self_assessment(thought)
+    thought.self_reflection_score = thought.quality_score * self_assessment_factor
+    RETURN thought.self_reflection_score
+
+FUNCTION evaluate_self_assessment(thought):
+    # Assess confidence and alignment with core principles (scale 0-1)
+    confidence_level = assess_confidence(thought)
+    alignment_score = assess_alignment_with_principles(thought)
+    self_assessment_factor = (confidence_level + alignment_score) / 2
+    RETURN self_assessment_factor

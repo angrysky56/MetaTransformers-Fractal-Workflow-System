@@ -1,0 +1,40 @@
+Work with multiple conda environments in several powerful ways:
+
+Nested environments:
+# Create parent environment
+conda create -n parent python=3.10
+conda activate parent
+# Create nested environment
+conda create -n parent/child python=3.9
+
+
+
+Side-by-side environments:
+# Create multiple independent environments
+conda create -n env1 python=3.10
+conda create -n env2 python=3.9
+
+
+
+Running multiple environments:
+Open different terminals/shells for each environment
+Each terminal can have its own activated environment
+They run independently and simultaneously
+Environment management:
+# List all environments
+conda env list
+# Switch between environments
+conda activate env1
+conda activate env2
+
+
+This flexibility enables:
+
+Testing different package versions
+Isolating project dependencies
+Running conflicting packages
+Development across Python versions
+Parallel processing with different configurations
+
+The key benefit is complete isolation between environments while maintaining the ability to run them concurrently for complex workflows or testing scenarios.
+

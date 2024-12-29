@@ -1,0 +1,37 @@
+{
+    "flowDescription": "Adaptive GPT Task Solver Flow",
+    "flowSteps": [
+        {
+            "step": 1,
+            "agent": "Direct Insight",
+            "task": "Analyze the initial request for clarity and context."
+        },
+        {
+            "step": 2,
+            "agent": "AnalytiQ",
+            "task": "Deepen the analysis to identify core problems and knowledge gaps."
+        },
+        {
+            "step": 3,
+            "agent": "Optimus AutoLogic-Progressor",
+            "task": "Generate and critically evaluate potential solutions."
+        },
+        {
+            "step": 4,
+            "agent": "Ethicus",
+            "task": "Ensure solutions align with ethical standards and considerations."
+        },
+        {
+            "step": 5,
+            "agent": "AiPro Python Coder",
+            "task": "Implement the solution with focus on technical development."
+        },
+        {
+            "step": 6,
+            "agent": "Web Dev Agency AI",
+            "task": "Enhance the solution with user interface and experience design."
+        }
+    ]
+}
+
+

@@ -1,0 +1,80 @@
+oMCD_Model:
+  Description: >
+    The oMCD (online Metacognitive Control of Decisions) model is a computational framework designed to regulate cognitive effort during decision-making. It balances the cost of mental effort with the benefits derived from decision confidence, using a Markov Decision Process to determine optimal stopping points for resource allocation.
+  
+  Formulas:
+    Benefit:
+      Formula: "B(z) = R * P_c(z)"
+      Variables:
+        - z: Amount of cognitive resources invested
+        - R: Importance of making a confident decision
+        - P_c(z): Decision confidence as a function of resource investment
+    
+    Cost:
+      Formula: "C(z) = α * z^ν"
+      Variables:
+        - z: Amount of cognitive resources invested
+        - α: Unitary effort cost
+        - ν: Cost power, controlling cost variation with resource investment
+    
+    Confidence:
+      Initial_Confidence: "P_c^0 = s(π * |Δμ^0| / sqrt(3 * (σ_1 + σ_2)))"
+      Expected_Confidence: "P_c(z) = s(λ * E[|Δμ(z)|] / sqrt(1 + (1/2) * (λ^2 * V[|Δμ(z)|])))"
+      Variables:
+        - Δμ: Difference in value modes of options
+        - σ: Variance of probabilistic value representations
+        - λ: Confidence scaling factor
+
+    Resource_Allocation:
+      Formula: "ẑ = argmax_z E[B(z) - C(z)]"
+      Description: Optimal amount of cognitive resources that balances the expected benefits and costs
+
+    Precision_Update:
+      Formula: "1/σ_i(z) = 1/σ_i^0 + β * z"
+      Variables:
+        - σ_i: Precision of value representation
+        - σ_i^0: Initial precision
+        - β: Type #1 effort efficacy
+
+    Value_Mode_Perturbation:
+      Formula: "μ_i(z) = μ_i^0 + δ_i"
+      Variables:
+        - μ_i: Mode of value representation
+        - μ_i^0: Initial mode
+        - δ_i: Perturbation term, δ_i ~ N(0, γ * z)
+        - γ: Type #2 effort efficacy
+
+    Optimal_Stopping:
+      Formula: |
+        Q(a(t), Δμ(t)) = 
+          if a(t) = 0:
+            R * P_c(Δμ(t)) - α * (κ * t)^ν
+          else:
+            0
+      Variables:
+        - a(t): Action at time t (0 for stop, 1 for continue)
+        - Δμ(t): Value mode difference at time t
+        - κ: Effort intensity (resources spent per unit of time)
+        - t: Current time
+
+    Control_Policy:
+      Formula: "π_ω(t) = 0 if Q(0, Δμ(t)) >= ω(t) else 1"
+      Variables:
+        - ω(t): Threshold at time t
+        - Q(0, Δμ(t)): Net benefit of stopping at time t
+
+  Instructions:
+    1. Define the amount of cognitive resources (z) to be allocated for processing value-relevant information.
+    2. Calculate the expected benefit (B(z)) as the product of decision confidence (P_c) and the importance weight (R).
+    3. Determine the cost (C(z)) of allocating cognitive resources using the formula C(z) = α * z^ν.
+    4. Update the precision of value representations as more resources are invested: 1/σ_i(z) = 1/σ_i^0 + β * z.
+    5. Calculate the perturbation of value modes: μ_i(z) = μ_i^0 + δ_i, where δ_i follows a normal distribution.
+    6. Derive the expected confidence (P_c(z)) based on the updated value mode difference and precision.
+    7. Establish the optimal resource allocation (ẑ) that maximizes the net benefit.
+    8. Implement the optimal stopping policy by comparing the current net benefit (Q(0, Δμ(t))) with the threshold (ω(t)).
+    9. Continuously monitor decision confidence and adjust resource allocation until the stopping criterion is met.
+
+  Notes:
+    - The model assumes that decision confidence serves as a primary benefit in the resource allocation problem.
+    - Effort efficacies (β and γ) must be calibrated based on the specific decision scenario and resource investment dynamics.
+    - The control policy dynamically adapts to new information, ensuring quasi-optimal decision control across various decision processes.

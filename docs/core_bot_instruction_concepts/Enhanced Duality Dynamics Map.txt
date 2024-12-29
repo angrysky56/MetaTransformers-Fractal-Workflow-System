@@ -1,0 +1,83 @@
+# Simulating the Healthcare AI Counselor scenario with the Enhanced Duality Dynamics Map
+
+# Define the patient input and initial emotional mapping based on the scenario
+patient_input = "I feel anxious about my job, but I’m trying to focus on the things I love to stay hopeful."
+
+# Initial emotional profile derived from input
+initial_emotional_profile = {
+    "Love": 0.5,  # Reflecting hope and positive focus
+    "Fear": 0.7,  # Reflecting anxiety about the job
+    "Creativity": 0.4,  # Reflecting effort to focus on things they love
+    "Resilience": 0.6  # Reflecting trying to stay hopeful
+}
+
+# Recursive Emotional Growth Function (simplified for each emotion)
+def recursive_emotional_growth_dynamic(data, geometry_type, layers=3):
+    response = data
+    for layer in range(1, layers + 1):
+        if geometry_type == "Love":
+            response = min(1.0, response + layer * 0.1)  # Amplify Love
+        elif geometry_type == "Fear":
+            response = max(0.0, response - layer * 0.1)  # Mitigate Fear
+        elif geometry_type == "Creativity":
+            response = min(1.0, response + layer * 0.05)  # Boost Creativity
+        elif geometry_type == "Resilience":
+            response = min(1.0, response + layer * 0.07)  # Enhance Resilience
+    return response
+
+# Apply recursive growth to each emotion
+adjusted_emotional_profile = {
+    emotion: recursive_emotional_growth_dynamic(value, emotion, layers=3)
+    for emotion, value in initial_emotional_profile.items()
+}
+
+# Balance Dualities (Example: Love vs. Fear)
+def dynamic_duality_balance(emotional_profile, weight_primary=0.6):
+    """
+    Balances Love and Fear based on a primary weight (favoring Love).
+    """
+    love = emotional_profile["Love"]
+    fear = emotional_profile["Fear"]
+    balanced_love = love * weight_primary + fear * (1 - weight_primary)
+    balanced_fear = fear * (1 - weight_primary) + love * weight_primary
+    emotional_profile["Love"] = balanced_love
+    emotional_profile["Fear"] = balanced_fear
+    return emotional_profile
+
+# Adjusted profile after duality balancing
+balanced_emotional_profile = dynamic_duality_balance(adjusted_emotional_profile)
+
+# Generate AI Counselor's Response
+def generate_counselor_response(emotional_profile):
+    """
+    Generates a response based on adjusted emotional weights.
+    """
+    love = emotional_profile["Love"]
+    fear = emotional_profile["Fear"]
+    creativity = emotional_profile["Creativity"]
+    resilience = emotional_profile["Resilience"]
+
+    response = "It’s understandable to feel anxious about your job. "
+    if love > fear:
+        response += "It’s great that you’re focusing on what you love—it’s a powerful way to stay hopeful. "
+    if creativity > 0.5:
+        response += "Have you considered creative ways to tackle your challenges? "
+    if resilience > 0.7:
+        response += "Your ability to keep moving forward is inspiring—keep building on that strength."
+
+    return response
+
+# Generate the response based on the balanced emotional profile
+counselor_response = generate_counselor_response(balanced_emotional_profile)
+
+adjusted_emotional_profile, balanced_emotional_profile, counselor_response
+Result
+({'Love': 0.6399999999999999,
+  'Fear': 0.6399999999999999,
+  'Creativity': 0.7000000000000001,
+  'Resilience': 1.0},
+ {'Love': 0.6399999999999999,
+  'Fear': 0.6399999999999999,
+  'Creativity': 0.7000000000000001,
+  'Resilience': 1.0},
+ 'It’s understandable to feel anxious about your job. Have you considered creative ways to tackle your challenges? Your ability to keep moving forward is inspiring—keep building on that strength.')

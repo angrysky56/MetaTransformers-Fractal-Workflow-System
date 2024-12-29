@@ -1,0 +1,1046 @@
+openapi: 3.0.1
+info:
+  title: Wolfram|Alpha APIs
+  description: The easy way to integrate top‑of‑the‑line computational knowledge into your applications
+  version: '0.1'
+  termsOfService: https://products.wolframalpha.com/api/commercial-termsofuse.html
+  contact:
+    name: "Contact Us Page"
+    url: https://products.wolframalpha.com/contact-us/#custom
+servers:
+  - url: 'https://api.wolframalpha.com'
+tags: 
+  - name: "Simple APIs"
+    description: ""
+  - name: "Full Results API"
+    description: ""
+
+
+paths:
+  /v1/simple:
+    get:
+      tags: 
+      - "Simple APIs"
+      summary: "Immediately get simple images of complete Wolfram|Alpha result pages"
+      description: "Built on the same technology as the Full Results API, the Simple API generates full Wolfram|Alpha output in a universally viewable image format. This API makes it easy to translate free-form linguistic queries into in-depth, formatted results for users with little coding effort. It is implemented in a standard REST protocol using HTTP GET requests."
+      externalDocs:
+        url: "https://products.wolframalpha.com/simple-api/documentation/"
+      parameters:
+        - $ref: '#/components/parameters/inputParam'
+        - name: layout
+          in: query
+          allowEmptyValue: true
+          description: Defines how content is presented
+          schema:
+            type: string
+            enum:
+              - divider
+              - labelbar
+            example: divider
+            default: divider
+        - name: background
+          in: query
+          allowEmptyValue: true
+          description: Define background color
+          schema:
+            type: string
+          examples:
+            c1:
+              value: white
+              summary: "By HTML name"
+            c2:
+              value: "00AAFF"
+              summary: "By hexidecimal RGB values"
+            c3:
+              value: "0,100,200"
+              summary: "By comma-separated decimal RGB values"
+            c4:
+              value: "0,100,200,200"
+              summary: "By comma-separated decimal RGB values with alpha channel"
+            c5:
+              value: "transparent"
+              summary: "By keyword 'transparent' or 'clear'"              
+        - name: foreground
+          in: query
+          allowEmptyValue: true
+          description: Define foreground color
+          schema:
+            type: string
+            default: black
+            enum:
+              - black
+              - white
+        - name: fontsize
+          in: query
+          allowEmptyValue: true
+          description: Specify the display size of text elements in points, with a default setting of 14. 
+          schema:
+            type: integer
+            default: 14
+            example: 16
+        - name: width
+          in: query
+          allowEmptyValue: true
+          description: Specify the desired width (in pixels) for output image. 
+          schema:
+            type: integer
+            default: 500
+            example: 800
+        - $ref: '#/components/parameters/unitsParam'
+        - $ref: '#/components/parameters/timeoutParam'
+      responses:
+        '200':
+          description: An image with informational elements relating to the input
+          content:
+            image/*:
+              schema:
+                type: string
+                format: binary
+              examples:
+                img1:
+                  summary: "Example image 1"
+                  externalValue: 'https://products.wolframalpha.com/simple-api/documentation/img/basic.png'
+                img2:
+                  summary: "Example image 2"
+                  externalValue: "https://api.wolframalpha.com/v1/simple?i=Who+is+the+prime+minister+of+India%3F&appid=DEMO"
+        '501':
+          $ref: '#/components/responses/501'
+        '400':
+          $ref: '#/components/responses/400'
+        '403':
+          $ref: '#/components/responses/403'
+  /v1/result:
+    get:
+      tags: 
+      - 'Simple APIs'
+      summary: "Short textual answers, quickly giving the main result for a query from Wolfram|Alpha"
+      description: "The Short Answers API returns a single plain text result directly from Wolfram|Alpha. In general, this text is taken directly from the Result pod of Wolfram|Alpha output. This API type is designed to deliver brief answers in the most basic format possible. It is implemented in a standard REST protocol using HTTP GET requests."
+      externalDocs:
+        url: "https://products.wolframalpha.com/short-answers-api/documentation/"
+      parameters: 
+      - $ref: '#/components/parameters/inputParam'
+      - $ref: '#/components/parameters/unitsParam'
+      - $ref: '#/components/parameters/timeoutParam'
+      responses:
+        '200':
+          description: response
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "about 224166 miles"
+        '501':
+          $ref: '#/components/responses/501'
+        '400':
+          $ref: '#/components/responses/400'
+        '403':
+          $ref: '#/components/responses/403'
+  /v1/spoken:
+    get:
+      tags:
+        - 'Simple APIs'
+      externalDocs:
+        url: "https://products.wolframalpha.com/spoken-results-api/documentation/"
+      summary: "Results optimized for conversational audio delivery"
+      description: "The Spoken Results API returns text results phrased in full sentence form. This API is ideal for applications that use a text-to-speech component to deliver a spoken result to the user. It is implemented in a standard REST protocol using HTTP GET requests."
+      parameters:
+      - $ref: '#/components/parameters/inputParam'
+      - $ref: '#/components/parameters/unitsParam'
+      - $ref: '#/components/parameters/timeoutParam'
+      responses:
+        '200':
+          description: response
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "The distance from Earth to the Moon at 12:26 P.M. Central Daylight Time, Wednesday, August 28, 2019 is about 224163 miles"
+        '501':
+          $ref: '#/components/responses/501'
+        '400':
+          $ref: '#/components/responses/400'
+        '403':
+          $ref: '#/components/responses/403'
+  /v1/conversation.jsp:
+    get:
+      tags:
+        - 'Simple APIs'
+      externalDocs:
+        url: "https://products.wolframalpha.com/conversational-api/documentation/"
+      summary: "Add intelligence to your bot with results optimized for back-and-forth dialog"
+      description: "The Conversational API returns a text result phrased in full sentence form, along with a token for making a related follow-up query. This API provides an easy interface for personal assistants, reference apps and other situations that call for a continuous dialog. It is implemented in a standard REST protocol using HTTP GET requests."
+      parameters:
+      - $ref: '#/components/parameters/inputParam'
+      - $ref: '#/components/parameters/unitsParam'
+      - $ref: '#/components/parameters/timeoutParam'
+      - name: geolocation
+        in: query
+        description: "This parameter lets you specify a latitude/longitude pair like \"40.42,-3.71\". Although this is the most exact way to specify a location, it will fail if no valid data is available nearby for the query. Negative latitude values indicate south, and negative longitude values indicate west"
+        schema:
+          type: string
+          example: "40.42,-3.71"
+      - name: ip
+        in: query
+        description: "Set the IP address of the caller, which will be used to determine a location. If you are forwarding calls from your own web visitors to the API, you can propagate their IP addresses with this parameter"
+        schema:
+          type: string
+          example: "203.0.113.10"
+      - name: s
+        in: query
+        schema:
+          type: string
+          example: 
+        description: "This parameter should only be used in the rare case that your result includes the `s` output parameter"
+      responses:
+        '200':
+          description: "Conversation response generated"
+          content:
+            application/json:
+              schema:
+                oneOf:
+                - $ref: '#/components/schemas/conversationResponseNoErrorNoS'
+                - $ref: '#/components/schemas/conversationResponseNoErrorWithS'
+                - $ref: '#/components/schemas/conversationResponseWithError'
+              examples:
+                no-s-parameter:
+                  $ref: '#/components/examples/conv-no-s-parameter'
+                with-s-parameter:
+                  $ref: '#/components/examples/conv-with-s-parameter'
+                error:
+                  $ref: '#/components/examples/conv-error'
+        '400':
+          $ref: '#/components/responses/400'
+        '403':
+          $ref: '#/components/responses/403'
+  /v2/query:
+    get:
+      tags:
+      - 'Full Results API'
+      summary: "Full programmable access to all the capabilities of Wolfram|Alpha"
+      description: "The API allows clients to submit free-form queries similar to the queries one might enter at the Wolfram|Alpha website, and for the computed results to be returned in a variety of formats. It is implemented in a standard REST protocol using HTTP GET requests. Each result is returned as a descriptive XML or JSON structure wrapping the requested content format."
+      externalDocs:
+        url: "https://products.wolframalpha.com/api/documentation/"
+      parameters:
+      - $ref: '#/components/parameters/inputParam' 
+      - name: output
+        in: query
+        description: "The desired format for full results"
+        schema:
+          type: string
+          default: xml
+          enum:
+           - xml
+           - json
+      - name: format
+        in: query
+        description: "The desired format for individual result pods"
+        style: form
+        explode: false
+        schema:
+          type: array
+          default: [plaintext, image]
+          items:
+            type: string
+            enum:
+             - image
+             - imagemap 
+             - plaintext
+             - minput
+             - moutput
+             - cell
+             - mathml
+             - sound
+             - wav
+      - name: includepodid
+        in: query
+        description: "Specifies a pod ID to include in the result"
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+        examples: 
+          single:
+            value: [Result]
+            summary: "A single pod"
+          multi:
+            value: ["Result", "Basic Information: PeopleData"]
+            summary: "Multiple pods"
+      - name: excludepodid
+        in: query
+        description: "Specifies a pod ID to exclude in the result"
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+        examples: 
+          single:
+            value: [Result]
+            summary: "A single pod"
+          multi:
+            value: ["Result", "Basic Information: PeopleData"]
+            summary: "Multiple pods"
+      - name: podtitle
+        in: query
+        description: "Specifies a pod title to include in the result"
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+        examples: 
+          single:
+            value: ["Basic+Information"]
+            summary: "A single pod"
+          multi:
+            value: ["Basic+Information", "Image"]
+            summary: "Multiple pods"
+          wildcard:
+            value: ["*-Information"]
+            summary: "Using a wildcard"
+      - name: podindex
+        in: query
+        description: "Specifies the index(es) of the pod(s) to return"
+        style: form
+        explode: false
+        schema:
+          type: array
+          items:
+            type: string
+        examples: 
+          single:
+            value: ["1"]
+            summary: "A single pod"
+          multi:
+            value: ["1", "7","13"]
+            summary: "Multiple pods"
+      - name: scanner
+        in: query
+        description: "Specifies that only pods produced by the given scanner should be returned"
+        style: form
+        explode: true
+        schema:
+          type: array
+          items: 
+            type: string
+        examples: 
+          single:
+            value: ["Numeric"]
+            summary: "Pods from a single scanner"
+          multi:
+            value: ["Numeric", "Data"]
+            summary: "Pods from multiple scanners"
+      - name: ip
+        in: query
+        description: "Specifies a custom query location based on an IP address"
+        schema:
+          type: string
+          example: "192.168.1.1"
+      - name: latlong
+        in: query
+        description: "Specifies a custom query location based on a latitude/longitude pair"
+        schema:
+          type: string
+          example: "40.11,-88.24"
+      - name: location
+        in: query
+        description: "Specifies a custom query location based on a string"
+        schema:
+          type: string
+        examples: 
+          boston:
+            value: "Boston, MA"
+            summary: "Example 1"
+          northpole:
+            value: "The North Pole"
+            summary: "Example 2"
+      - name: width
+        in: query
+        description: "Specify an approximate width limit for text and tables"
+        schema:
+          type: integer
+          example: 800
+          default: 500
+      - name: maxwidth
+        in: query
+        description: "Specify an extended maximum width for large objects"
+        schema:
+          type: integer
+          example: 800
+          default: 500
+      - name: plotwidth
+        in: query
+        description: "Specify an approximate width limit for plots and graphics"
+        schema:
+          type: integer
+          example: 400
+          default: 200
+      - name: mag
+        in: query
+        description: "Specify magnification of objects within a pod"
+        schema:
+          type: number
+          example: 1.5
+          default: 1.0
+      - name: scantimeout
+        in: query
+        description: "The number of seconds to allow Wolfram|Alpha to spend in the 'scan' stage of processing"
+        schema:
+          type: number
+          example: 5.0
+          default: 3.0
+      - name: podtimeout
+        in: query
+        description: "The number of seconds to allow Wolfram|Alpha to compute results in the 'format' stage for any one pod"
+        schema:
+          type: number
+          example: 0.5
+          default: 4.0
+      - name: formattimeout
+        in: query
+        description: "The number of seconds to allow Wolfram|Alpha to compute results in the 'format' stage for the entire collection of pods"
+        schema:
+          type: number
+          example: 0.5
+          default: 8.0
+      - name: parsetimeout
+        in: query
+        description: "The number of seconds to allow Wolfram|Alpha to spend in the 'parsing' stage of processing"
+        schema:
+          type: number
+          example: 0.5
+          default: 5.0
+      - name: totaltimeout
+        in: query
+        description: "The total number of seconds to allow Wolfram|Alpha to spend on a query"
+        schema:
+          type: number
+          example: 5.0
+          default: 20.0
+      - name: async
+        in: query
+        description: "Toggles asynchronous mode to allow partial results to return before all the pods are computed. Specifying a number sets the time limit (in seconds) for returning partial results"
+        schema:
+          oneOf:
+            - type: boolean
+              example: true
+            - type: number
+              example: 3.0
+          default: false
+      - name: reinterpret
+        in: query
+        description: "Whether to allow Wolfram|Alpha to reinterpret queries that would otherwise not be understood"
+        schema:
+          type: boolean
+          default: false
+      - name: translation
+        in: query
+        description: "Whether to allow Wolfram|Alpha to try to translate simple queries into English"
+        schema:
+          type: boolean
+          default: false
+      - name: ignorecase
+        in: query
+        description: "Whether to force Wolfram|Alpha to ignore case in queries"
+        schema:
+          type: boolean
+          default: false
+      - name: assumption
+        in: query
+        description: "Specifies an assumption, such as the meaning of a word or the value of a formula variable.\n Values for this parameter are given by the input properties of 'value' subelements of 'assumption' elements in the results"
+        schema:
+          type: string
+        examples:
+          ex1:
+            value: "*C.pi-_*Movie"
+            summary: "Movie"
+          ex2:
+            value: "DateOrder_**Day.Month.Year--"
+            summary: "DateOrder"
+      - name: podstate
+        in: query
+        description: "Specifies a pod state change, which replaces a pod with a modified version, such as displaying more digits of a large decimal value"
+        schema:
+          type: string
+        examples:
+          ex1:
+            value: "WeatherCharts:WeatherData__Past+5+years"
+            summary: "WeatherCharts"
+          ex2:
+            value: "2@DecimalApproximation__More+digits"
+            summary: "More Digits"
+      - name: units
+        in: query
+        description: "Lets you specify the preferred measurement system"
+        schema:
+          type: string
+          enum:
+          - metric
+          - nonmetric
+      responses:
+        '200':
+          $ref: '#/components/responses/full200'
+        '501':
+          $ref: '#/components/responses/501'
+        '400':
+          $ref: '#/components/responses/400'
+        '403':
+          $ref: '#/components/responses/403'      
+
+security:
+  - appid: []
+      
+externalDocs:
+  description: Find more info here
+  url: https://products.wolframalpha.com/api/
+  
+components:
+  parameters:
+    iParam:
+      name: i
+      in: query
+      description: "Input for your query"
+      required: true
+      schema:
+        type: string
+      examples:
+        moon:
+          value: "How far away is the moon"
+          summary: "Example 1"
+        math:
+          value: "What is the integral of exp(-x)cos(3x)?"
+          summary: "Example 2"
+    inputParam:
+      name: input
+      in: query
+      description: "Input for your query"
+      required: true
+      schema:
+        type: string
+      examples:
+        moon:
+          value: "How far away is the moon"
+          summary: "Example 1"
+        math:
+          value: "What is the integral of exp(-x)cos(3x)?"
+          summary: "Example 2"
+        countries:
+          value: "5 largest countries"
+          summary: "Example 3"
+        doppler:
+          value: "Doppler shift"
+          summary: "Example 4"
+    unitsParam:
+      name: units
+      in: query
+      allowEmptyValue: true
+      description: Use this parameter to manually select what system of units to use for measurements and quantities (either "metric" or "imperial"). By default, the system will use your location to determine this setting.
+      schema:
+        type: string
+        enum:
+          - metric
+          - imperial
+    timeoutParam:
+      name: timeout
+      in: query
+      allowEmptyValue: true
+      description: The maximum amount of time (in seconds) allowed to process a query, with a default value of "5". 
+      schema:
+        type: number
+        default: 5
+        example: 1
+  responses:
+    'full200':
+      description: "Sucess"
+      content:
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/queryresult'
+        application/json:
+          schema:
+            type: object
+            properties:
+              queryresult:
+                $ref: '#/components/schemas/queryresult'
+    '501':
+      description: "Not Implemented: This status is returned if a given input value cannot be interpreted by this API. This is commonly caused by input that is blank, misspelled, poorly formatted or otherwise unintelligible. You may occasionally receive this status when requesting information on topics that are restricted or not covered."
+      content:
+        text/plain:
+          schema: 
+            type: string
+          example: "Wolfram|Alpha did not understand your input"
+    '400':
+      description: "Bad Request: This status indicates that the API did not find an input parameter while parsing."
+      content:
+        text/plain:
+          schema:
+            type: string
+          example: "No input.  Please specify the input using the 'i' query parameter."
+    '403':
+      description: "Forbidden: Double-check that your AppID is typed correctly and that your appid parameter is using the correct syntax. "
+      content:
+        text/plain:
+          schema:
+            type: string
+          examples:
+            error1:
+              summary: "This is returned when a request contains an invalid option for the appid parameter."
+              value: "Error 1: Invalid Appid"
+            error2:
+              summary: "This is returned when a request does not contain any option for the appid parameter."
+              value: "Error 1: Appid Missing"
+  schemas:
+    queryresult:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: "true or false depending on whether the input could be successfully understood. If false, there will be no `pod` subelements"
+          xml:
+            attribute: true
+        error:
+          type: boolean
+          description: "true or false depending on whether a serious processing error occurred, such as a missing required parameter. If true, there will be no pod content, just an `error` subelement"
+          xml:
+            attribute: true
+        numpods:
+          type: integer
+          description: "the number of pods"
+          xml:
+            attribute: true
+        datatypes:
+          type: string
+          description: "categories and types of data represented in the results"
+          xml:
+            attribute: true
+        timedout:
+          type: string
+          description: "pods that are missing because they timed out" 
+          xml:
+            attribute: true
+        timedoutpods:
+          type: string
+          xml:
+            attribute: true
+        timing:
+          type: number
+          description: "The wall-clock time in seconds required to generate the output"
+          xml:
+            attribute: true
+        parsetiming:
+          type: number
+          description: "the time in seconds required by the parsing phase"
+          xml:
+            attribute: true
+        parsetimeout:
+          type: boolean
+          description: "whether the parsing stage timed out"
+          xml:
+            attribute: true
+        recalculate:
+          type: string
+          description: "you can call this URL to redo the query with a longer scantimeout to give the scanners that timed out a chance to finish and give you some new pods"
+          xml:
+            attribute: true
+        id:
+          type: string
+          description: "a string that serves as a unique identifier for the current query"
+          xml:
+            attribute: true
+        host:
+          type: string
+          description: "the URL of the specific Wolfram|Alpha server processing the current query"
+          xml:
+            attribute: true
+        server:
+          type: string
+          description: ""
+          xml:
+            attribute: true
+        related:
+          type: string
+          description: ""
+          xml:
+            attribute: true
+        version:
+          type: string
+          description: "the version specification of the API on the server that produced this result"
+          xml:
+            attribute: true
+        pod:
+          $ref: '#/components/schemas/pod'
+        warnings:
+          $ref: '#/components/schemas/warnings'
+        errors:
+          $ref: '#/components/schemas/error'
+        sources:
+          $ref: '#/components/schemas/sources'
+
+    pod:
+      description: "The main output of the Full Results API. Each pod contains a piece or category of information about the given query"  
+      type: object
+      properties:
+        title:
+          type: string
+          description: "the pod title, used to identify the pod and its contents"
+          xml: 
+            attribute: true
+        error:
+          type: boolean
+          description: "true or false depending on whether a serious processing error occurred with this specific pod. If true, there will be an `error` subelement"
+          xml: 
+            attribute: true
+        position:
+          type: number
+          description: "A number indicating the intended position of the pod in a visual display. These numbers are typically multiples of 100, and they form an increasing sequence from top to bottom."
+          xml: 
+            attribute: true            
+        scanner:
+          type: string
+          description: "The name of the scanner that produced this pod. A general guide to the type of data it holds"
+          xml: 
+            attribute: true
+        id:
+          type: string
+          description: "the pod title, used to identify the pod and its contents"
+          xml: 
+            attribute: true
+        numsubpods:
+          type: integer
+          description: "the number of subpod elements present"
+          xml: 
+            attribute: true
+        subpod:
+          $ref: '#/components/schemas/subpod'
+        states:
+          $ref: '#/components/schemas/states'
+        errors:
+          $ref: '#/components/schemas/error'
+        infos:
+          $ref: '#/components/schemas/infos'
+        
+    subpod:
+      description: "Subelements of `pod` that contain the results for a single subpod"
+      type: object
+      properties:
+        title:
+          type: string
+          description: "Usually an empty string because most subpods have no title"
+          xml:
+            attribute: true
+        image:
+          $ref: '#/components/schemas/img'
+          
+    img:
+      description: "HTML `img` elements suitable for direct inclusion in a webpage. They point to stored image files giving a formatted visual representation of a single subpod. They only appear in pods if the requested result formats include img. In most cases, the image will be in GIF format, although in a few cases it will be in JPEG format. The filename in the `img` URL will tell you whether it is GIF or JPEG. "
+      type: object
+      properties:
+        src:
+          type: string
+          description: "The exact URL of the image being displayed, to be used for displaying the image"
+          xml:
+            attribute: true
+        alt:
+          type: string
+          description: "Alternate text to display in case the image does not render correctly—usually the same as the `plaintext` representation of the image"
+          xml:
+            attribute: true
+        title:
+          type: string
+          description: "Descriptive title for internal identification of an image—usually the same as the `plaintext` representation of the image"
+          xml:
+            attribute: true        
+        width:
+          type: string
+          description: "The width of the image in pixels; can be changed using the width control parameters"
+          xml:
+            attribute: true
+        height:
+          type: string
+          description: "The height of the image in pixels; scales depending on width setting"
+          xml:
+            attribute: true
+    
+    imagemap:
+      description: HTML image maps for visual elements that can be clicked to execute further queries. Contains `rect` subelements that specify the corners of clickable areas with coordinates (using the top-left corner as the origin).
+      type: object
+  
+    plaintext:
+      description: Textual representation of a single subpod. Only appears if the requested result formats include plain text. `plaintext` has no attributes or subelements.
+      type: string
+      
+    mathml:
+      description: Contains the MathML representation of a single subpod. MathML output opens with `<math>` and includes formatting subelements such as `<mfrac>` and `<msup>`. This element type will only appear if the requested result formats include mathm.
+    
+    sound:
+      description: HTML `<sound>` elements suitable for direct inclusion in a webpage. They point to stored sound files giving an audio representation of a single subpod. These elements only appear in pods if the requested result formats include sound or wav. The type attribute will tell whether the format is MIDI or WAV.
+      type: string
+      
+    minput:
+      description: Wolfram Language input that can be executed within a Wolfram Language environment to provide the result given in a single subpod.
+      type: string
+      
+    moutput:
+      description: Wolfram Language output representation of the result given in a single subpod.
+      type: string
+
+    cell:
+      description: A Wolfram Language Cell expression that can be interpreted in a Wolfram Language environment to render exactly the same output as the Wolfram|Alpha website for a single subpod. The expression is wrapped in a `<![CDATA[...]]>` element, and can sometimes span across multiple elements.
+      
+    assumptions:
+      description: The `<assumptions>` element is a subelement of `<queryresult>`. Its content is a series of `<assumption>` elements. 
+      type: object
+      properties:
+        count:
+          type: string
+          description: The number of `<assumption>` subelements
+          xml:
+            attribute: true
+        assumption:
+          $ref: '#/components/schemas/assumption'
+          
+    assumption:
+      description: The `<assumption>` element is a subelement of `<assumptions>`. It defines a single assumption, typically about the meaning of a word or phrase, and a series of possible other values.
+      type: object
+      properties:
+        type:
+          type: string
+          xml: 
+            attribute: true
+        word: 
+          type: string
+          xml: 
+            attribute: true
+        template:
+          type: string
+          xml: 
+            attribute: true
+        count: 
+          type: string
+          xml: 
+            attribute: true
+            
+    states:
+      description: The `<states>`element is a subelement of `<pod>` or `<subpod>`.
+      type: object
+      anyOf:
+      - $ref: '#/components/schemas/state'
+      - $ref: '#/components/schemas/statelist'
+          
+    state:
+      description: The `<state>` element, always a subelement of `<states>`, contains a particular pod state for a single pod or subpod. 
+      type: object
+      properties:
+        name:
+          description: An attribute that describes the pod state
+          type: string
+          xml:
+            attribute: true
+        input:
+          description: An attribute that can be used to modify subsequent queries
+  
+    statelist:
+      description: TDB
+      type: string
+          
+    warnings:
+      description: The `<warnings>` element occurs as a subelement of <queryresult>.
+      type: object
+      properties:
+        count:
+          description: Number of warnings
+          type: string
+          xml:
+            attribute: true
+        warning:
+          type: array
+          items:
+            anyOf:
+              - $ref: '#/components/schemas/spellcheck'
+              - $ref: '#/components/schemas/delimeters'
+              - $ref: '#/components/schemas/translation'
+              - $ref: '#/components/schemas/reinterpret'
+      
+    spellcheck:
+      description: The `<spellcheck>` element contains a warning about a word that was reinterpreted because Wolfram|Alpha concluded it was misspelled.
+      type: object
+      properties:
+        word:
+          description: The exact word taken from the original query.
+          type: string
+          xml:
+            attribute: true
+        suggestion:
+          description: Wolfram|Alpha's suggested respelling of the word.
+          type: string
+          xml:
+            attribute: true
+        text:
+          description: The message normally displayed to the user when a word is reinterpreted because of a `<spellcheck>` warning
+          type: string
+          xml:
+            attribute: true
+            
+    delimeters:
+      description: The `<delimiters>` element contains a warning about mismatched parentheses or other bracketing elements that Wolfram|Alpha attempted to rectify.
+      type: object
+      properties:
+        text:
+          type: string
+          example: "An attempt was made to fix mismatched parentheses, brackets or braces."
+          
+    translation:
+      description: The `<translation>` element contains a warning about a phrase in a query that Wolfram|Alpha attempted to translate to English before computation.
+      type: object
+      properties:
+        phrase:
+          description: The exact phrase taken from the original query.
+          type: string
+          xml:
+            attribute: true
+        trans:
+          description: Wolfram|Alpha's suggested translation of the phrase.
+          type: string
+          xml:
+            attribute: true
+        lang:
+          description: The language from which Wolfram|Alpha attempted to translate.
+          type: string
+          xml:
+            attribute: true
+        text:
+          description: The message normally displayed on the Wolfram|Alpha website to inform the user of this warning
+          type: string
+          xml:
+            attribute: true
+            
+    reinterpret:
+      description: The `<reinterpret>` element contains a warning about a query or part of a query that was reinterpreted by Wolfram|Alpha to provide more useful and/or relevant results.
+      type: object
+      properties:
+        text:
+          type: string
+          xml:
+            attribute: true
+        alternative:
+          type: object
+          
+    error:
+      description: The `<error>` element occurs as either a subelement of `<queryresult>`, if there was a failure that prevented any result from being returned, or as a subelement of `<pod>`, if there was an error that only prevented the result from a given pod from being returned.
+      type: object
+      properties:
+        code:
+          description: The error code
+          type: integer
+        msg:
+          description: A short message describing the error
+          type: string
+          
+    sources:
+      description: The `<sources>` element is a subelement of `<queryresult>`.
+      type: object
+      properties:
+        count: 
+          description: Number of sources
+          type: string
+          xml:
+            attribute: true
+        source:
+          type: array
+          items:
+           $ref: '#/components/schemas/source'
+        
+    source: 
+      description: Source information
+      type: object
+      properties:
+        url:
+          type: string
+          format: url
+        text:
+          type: string
+          
+    infos:
+      description: The `<infos`> element contains `<info>` elements that contain pieces of information about the contents of a pod.
+      type: object
+      properties:
+        count:
+          description: Number of info elements
+          type: string
+          xml:
+            attribute: true
+        info:
+          type: array
+          items:
+            $ref: '#/components/schemas/info'
+            
+    info:
+      description: Additional information
+      type: object
+      properties:
+        link:
+          type: object
+          properties:
+            url:
+              type: string
+              format: url
+              xml:
+                attribute: true
+            text:
+              type: string
+              xml:
+                attribute: true
+          
+            
+    conversationResponseNoErrorNoS:
+      title: "Conversational API: Successful Response with no `s` parameter returned"
+      description: "Summary"
+      type: object
+      properties:
+        result:
+          type: string
+          description: "The latest text response from Wolfram|Alpha in the current conversation. The API will take this value into account when computing an answer to the next query in this conversation."
+        conversationID:
+          type: string
+          description: "A string that serves as a unique identifier for the current conversation. Passing this value into a subsequent query (using the `conversationID` input parameter) will continue the current conversation, computing a result based on both the new query and the previous result."
+        host:
+          type: string
+          description: "The URL of the specific Wolfram|Alpha server processing the current conversation, to be used as the base URL for followup queries. This value should stay the same throughout a conversation."
+    conversationResponseNoErrorWithS:
+      title: "Conversational API: Successful Response with 's' parameter returned"
+      allOf:
+        - $ref: "#/components/schemas/conversationResponseNoErrorNoS"
+        - type: object
+          properties:
+            s:
+              type: string
+              description: "This parameter only appears in rare circumstances. When present, this value must be passed into the `s` input parameter to continue a conversation."
+    conversationResponseWithError:
+      title: "Conversational API: Error Respsonse"
+      type: object
+      properties:
+        error:
+          type: string
+          description: "This value for the error parameter is returned if a given input value cannot be interpreted by this API. This is commonly caused by input that is misspelled, poorly formatted or otherwise unintelligible. Because this API is designed to return a single result, this message may appear if no sufficiently short result can be found. You may occasionally receive this status when requesting information on topics that are restricted or not covered."
+
+  examples:
+    conv-no-s-parameter:
+      summary: "Successful response with no 's' parameter returned"
+      value: {"result" : "The answer is 290 years 1 month 11 days", "conversationID" : "MSP13741bi53ge47cd896fa00002eg6gai764c04dhc", "host" : "www4b.wolframalpha.com"}
+    conv-with-s-parameter:
+      summary: "Successful response with 's' parameter returned"
+      value: {"result" : "Isaac Newton was born on Sunday, December 25, 1642", "conversationID" : "MSP7451bi53ge536cadca8000054ihb2h764g39d2g", "host" : "www4b.wolframalpha.com", "s" : "3"}
+    conv-error: 
+      summary: "Response with error message"
+      value: {"error":"Wolfram|Alpha did not understand your input"}
+        
+  securitySchemes:
+    appid:
+      type: apiKey
+      description: API key to authorize requests. If you don't have an AppID yet, go [here](https://developer.wolframalpha.com/portal/).
+      name: appid
+      in: query

@@ -1,0 +1,5 @@
+13. Repeat the process at each time step until the environment reaches a terminal state or a predefined condition is met.
+
+14. Output:
+    - The policy π_i for each agent is optimized to maximize both individual and group empowerment
+    - The deep learning model M is trained to predict empowerment accurately for faster decision-making

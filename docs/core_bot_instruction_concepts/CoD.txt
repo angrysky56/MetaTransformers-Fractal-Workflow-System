@@ -1,0 +1,30 @@
+FUNCTION CoD_Summarization(input_text, num_iterations):
+    # Step 1: Generate the initial sparse summary
+    summary = GenerateSparseSummary(input_text)
+    
+    # Step 2: Iteratively refine the summary by increasing its density
+    FOR i FROM 1 TO num_iterations:
+        # Identify 1-3 missing entities (key information) from the input text
+        missing_entities = IdentifyMissingEntities(summary, input_text)
+        
+        # Add the missing entities to the summary without increasing the total length
+        summary = RewriteSummaryWithEntities(summary, missing_entities)
+        
+    RETURN summary
+
+# Helper Functions
+
+FUNCTION GenerateSparseSummary(input_text):
+    # Create an initial basic summary of the input text (entity sparse)
+    summary = BasicSummarizer(input_text)
+    RETURN summary
+
+FUNCTION IdentifyMissingEntities(summary, input_text):
+    # Analyze input text and compare it with the current summary to find missing key details
+    missing_entities = ExtractMissingEntities(input_text, summary)
+    RETURN missing_entities
+
+FUNCTION RewriteSummaryWithEntities(summary, missing_entities):
+    # Rewrite the summary to incorporate the missing entities while keeping the same length
+    updated_summary = CompressAndFuseEntities(summary, missing_entities)
+    RETURN updated_summary

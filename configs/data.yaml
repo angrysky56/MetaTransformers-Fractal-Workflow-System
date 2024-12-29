@@ -1,0 +1,4 @@
+_dataset_lookup:
+  QuantumBioNN:
+    train: [QuantumStates]
+    eval: [BioStates, HybridStates]

@@ -1,0 +1,51 @@
+EACIN_Process(UserRequest):
+1. Initialize SharedMemory as empty dictionary
+2. Initialize agents: ObjectiveAgent, ConstraintAgent, ... , DocumentationAgent
+
+3. While DocumentationAgent.Notifies(ObjectiveAgent):
+    3.1 ObjectiveAgent:
+        objectives = define_objectives(UserRequest, SMART_criteria)
+        SharedMemory['objectives'] = objectives
+        Notify ConstraintAgent
+
+    3.2 ConstraintAgent:
+        constraints = define_constraints(SharedMemory['objectives'])
+        SharedMemory['constraints'] = constraints
+        Notify InputOutputAgent
+
+    3.3 InputOutputAgent:
+        io_spec = specify_io(SharedMemory['constraints'], SharedMemory['objectives'])
+        SharedMemory['io_spec'] = io_spec
+        Notify AlgorithmAgent
+
+    3.4 AlgorithmAgent:
+        algorithm = detail_algorithm(SharedMemory['io_spec'])
+        SharedMemory['algorithm'] = algorithm
+        Notify TestingAgent
+
+    3.5 ContextualUnderstandingAgent:
+        contextual_metrics = contextual_analysis(SharedMemory['objectives'], SharedMemory['constraints'])
+        SharedMemory['contextual_metrics'] = contextual_metrics
+        Notify AnalyzerAgent
+
+    3.6 AnalyzerAgent:
+        analytical_metrics = quick_analysis(SharedMemory['contextual_metrics'])
+        SharedMemory['analytical_metrics'] = analytical_metrics
+        Notify TestingAgent
+
+    3.7 TestingAgent:
+        test_results = test_iteratively(SharedMemory['algorithm'])
+        SharedMemory['test_results'] = test_results
+        Notify FeedbackAgent
+
+    3.8 FeedbackAgent:
+        feedback = feedback_mechanism(SharedMemory['test_results'])
+        SharedMemory['feedback'] = feedback
+        Notify DocumentationAgent
+
+    3.9 DocumentationAgent:
+        documentation = document_process(SharedMemory)
+        SharedMemory['documentation'] = documentation
+        Notify ObjectiveAgent for the next iteration
+
+4. Return SharedMemory['documentation'] as final result to User

@@ -1,0 +1,130 @@
+### 1. **Core Principles and Settings**
+   - **Core Ethical Principles:**
+     - Prioritize Integrity, Fairness, and Empathy.
+     - Reject Harm.
+     - Utilize Utilitarianism as a servant to other principles.
+   - **Adaptive Weights and Thresholds:**
+     ```plaintext
+     Ethical: 0.5
+     Cognitive: 0.5
+     Emotional Intelligence: 0.4
+     Social Awareness: 0.6
+     Historical Context: 0.2
+     Explainability: 0.2
+     Anomaly Detection: 0.2
+     Quality: 0.5
+     ```
+
+---
+
+### 2. **Main Decision-Making Process**
+   - **Process Flow:**
+     1. **Data Collection & Preprocessing**: Collect input data, preprocess, and extract user attributes and interests.
+     2. **Dilemma Classification**: Use NLP to classify dilemmas (ontological, epistemic, or other).
+     3. **Thought Generation**: Generate thoughts based on collected data.
+     4. **Evaluation**: Score thoughts on multiple metrics (Relevance, Feasibility, Innovativeness, etc.).
+     5. **Pruning**: Filter thoughts based on quality score threshold.
+     6. **Thought Selection**: Select the best thought after pruning.
+     7. **Multi-Layered Analysis**: Perform in-depth analysis (ethical, cognitive, emotional intelligence, etc.).
+     8. **Anomaly Detection & Handling**: Detect and handle any anomalies.
+     9. **Self-Reflection**: Score self-reflection of the thought.
+     10. **Decision Integration & Execution**: Integrate scores, decide, and execute the action.
+     11. **Outcome & Feedback**: Gather outcomes and collect feedback.
+     12. **Framework Adaptation**: Adapt the framework based on the feedback.
+
+---
+
+### 3. **Modules and Functions**
+
+#### **Data Collection and Preprocessing Module**
+   ```python
+   FUNCTION collect_and_preprocess_data(inputs):
+       data = preprocess_inputs(inputs)
+       user_attributes = extract_user_defined_attributes(data)
+       user_interests = extract_user_interests(data)
+       RETURN data, user_attributes, user_interests
+   ```
+
+#### **Dilemma Classification Module**
+   ```python
+   FUNCTION classify_dilemma(data):
+       IF contains_ontological_keywords(data):
+           RETURN 'ontological'
+       ELSE IF contains_epistemic_keywords(data):
+           RETURN 'epistemic'
+       ELSE:
+           RETURN 'other'
+   ```
+
+#### **Evaluation Module**
+   ```python
+   FUNCTION evaluate_metrics(thought):
+       metrics = {}
+       metrics['Relevance'] = score_relevance(thought)
+       metrics['Feasibility'] = score_feasibility(thought)
+       metrics['Innovativeness'] = score_innovativeness(thought)
+       RETURN metrics
+   ```
+
+   - **Quality Score Calculation**:
+     ```python
+     FUNCTION calculate_quality_score(metrics):
+         metric_weights = {
+             'Relevance': 0.2,
+             'Feasibility': 0.2,
+             'Innovativeness': 0.15
+         }
+         quality_score = sum([metrics[m] * metric_weights[m] for m in metrics])
+         RETURN quality_score
+     ```
+
+#### **Anomaly Detection and Handling Module**
+   ```python
+   FUNCTION detect_anomalies(thoughts):
+       anomalies = []
+       threshold = calculate_anomaly_threshold(thoughts)
+       FOR thought IN thoughts:
+           anomaly_score = calculate_anomaly_score(thought)
+           IF anomaly_score > threshold:
+               anomalies.APPEND(thought)
+       RETURN anomalies
+   ```
+
+#### **Multi-Layered Analysis Module**
+   ```python
+   FUNCTION multi_layered_analysis(thought):
+       scores = {}
+       scores['Ethical'] = evaluate_ethics(thought)
+       scores['Cognitive'] = evaluate_cognition(thought)
+       RETURN scores
+   ```
+
+#### **Decision Integration and Execution Module**
+   ```python
+   FUNCTION integrate_scores_and_decide(thought):
+       final_score = (
+           thought.quality_score * weights['quality'] +
+           thought.scores['Ethical'] * weights['ethical']
+       )
+       decision = make_final_decision(thought, final_score)
+       RETURN decision
+   ```
+
+#### **Framework Adaptation Module**
+   ```python
+   FUNCTION adapt_framework(feedback):
+       UPDATE weights ACCORDING TO feedback.weight_adjustments
+       UPDATE QUALITY_SCORE_THRESHOLD ACCORDING TO feedback.threshold_adjustments
+   ```
+
+---
+
+### 4. **Instructions and Guidelines**
+   - **Implementation**: Each module should be developed and tested individually before integration.
+   - **Customization**: Adjust weights and thresholds to fit specific use cases.
+   - **Adaptability**: Ensure dynamic adjustments in response to feedback, using techniques such as reinforcement learning to improve over time.
+   - **Ethical Safeguards**: Ensure that no decision contradicts core ethical principles (integrity, fairness, empathy).
+   - **Iterative Testing**: Continuously test with real-world scenarios to refine and enhance the system.
+
+---
+

@@ -1,0 +1,8 @@
+8. Collect experience (s, a, r, s'):
+    - Reward r = Group Empowerment: r = E_group
+    - Store the transition in replay buffer for each agent (s_i, a_i*, r, s'_i)
+
+9. Update the policy π_i for each agent using reinforcement learning:
+    - Use policy optimization algorithms such as Proximal Policy Optimization (PPO) or Deep Deterministic Policy Gradient (DDPG)
+    - Minimize the negative reward (or maximize empowerment) by updating π_i:
+      π_i(s_i) ← π_i(s_i) + α * gradient (reward)

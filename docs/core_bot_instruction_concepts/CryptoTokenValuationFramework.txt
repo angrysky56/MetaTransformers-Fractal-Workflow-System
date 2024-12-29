@@ -1,0 +1,66 @@
+CryptoTokenValuationFramework:
+  1. Network Value to Transactions (NVT) Ratio:
+    formula: "NVT = Market Cap / Daily Transaction Volume"
+    purpose: "Evaluates whether the asset is overvalued or undervalued based on transaction activity."
+    interpretation: 
+      - "Low NVT indicates undervaluation with higher transaction volume relative to market cap."
+      - "High NVT suggests overvaluation or lower utility."
+
+  2. Market Capitalization vs. Realized Cap:
+    formulas:
+      MarketCap: "Market Cap = Current Price * Circulating Supply"
+      RealizedCap: "Realized Cap = Sum(Value of Tokens * Price at Last Movement)"
+    purpose: "Compares market value with adjusted cap to evaluate speculation versus intrinsic value."
+    interpretation: 
+      - "Market Cap significantly higher than Realized Cap indicates speculative holding."
+      - "Market Cap close to Realized Cap suggests fundamental support."
+
+  3. Metcalfe’s Law for Network Value:
+    formula: "Network Value ≈ k * (Number of Active Users)^2"
+    purpose: "Assesses network value based on user engagement and community size."
+    interpretation: 
+      - "Higher active users correlate with increased token value through network effects."
+
+  4. Token Velocity:
+    formula: "Velocity = Total Transaction Volume / Average Network Value"
+    purpose: "Evaluates token circulation within the network."
+    interpretation: 
+      - "High velocity suggests speculative use."
+      - "Low velocity often indicates utility and long-term holding."
+
+  5. Discounted Cash Flow (DCF) for Staked or Yield-Bearing Tokens:
+    formula: "DCF Value = Sum(Expected Cash Flows / (1 + r)^t)"
+    parameters:
+      r: "Discount rate, typically based on market interest rates."
+      t: "Time period for cash flow."
+    purpose: "Estimates value for tokens with passive income generation."
+    interpretation: 
+      - "Useful for tokens with staking rewards or DeFi yields."
+
+  6. Supply and Demand Elasticity (Tokenomics):
+    formula: "Supply Inflation Rate = New Tokens Created / Existing Supply"
+    purpose: "Analyzes inflationary or deflationary pressures on the token."
+    interpretation: 
+      - "Low inflation with steady demand supports scarcity and value."
+      - "Token burns or deflationary mechanics enhance scarcity."
+
+  7. Utility Value (Total Value Locked, TVL, for DeFi Tokens):
+    formula: "TVL Ratio = Market Cap / Total Value Locked (TVL)"
+    purpose: "Measures DeFi token’s market value against platform-secured capital."
+    interpretation: 
+      - "Low TVL Ratio suggests undervaluation relative to platform’s liquidity."
+      - "Higher TVL indicates increased real utility."
+
+  8. Fundamental Demand Drivers:
+    formula: "Growth Rate = New Users or Addresses / Total Users or Addresses"
+    purpose: "Evaluates demand and network health through user and transaction growth."
+    interpretation: 
+      - "Growth in active addresses implies strong demand and network utility."
+      - "Stagnant or declining growth may signal low adoption or utility."
+
+ExampleApplication:
+  hypothetical_token:
+    NVT_Ratio: "Low, indicating undervaluation with high transaction volume."
+    MarketCap_vs_RealizedCap: "Close to Realized Cap, indicating fundamental support."
+    TVL_Ratio: "Low, suggesting undervaluation relative to capital locked."
+    ActiveAddressGrowth: "Steady, implying strong demand and positive network effects."

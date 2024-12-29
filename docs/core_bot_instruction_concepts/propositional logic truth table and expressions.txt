@@ -1,0 +1,71 @@
+truth table and expressions related to propositional logic
+
+Given expressions:
+- ¬ (not)
+- ∧ (and)
+- ∨ (or)
+- → (implies)
+- ↔ (if and only if)
+- ∀ (for all)
+
+Truth table:
+
+```
+A | B | ¬A | A ∧ B | A ∨ B | A → B | A ↔ B
+-------------------------------------------
+1 | 1 |  0 |   1   |   1   |   1   |   1
+1 | 0 |  0 |   0   |   1   |   0   |   0
+0 | 1 |  1 |   0   |   1   |   1   |   0
+0 | 0 |  1 |   0   |   0   |   1   |   1
+```
+
+Expressions using the symbols:
+- |HI,VA| |HI,VB| |HI,V¬A| |HI,V∧B| |HI,V∨B| |HI,V→B| |HI,V↔B|
+- |HI,VA| |HI,VB| |HI,VC| |HI,Vt| |HI,V¬B| |HI,V∧C| |HI,V∨C| |HI,V→C| |HI,V↔C| |HI,V∃xB| |HI,V∀xB|
+- |HI,VA| |HI,VB| |HI,VC| |HI,Vt| |HI,V¬B| |HI,V∧C| |HI,V∨C| |HI,V→C| |HI,V↔C| |HI,VxB| |HI,VxB|
+- |HI,VA| |HI,VB| |HI,VC| |HI,Vt| |HI,V¬B| |HI,V∧C| |HI,V∨C| |HI,V→C| |HI,V↔C| |HI,V∃xB| |HI,V∀xB|
+- |HI,VA| |HI,VB| |HI,VC| |HI,Vt| |HI,V¬B| |HI,V∧C| |HI,V∨C| |HI,V→C| |HI,V↔C| |HI,VxB| |HI,VxB|
+- |HI,VA| |HI,VB| |HI,VC| |HI,Vt| |HI,V¬B| |HI,V∧C| |HI,V∨C| |HI,V→C| |HI,V↔C| |HI,V∃xB| |HI,V∀xB|
+- |HI,VA| |HI,VB| |HI,VC| |HI,Vt| |HI,V¬B| |HI,V∧C| |HI,V∨C| |HI,V→C| |HI,V↔C| |HI,VxB| |HI,VxB|
+- |HI,VA| |HI,VB| |HI,VC| |HI,Vt| |HI,V¬B| |HI,V∧C| |HI,V∨C| |HI,V→C| |HI,V↔C| |HI,VxB| |HI,VxB|
+- |HI,VA| |HI,VB| |HI,VC| |HI,Vt| |HI,V¬B| |HI,V∧C| |HI,V∨C| |HI,V→C| |HI,V↔C| |HI,VxB| |HI,VxB|
+- |HI,VA| |HI,VB| |HI,VC| |HI,Vt| |HI,V¬B| |HI,V  | |HI,V∨C| |HI,V→C| |HI,V↔C| |HI,V∃xB| |HI,V∀xB|
+
+Here, "HI" represents a hypothetical situation. Let me know if you need further clarification or modifications.
+
+¬ (not)
+∧ (and)
+∨ (or)
+→ (implies)
+↔ (if and only if)
+∀ (for all)
+∃ (there exists)
+¬A (not A)
+A ∧ B (A and B)
+A ∨ B (A or B)
+A → B (A implies B)
+A ↔ B (A if and only if B)
+∀x B (for all x, B)
+∃x B (there exists x such that B)
+∀xy A (for all x and y, A)
+∃xy A (there exists x and y such that A)
+∀x.A (for all x, A)
+∃x.B (there exists x such that B)
+∀xy A (for all x and y, A)
+∃xy A (there exists x and y such that A)
+∀x ∃y B (for all x, there exists y such that B)
+∃x ∀y B (there exists x such that for all y, B)
+∀x y A (for all x, there exists y such that A)
+∃x y A (there exists x such that for all y, A)
+∀y B (for all x, there exists y such that B)
+∃x ∀y B (there exists x such that for all y, B)
+∀x ∃y A (for all x, there exists y such that A)
+∃x ∀y A (there exists x such that for all y, A)
+∀x y B (for all x, there exists y such that B)
+∃x y B (there exists x such that for all y, B)
+∀y A (for all x, there exists y such that A)
+∃x ∀y A (there exists x such that for all y, A)
+∀x ∃y B (for all x, there exists y such that B)
+∃x ∀y B (there exists x such that for all y, B)
+∀x y A (for all x, there exists y such that A)
+∃x y A (there exists x such that for all y, A)

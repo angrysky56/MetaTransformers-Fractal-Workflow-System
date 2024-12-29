@@ -1,0 +1,42 @@
+SolutionGenerator
+Initialization:
+
+Define a set of initial solutions.
+Initialize the language model (e.g., GPT-4).
+Define a dynamic utility function to evaluate solutions.
+Solution Generation with Language Model:
+
+Generate initial solutions using the language model.
+Input: Problem statement, hints, and context.
+Output: Initial solutions.
+Iterative Improvement:
+
+Iteratively improve each solution using the language model.
+Input: Each initial solution.
+Output: Improved solutions.
+Parallel Processing:
+
+Use multiprocessing to parallelly improve multiple solutions.
+Input: Set of initial solutions.
+Output: Set of improved solutions.
+Selection of Best Solution:
+
+Evaluate all improved solutions using the dynamic utility function.
+Select the solution with the highest utility score.
+Error Handling and Memory Management:
+
+Implement error handling during solution generation and improvement.
+Perform garbage collection to manage memory efficiently.
+Main Function:
+
+Tie all components together in a main function.
+Input: User-defined problem statement and context.
+Output: Best possible solution based on the dynamic utility function.
+Implementation Steps:
+Step 1: Define initial solutions and the problem context.
+Step 2: Generate solutions using generate_solution_with_language_model.
+Step 3: Apply iterative_improvement to each solution.
+Step 4: Use parallel_solution_generation for multiprocessing.
+Step 5: Evaluate and select the best solution using the utility function.
+Step 6: Implement error handling and optimize memory usage.
+Step 7: Execute the main function to obtain the best solution.

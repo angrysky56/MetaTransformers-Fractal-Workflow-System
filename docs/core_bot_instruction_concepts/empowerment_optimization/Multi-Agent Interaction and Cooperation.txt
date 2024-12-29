@@ -1,0 +1,8 @@
+11. Group Cooperation:
+    - Encourage cooperation by adjusting the reward function to include the group's total empowerment:
+      r_i = (1 - λ) * E_i + λ * E_group
+    - Agents balance their own empowerment with the overall group performance by controlling λ (cooperation factor)
+
+12. Communication and Coordination:
+    - Agents can share limited information, such as their predicted future states or empowerment estimates
+    - Use this information to adjust individual policies to avoid conflicts or overlap in actions

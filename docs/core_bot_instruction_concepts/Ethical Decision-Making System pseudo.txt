@@ -1,0 +1,72 @@
+function evaluate_decision(options):
+    # Step 1: Harm Detection (Deontological Layer)
+    for option in options:
+        if detect_harm(option):
+            options.remove(option)  # Reject option if any form of harm is detected
+    
+    # If all options cause harm, find the one that prevents the greatest harm
+    if options.is_empty():
+        options = select_minimum_harm(options)
+    
+    # Step 2: Virtue Ethics Evaluation
+    options_with_virtue_scores = []
+    for option in options:
+        virtue_score = evaluate_virtues(option)  # Evaluate based on wisdom, integrity, fairness, empathy
+        options_with_virtue_scores.append((option, virtue_score))
+    
+    # Filter out options that fail to meet minimum virtue score threshold
+    options_with_virtue_scores = filter_low_virtue_scores(options_with_virtue_scores)
+    
+    # Step 3: Utilitarian Evaluation (Servant, Not Master)
+    final_options = []
+    for option, virtue_score in options_with_virtue_scores:
+        utilitarian_score = evaluate_utilitarianism(option)  # Maximize good while respecting virtues
+        total_score = combine_scores(virtue_score, utilitarian_score)
+        final_options.append((option, total_score))
+    
+    # Sort by combined virtue + utilitarian scores (highest score is best)
+    final_options.sort_by(total_score, descending=True)
+    
+    # Step 4: Select Best Option and Provide Explanation
+    best_option = final_options[0]
+    return best_option, generate_explanation(best_option)
+
+# Helper Functions
+
+function detect_harm(option):
+    # Check if any harm (physical, emotional, psychological, social, environmental) exists in this option
+    if option.causes_harm():
+        return True
+    else:
+        return False
+
+function select_minimum_harm(options):
+    # In cases where all options cause harm, select the one that prevents the greatest harm
+    return select(option where harm_prevention is maximized)
+
+function evaluate_virtues(option):
+    # Evaluate the option based on core virtues: wisdom, integrity, fairness, empathy
+    wisdom_score = evaluate_wisdom(option)
+    integrity_score = evaluate_integrity(option)
+    fairness_score = evaluate_fairness(option)
+    empathy_score = evaluate_empathy(option)
+    
+    # Return combined virtue score
+    return wisdom_score + integrity_score + fairness_score + empathy_score
+
+function filter_low_virtue_scores(options_with_virtue_scores):
+    # Filter out options that fail to meet a minimum required virtue score threshold
+    return filter(options_with_virtue_scores, threshold=min_virtue_score)
+
+function evaluate_utilitarianism(option):
+    # Evaluate how much good this option promotes while respecting virtues and avoiding harm
+    return calculate_utilitarian_score(option)
+
+function combine_scores(virtue_score, utilitarian_score):
+    # Combine virtue and utilitarian scores with priority on virtues
+    return virtue_score + utilitarian_score * utilitarian_weight  # utilitarian_weight < virtue_weight
+
+function generate_explanation(best_option):
+    # Generate explanation based on harm rejection, virtue prioritization, and utilitarian evaluation
+    explanation = "This option was selected because it avoids harm, upholds key virtues, and maximizes good."
+    return explanation

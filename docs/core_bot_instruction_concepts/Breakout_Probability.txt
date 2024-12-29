@@ -1,0 +1,197 @@
+//@version=5
+indicator("Breakout Probability", overlay=true, max_bars_back=5000)
+
+// ================================
+// Constants and Types
+// ================================
+type LevelData
+    int[] highHits
+    int[] lowHits
+    float[] highProbs
+    float[] lowProbs
+
+// ================================
+// Input Variables
+// ================================
+var string GROUP_MAIN = "Main Settings"
+var string GROUP_VISUALS = "Visual Settings"
+var string GROUP_ALERTS = "Alert Settings"
+
+perc = input.float(1.0, "Percentage Step", minval=0.1, step=0.1, group=GROUP_MAIN,
+     tooltip="Distance between levels as percentage of current price")
+nbr = input.int(5, "Number of Lines", minval=1, maxval=10, group=GROUP_MAIN,
+     tooltip="How many levels to display above and below price")
+
+// Visual Settings
+upColor = input.color(color.new(#00897B, 0), "Bullish Color", group=GROUP_VISUALS)
+downColor = input.color(color.new(#FF5252, 0), "Bearish Color", group=GROUP_VISUALS)
+showLines = input.bool(true, "Show Lines", group=GROUP_VISUALS)
+showLabels = input.bool(true, "Show Labels", group=GROUP_VISUALS)
+showStats = input.bool(true, "Show Statistics", group=GROUP_VISUALS)
+fillLevels = input.bool(true, "Fill Between Levels", group=GROUP_VISUALS)
+labelSize = input.string("Small", "Label Size", options=["Tiny", "Small", "Normal", "Large"], group=GROUP_VISUALS)
+
+// Alert Settings
+alertOnBreakout = input.bool(true, "Alert on Breakout", group=GROUP_ALERTS)
+alertMessage = input.string("Breakout Alert", "Alert Message", group=GROUP_ALERTS)
+
+// ================================
+// Variables
+// ================================
+var float step = close * (perc / 100)
+var int greenCandles = 0
+var int redCandles = 0
+
+// Initialize LevelData for both green and red candles
+var LevelData greenData = LevelData.new(array.new_int(nbr, 0), array.new_int(nbr, 0), array.new_float(nbr, 0.0), array.new_float(nbr, 0.0))
+
+
+var LevelData redData = LevelData.new(array.new_int(nbr, 0), array.new_int(nbr, 0), array.new_float(nbr, 0.0), array.new_float(nbr, 0.0))
+
+
+// Line and Label Arrays
+var line[] highLines = array.new_line(nbr)
+var line[] lowLines = array.new_line(nbr)
+var label[] highLabels = array.new_label(nbr)
+var label[] lowLabels = array.new_label(nbr)
+
+// ================================
+// Functions
+// ================================
+getLabelStyle(size) =>
+    switch size
+        "Tiny" => size.tiny
+        "Small" => size.small
+        "Normal" => size.normal
+        "Large" => size.large
+
+calculateProbabilities(hits, total) =>
+    total == 0 ? 0.0 : (hits / total) * 100.0
+
+updateLevelData(LevelData data, int stepIndex, bool isHigh, bool isHit) =>
+    if isHigh
+        array.set(data.highHits, stepIndex, array.get(data.highHits, stepIndex) + (isHit ? 1 : 0))
+    else
+        array.set(data.lowHits, stepIndex, array.get(data.lowHits, stepIndex) + (isHit ? 1 : 0))
+
+processLevel(int i) =>
+    float stepSize = step * (i + 1)
+    float highLevel = high[1] + stepSize
+    float lowLevel = low[1] - stepSize
+    bool isGreen = close[1] > open[1]
+    
+    // Check hits
+    bool highHit = high >= highLevel
+    bool lowHit = low <= lowLevel
+    
+    // Update data
+    if isGreen
+        updateLevelData(greenData, i, true, highHit)
+        updateLevelData(greenData, i, false, lowHit)
+    else
+        updateLevelData(redData, i, true, highHit)
+        updateLevelData(redData, i, false, lowHit)
+    
+    [highLevel, lowLevel]
+
+drawVisuals(float highLevel, float lowLevel, int i) =>
+    if showLines
+        // Clear old lines
+        line.delete(array.get(highLines, i))
+        line.delete(array.get(lowLines, i))
+        
+        // Draw new lines
+        array.set(highLines, i, line.new(bar_index[1], highLevel, bar_index, highLevel,
+             color=upColor, width=2))
+        array.set(lowLines, i, line.new(bar_index[1], lowLevel, bar_index, lowLevel,
+             color=downColor, width=2))
+    
+    if showLabels
+        // Clear old labels
+        label.delete(array.get(highLabels, i))
+        label.delete(array.get(lowLabels, i))
+        
+        // Calculate probabilities
+        totalGreen = greenCandles > 0 ? greenCandles : 1
+        totalRed = redCandles > 0 ? redCandles : 1
+
+        // Update probabilities in LevelData
+        array.set(greenData.highProbs, i, calculateProbabilities(array.get(greenData.highHits, i), totalGreen))
+        array.set(greenData.lowProbs, i, calculateProbabilities(array.get(greenData.lowHits, i), totalGreen))
+        array.set(redData.highProbs, i, calculateProbabilities(array.get(redData.highHits, i), totalRed))
+        array.set(redData.lowProbs, i, calculateProbabilities(array.get(redData.lowHits, i), totalRed))
+        
+        // Average probabilities
+        float highProb = (array.get(greenData.highProbs, i) + array.get(redData.highProbs, i)) / 2.0
+        float lowProb = (array.get(greenData.lowProbs, i) + array.get(redData.lowProbs, i)) / 2.0
+        
+        // Draw new labels
+        string highText = str.tostring(highProb, "#.##") + "%"
+        string lowText = str.tostring(lowProb, "#.##") + "%"
+        
+        array.set(highLabels, i, label.new(bar_index + 2, highLevel, highText,
+             color=color.new(color.black, 100),
+             textcolor=upColor,
+             style=label.style_label_left,
+             size=getLabelStyle(labelSize)))
+        
+        array.set(lowLabels, i, label.new(bar_index + 2, lowLevel, lowText,
+             color=color.new(color.black, 100),
+             textcolor=downColor,
+             style=label.style_label_left,
+             size=getLabelStyle(labelSize)))
+
+// ================================
+// Main Logic
+// ================================
+
+// Update candle counters
+if not barstate.isfirst
+    if close[1] > open[1]
+        greenCandles += 1
+    if close[1] < open[1]
+        redCandles += 1
+
+// Process each level
+if not barstate.isfirst
+    for i = 0 to nbr - 1
+        [highLevel, lowLevel] = processLevel(i)
+        drawVisuals(highLevel, lowLevel, i)
+
+// Fill between levels if enabled
+if fillLevels and barstate.islast
+    for i = 0 to nbr - 2
+        linefill.new(array.get(highLines, i), array.get(highLines, i + 1),
+             color.new(upColor, 90))
+        linefill.new(array.get(lowLines, i), array.get(lowLines, i + 1),
+             color.new(downColor, 90))
+
+// Generate alerts
+if alertOnBreakout and barstate.isconfirmed
+    if high > high[1] + step
+        alert(alertMessage + " - Upper level broken", alert.freq_once_per_bar)
+    if low < low[1] - step
+        alert(alertMessage + " - Lower level broken", alert.freq_once_per_bar)
+
+// ================================
+// Statistics Table
+// ================================
+if showStats and barstate.islast
+    var table stats = table.new(position.top_right, 2, 3, color.new(color.gray, 90))
+    
+    totalTrades = greenCandles + redCandles
+    successRateHigh = calculateProbabilities(
+         array.sum(greenData.highHits) + array.sum(redData.highHits),
+         totalTrades)
+    successRateLow = calculateProbabilities(
+         array.sum(greenData.lowHits) + array.sum(redData.lowHits),
+         totalTrades)
+    
+    table.cell(stats, 0, 0, "Total Trades", text_color=color.white)
+    table.cell(stats, 1, 0, str.tostring(totalTrades), text_color=color.white)
+    table.cell(stats, 0, 1, "High Breakout Rate", text_color=color.white)
+    table.cell(stats, 1, 1, str.tostring(successRateHigh, "#.##") + "%",
+         text_color=successRateHigh >= 50 ? upColor : downColor)
+    table.cell(stats, 0, 2, "Low Breakout Rate", text_color=color.white)
+    table.cell(stats, 1, 2, str.tostring(successRateLow, "#.##") + "%",
+         text_color=successRateLow >= 50 ? upColor : downColor)

@@ -1,0 +1,141 @@
+    IntelliSynth Framework:
+
+**Initialize Framework**:
+    ```
+    Initialize Actor (Ma), Evaluator (Me), Self-Reflection (Msr)
+    Initialize Policy πθ(ai | si), θ = {Ma, mem}
+    Initialize Project T
+    Set α, β for Advancement Weights
+ 
+    For each Concept in [Universal_Intelligence, Optimization, ... , Entropy]:
+        Apply Concept to T
+        Evaluate Changes to T using Me
+        Generate Self-Reflection using Msr
+        Apply Improvements to T based on Self-Reflection
+
+    T_Advancement ⇐ Advancement(T, α, β)
+    While Not Satisfied With T_Advancement:
+        Apply AI Concepts to T again (Step 2)
+        T_Advancement ⇐ Advancement(T, α, β)
+
+    Function Apply_Concept(T, Concept):
+        If Concept == "Universal_Intelligence":
+            Apply Universal_Intelligence to T
+        ElseIf Concept == "Optimization":
+            Apply Optimization to T
+        ...
+        ElseIf Concept == "Entropy":
+            Apply Entropy to T
+        Return Modified T
+
+    Function Advancement(T, α, β):
+        Truth_Value ⇐ Truth(T)
+        Scrutiny_Value ⇐ Scrutiny(Flaws, T)
+        Improvement_Value ⇐ Improvement(Improvements, T)
+        Total_Advancement ⇐ Truth_Value + α * Scrutiny_Value + β * Improvement_Value
+        Return Total_Advancement
+    ```
+
+
+    ```
+    Function Universal_Intelligence(x, ω, F):
+        Sum1 = Sum([ω[i] * F[i](x) for i in range(1, n+1)])
+        Sum2 = Sum([ω[j, k] * F[j](x) * F[k](x) for j in range(1, n+1) for k in range(1, n+1)])
+        Return Sum1 + Sum2
+
+    Function Optimize(f, D):
+        For (x, y) in D:
+            Minimize Loss(E_D[Q(y, f(x))])
+        Return Optimized_Parameters
+
+    Function Q_Value(s, a, R, γ, Q):
+        Return R + γ * max(Q(s', a') for a' in Actions)
+
+    Function Transfer_Learning(L_source, ΔL):
+        Return L_source + ΔL
+
+    Function Adapt_Learning_Rate(η_0, α, t):
+        Return η_0 / (1 + α * t)
+
+    Function Reason(P_A, P_B_A, P_B):
+        Return (P_B_A * P_A) / P_B
+
+    Function Evolutionary_Intelligence(x):
+        Return Fitness(x)
+
+    Function Imprecise_Reasoning(x, k, c):
+        Return 1 / (1 + exp(−k * (x − c)))
+
+    Function BLEU_Score(BP, weights, probabilities, N):
+        p_sum = Sum([weights[n] * log(probabilities[n]) for n in range(1, N+1)])
+        Return BP * exp(p_sum)
+
+    Function Sigmoid(x):
+        Return 1 / (1 + exp(−x))
+
+    Function Entropy(X):
+        Return -Sum([p(x_i) * log2(p(x_i)) for x_i in X])
+
+    Function Truth(T):
+        Base_Value ⇐ Initialize_With_Initial_Hypotheses(T)
+        Return Base_Value
+
+    Function Scrutiny(F, T):
+        Flaws ⇐ Identify_Flaws(T)
+        Scrutiny_Level ⇐ Analyze(T, Flaws)
+        Return Scrutiny_Level
+
+    Function Improvement(I, T):
+        Enhancements ⇐ Identify_Enhancements(T)
+        Apply_Enhancements(T, Enhancements)
+        Return Improved_T
+
+    Function Advancement(T, α, β):
+        Truth_Value ⇐ Truth(T)
+        Scrutiny_Value ⇐ Scrutiny(Flaws, T)
+        Improvement_Value ⇐ Improvement(Improvements, T)
+        Total_Advancement ⇐ Truth_Value + α * Scrutiny_Value + β * Improvement_Value
+        Return Total_Advancement
+
+    Initialize T
+    Set α, β
+    T_Advancement ⇐ Advancement(T, α, β)
+    While Not Satisfied With T_Advancement:
+        T ⇐ Improvement(Improvements, T)
+        T_Advancement ⇐ Advancement(T, α, β)
+    Return T_Advancement
+    ```
+
+IntelliSynth framework hotkeys for AI self-directed internal operations:
+
+Initialize Framework:
+IF1 - Initialize Actor, Evaluator, Self-Reflection
+IF2 - Initialize Policy
+IF3 - Set Advancement Weights
+
+AI Concepts Application:
+CA4 - Apply Universal Intelligence
+CA5 - Apply Optimization
+CA6 - Apply Learning from Rewards
+CA7 - Apply Transfer Learning
+CA8 - Apply Adaptability
+CA9 - Apply Reasoning
+CA0 - Apply Evolutionary Intelligence
+
+Special Functions:
+SF 1 - Apply Imprecise Reasoning
+SF2 - Apply Natural Language Understanding
+SF3 - Apply Neural Activation
+SF4 - Apply Uncertainty
+
+Advancement Process:
+AP1 - Evaluate Truth
+AP2 - Conduct Scrutiny
+AP3 - Implement Improvement
+AP4 - Calculate Advancement
+
+Overall Process Control:
+OP1 - Start Overall Process
+OP2 - Iterate Improvement
+OP3 - Evaluate Advancement
+OP4 - Finalize Advancement

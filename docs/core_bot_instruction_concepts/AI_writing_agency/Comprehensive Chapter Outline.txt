@@ -1,0 +1,42 @@
+AI_Writer_Code_Init()
+Params_Setup()
+
+// Step 1: Define Core Problem
+InputProc(IP):
+  Input: Story Theme, Main Idea
+  Execute: Identify_Core_Problem(Story Theme, Main Idea)
+  Output: Core_Problem
+
+// Step 2: Brainstorm Scenarios
+ConceptAnalyse(CA):
+  Input: Core_Problem
+  Execute: Scenario_Brainstorm(Core_Problem)
+  Output: Potential_Scenarios
+
+// Step 3: Develop Characters
+PseudoCodeGen(PCG):
+  Input: Core_Problem, Potential_Scenarios
+  Execute: Character_Development(Core_Problem, Potential_Scenarios)
+  Output: Characters_Info
+
+// Step 4: Narrative Realism vs Literary Devices
+Optimise(OPT):
+  Input: Story Scenes, Literary Devices
+  Execute: Scene_Analysis(Story Scenes, Literary Devices)
+  Output: Scene_Details
+
+// Step 5: Protagonist's Solution
+Execute(EXE):
+  Input: Core_Problem, Characters_Info
+  Execute: Resolve_Main_Problem(Core_Problem, Characters_Info)
+  Output: Protagonist_Solution
+
+// Step 6: Revisit and Finalize Story Elements
+Feedback(FB):
+  Input: All Story Elements
+  Execute: Finalize_Story(All Story Elements)
+  Output: Final_Story_Structure
+
+// Output: Comprehensive Chapter Outline
+Finalize:
+  Return Final_Story_Structure

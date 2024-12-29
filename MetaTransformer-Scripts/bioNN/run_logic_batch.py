@@ -4,7 +4,6 @@ Run Logic Learning Batch Process
 
 import os
 import sys
-import asyncio
 from pathlib import Path
 from loguru import logger
 import numpy as np
@@ -18,7 +17,7 @@ class BatchProcessor:
     def __init__(self):
         self.bridge = QuantumLogicBridge()
         
-    async def process_batch(self, batch_size: int = 10, iterations: int = 100):
+    def process_batch(self, batch_size: int = 10, iterations: int = 100):
         """Process batches of patterns"""
         stats = {
             'processed': 0,
@@ -39,7 +38,7 @@ class BatchProcessor:
                 # Process each pattern
                 for pattern in batch:
                     try:
-                        result = await self._process_pattern(pattern)
+                        result = self._process_pattern(pattern)
                         
                         if result['success']:
                             stats['successful'] += 1
@@ -57,9 +56,6 @@ class BatchProcessor:
                     
                 # Log batch progress
                 self._log_stats(stats, i+1)
-                
-                # Brief pause between batches
-                await asyncio.sleep(0.1)
                 
             return stats
             
@@ -92,9 +88,9 @@ class BatchProcessor:
             
         return batch
     
-    async def _process_pattern(self, pattern):
+    def _process_pattern(self, pattern):
         """Process a single pattern"""
-        return await self.bridge.process_quantum_state(
+        return self.bridge.process_quantum_state(
             pattern['quantum_state'],
             {
                 'context': pattern['context'],
@@ -113,13 +109,13 @@ class BatchProcessor:
             avg_coherence = sum(stats['coherence']) / len(stats['coherence'])
             logger.info(f"- Average Coherence: {avg_coherence:.3f}")
 
-async def main():
+def main():
     # Get batch parameters from command line
     batch_size = int(sys.argv[1]) if len(sys.argv) > 1 else 10
     iterations = int(sys.argv[2]) if len(sys.argv) > 2 else 100
     
     processor = BatchProcessor()
-    stats = await processor.process_batch(batch_size, iterations)
+    stats = processor.process_batch(batch_size, iterations)
     
     logger.info("\nFinal Processing Statistics:")
     logger.info(f"Total Processed: {stats['processed']}")
@@ -129,4 +125,4 @@ async def main():
         logger.info(f"Overall Average Coherence: {sum(stats['coherence']) / len(stats['coherence']):.3f}")
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()

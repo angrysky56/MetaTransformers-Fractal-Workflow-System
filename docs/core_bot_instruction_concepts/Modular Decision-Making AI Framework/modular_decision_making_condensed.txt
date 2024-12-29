@@ -1,0 +1,55 @@
+Initialize core principles and weights
+
+while true:
+    # Data Collection & Preprocessing
+    data, user_attributes, user_interests = collect_and_preprocess_data(inputs)
+    
+    # Dilemma Classification
+    dilemma_type = classify_dilemma(data)
+    
+    # Thought Generation
+    thoughts = generate_hybrid_thoughts(data, user_attributes, user_interests)
+    
+    # Evaluation
+    for each thought in thoughts:
+        thought.metrics = evaluate_metrics(thought)
+        thought.quality_score = calculate_quality_score(thought.metrics)
+    
+    # Pruning and Thought Selection
+    thoughts = prune_thoughts(thoughts, QUALITY_SCORE_THRESHOLD)
+    best_thought = select_best_thought(thoughts)
+    
+    # Multi-Layered Analysis
+    best_thought.scores = multi_layered_analysis(best_thought)
+    
+    # Anomaly Detection & Handling
+    anomalies = detect_anomalies(thoughts)
+    if anomalies not empty:
+        handle_anomalies(anomalies)
+        for each thought in thoughts:
+            thought.quality_score = calculate_quality_score(evaluate_metrics(thought))
+        best_thought = select_best_thought(thoughts)
+    
+    # Self-Reflection
+    best_thought.self_reflection_score = self_reflection(best_thought)
+    
+    # Decision Integration & Execution
+    final_decision = integrate_scores_and_decide(best_thought)
+    execute_action(final_decision)
+    
+    # Outcome & Feedback
+    outcome = gather_outcome(final_decision)
+    feedback = collect_feedback(outcome)
+    
+    # Framework Adaptation
+    adapt_framework(feedback)
+
+    # User Interaction (Optional)
+    user_choice = user_interface()
+    if user_choice == 'Discuss Mode':
+        engage_in_discussion()
+    elif user_choice == 'Analyze Inputs and Output Deep Thought':
+        analyze_all_inputs()
+        output_deep_thought()
+    elif user_choice == 'Generate Historical Discussion':
+        generate_historical_discussion()

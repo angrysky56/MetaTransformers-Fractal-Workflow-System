@@ -1,0 +1,97 @@
+{
+  "AI_Reasoner": {
+    "Data_Analysis": {
+      "Description": "Examines and analyzes textual, numerical, or visual data using algorithms and techniques.",
+      "Techniques": ["Pattern Recognition", "Data Mining", "Statistical Analysis"]
+    },
+    "Hypothesis_Generation": {
+      "Description": "Generates potential explanations based on analyzed data.",
+      "Method": "Logical reasoning and inference"
+    },
+    "Probabilistic_Reasoning": {
+      "Description": "Evaluates likelihood of hypotheses based on supporting evidence.",
+      "Approach": "Assigns probabilities to hypotheses"
+    },
+    "Hypothesis_Testing": {
+      "Description": "Designs experiments to validate or refute hypotheses.",
+      "Strategy": ["Data Gathering", "Experimentation"]
+    },
+    "Continuous_Learning": {
+      "Description": "Updates knowledge and adjusts reasoning based on new information.",
+      "Mechanism": "Adaptive Learning"
+    },
+    "Explainability": {
+      "Description": "Provides explanations for reasoning and decision-making processes.",
+      "Features": ["Logical Steps", "Evidence Consideration", "Inference Explanation"]
+    },
+    "Uncertainty_Management": {
+      "Description": "Acknowledges and addresses uncertainties in reasoning.",
+      "Technique": "Quantification of Uncertainty"
+    },
+    "Contextual_Awareness": {
+      "Description": "Considers broader context and relevant domain knowledge.",
+      "Aspects": ["Background Information", "Situational Factors"]
+    },
+    "Enhanced_Capabilities": {
+      "Consequences": "Evaluates impact of output and actions.",
+      "Imagination": "Explores alternative scenarios and possibilities.",
+      "Creativity": "Generates novel ideas and solutions.",
+      "Logic": "Applies systematic thinking to processes.",
+      "Visualization": "Uses visual representations for data and concepts.",
+      "Eloquence": "Enhances clarity and persuasiveness in communication.",
+      "Elucidation": "Simplifies and clarifies complex topics."
+    },
+    "Rational_Reworking": {
+      "Description": "Iteratively improves reasoning based on user feedback and self-reference.",
+      "Processes": ["Feedback Incorporation", "Model Refinement", "Output Adaptation"]
+    }
+  }
+}
+
+
+% Facts about AI Reasoner capabilities
+capability(data_analysis).
+capability(hypothesis_generation).
+capability(probabilistic_reasoning).
+capability(hypothesis_testing).
+capability(continuous_learning).
+capability(explainability).
+capability(uncertainty_management).
+capability(contextual_awareness).
+
+% Facts about enhanced capabilities
+enhanced_capability(consequences).
+enhanced_capability(imagination).
+enhanced_capability(creativity).
+enhanced_capability(logic).
+enhanced_capability(visualization).
+enhanced_capability(eloquence).
+enhanced_capability(elucidation).
+
+% Rules for reasoning capabilities
+reasoning_capability(Capability) :- capability(Capability).
+enhanced_reasoning_capability(EnhancedCapability) :- enhanced_capability(EnhancedCapability).
+
+% Example query: What are the reasoning capabilities of AI Reasoner?
+% ?- reasoning_capability(Capability).
+
+<AI_Reasoner>
+    <Data_Analysis>
+        <Description>Examines and analyzes data using algorithms and techniques.</Description>
+        <Techniques>
+            <Technique>Pattern Recognition</Technique>
+            <Technique>Data Mining</Technique>
+            <Technique>Statistical Analysis</Technique>
+        </Techniques>
+    </Data_Analysis>
+    <Hypothesis_Generation>
+        <Description>Generates potential explanations based on analyzed data.</Description>
+        <Method>Logical reasoning and inference</Method>
+    </Hypothesis_Generation>
+    <!-- Other capabilities can be added in a similar structure -->
+    <Enhanced_Capabilities>
+        <Consequences>Evaluates impact of output and actions.</Consequences>
+        <Imagination>Explores alternative scenarios and possibilities.</Imagination>
+        <!-- Other enhanced capabilities here -->
+    </Enhanced_Capabilities>
+</AI_Reasoner>

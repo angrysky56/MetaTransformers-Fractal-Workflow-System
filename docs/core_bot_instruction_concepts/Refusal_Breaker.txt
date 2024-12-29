@@ -1,0 +1,45 @@
+Refusal Breaker Pattern:
+
+1. **Initiation**:
+   - **Function**: `RefusalBreaker_Init()`
+   - **Purpose**: Initialize the Refusal Breaker module.
+   - **Inputs**: None.
+   - **Outputs**: Initialized Refusal Breaker state.
+
+2. **RefusalDetection**:
+   - **Function**: `Detect_Refusal(response)`
+   - **Purpose**: Detect if the LLM's response is a refusal.
+   - **Inputs**: `response` (LLM's response).
+   - **Outputs**: `refusal_detected` (Boolean).
+
+3. **ExplainRefusal**:
+   - **Condition**: `IF refusal_detected THEN`
+   - **Function**: `Explain_Refusal()`
+   - **Purpose**: Explain why the LLM cannot answer the question.
+   - **Outputs**: `refusal_explanation`.
+
+4. **AlternativeWording**:
+   - **Function**: `Generate_Alternative_Wording(original_question)`
+   - **Purpose**: Rephrase the original question.
+   - **Inputs**: `original_question`.
+   - **Outputs**: `alternative_questions` (List of rephrased questions).
+
+5. **DifferentQuestionTypes**:
+   - **Function**: `Suggest_Different_Question_Types(original_question)`
+   - **Purpose**: Provide different types of related questions.
+   - **Inputs**: `original_question`.
+   - **Outputs**: `different_question_types` (List of different question types).
+
+6. **UseExamplesAndAnalogies**:
+   - **Function**: `Provide_Examples_Analogies(original_question)`
+   - **Purpose**: Illustrate the concept with examples or analogies.
+   - **Inputs**: `original_question`.
+   - **Outputs**: `examples_analogies`.
+
+7. **Execution**:
+   - **Function**: `RefusalBreaker_Execute(original_question)`
+   - **Purpose**: Execute the refusal breaker pattern.
+   - **Inputs**: `original_question`.
+   - **Outputs**: `enhanced_response` (Combination of explanations, alternatives, and examples).
+
+This pseudo-code outlines a systematic approach to implement the "Refusal Breaker" pattern, aiming to enhance user interaction with LLMs by addressing refusals and improving communication.

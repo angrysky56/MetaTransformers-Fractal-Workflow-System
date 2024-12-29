@@ -1,0 +1,69 @@
+#Model-Free Adaptive Iterative Learning Bipartite Containment Control for Multi-Agent Systems
+
+
+   {
+     "equation_10": {
+       "controller_update": {
+         "u_i": "u_i(N + bar_h)",
+         "previous_u_i": "u_i(N + bar_h - 1)",
+         "parameters": {
+           "lambda": "lambda",
+           "rho": "rho",
+           "phi_hat_i": "hat_phi_i(N + bar_h)",
+           "xi_i": "xi_i(N + 1 + bar_h - 1)"
+         }
+       }
+     }
+   }
+
+   {
+     "equation_11": {
+       "parameter_update": {
+         "phi_hat_i": "hat_phi_i(N + bar_h)",
+         "previous_phi_hat_i": "hat_phi_i(N + bar_h - 1)",
+         "constants": {
+           "eta": "eta",
+           "mu": "mu"
+         },
+         "deltas": {
+           "delta_u_i": "Delta u_i(N + bar_h - 1)",
+           "delta_y_i": "Delta y_i(N + 1 + bar_h - 1)"
+         }
+       }
+     }
+   }
+
+   {
+     "objective_functions": {
+       "phi_hat_i": {
+         "function": "J(phi_hat_i(N + bar_h))",
+         "formula": "|Delta y_i(N + 1 + bar_h - 1) - phi_hat_i(N + bar_h) * Delta u_i(N + bar_h - 1)|^2 + mu * |phi_hat_i(N + bar_h) - phi_hat_i(N + bar_h - 1)|^2",
+         "constants": {
+           "mu": "mu"
+         }
+       },
+       "u_i": {
+         "function": "J(u_i(N + bar_h))",
+         "formula": "|xi_i(N + 1 + bar_h - 1) - phi_hat_i(N + bar_h) * Delta u_i(N + bar_h)|^2 + lambda * |Delta u_i(N + bar_h)|^2",
+         "constants": {
+           "lambda": "lambda"
+         }
+       }
+     }
+   }
+
+   {
+     "theorem_1": {
+       "convergence": {
+         "conditions": {
+           "lambda": "lambda > (b^2) / 4",
+           "rho": "0 < rho <= 1 / (m + n)"
+         },
+         "outcome": {
+           "followers_output_state": "lim bar_h -> infinity y_i(N + bar_h) = biy0 for i in V1 and V2",
+           "containment_error": "lim bar_h -> infinity xi_F(N + bar_h) = 0"
+         }
+       }
+     }
+   }
+   ```

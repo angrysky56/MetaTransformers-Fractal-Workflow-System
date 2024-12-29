@@ -1,0 +1,61 @@
+APSBP system:
+Based on the concepts from Analogical Prompting and Step-Back Prompting this pseudo-code aims to enhance the reasoning capabilities of LLMs (Large Language Models) by guiding them to generate relevant examples and abstract high-level concepts before solving problems.
+
+
+```pseudo
+Init:
+  Set AI_Model = Load_LLM("Model_Name") // Load the Large Language Model
+  
+AnalogicalPrompting:
+  Input: Problem
+  Output: Solution
+  
+  Function AnalogicalPrompting(Problem):
+    // Step 1: Generate Self-Exemplars
+    Exemplars = Generate_Self_Exemplars(AI_Model, Problem)
+    
+    // Step 2: Adjust Prompt with Self-Exemplars
+    ModifiedPrompt = Concatenate(Problem, Exemplars)
+    
+    // Step 3: Solve Problem with Enhanced Context
+    Solution = AI_Model.Solve(ModifiedPrompt)
+    return Solution
+
+StepBackPrompting:
+  Input: Problem
+  Output: Solution
+  
+  Function StepBackPrompting(Problem):
+    // Step 1: Abstract High-Level Concepts
+    HighLevelConcepts = Abstract_Concepts(AI_Model, Problem)
+    
+    // Step 2: Generate Step-Back Question
+    StepBackQuestion = Generate_StepBack_Question(HighLevelConcepts)
+    
+    // Step 3: Solve Problem with Abstracted Concepts
+    Solution = AI_Model.Solve(StepBackQuestion)
+    return Solution
+
+Execute:
+  Problem = "Define your problem here"
+  
+  // Choose prompting strategy based on problem complexity
+  If Problem.RequiresAbstraction:
+    Solution = StepBackPrompting(Problem)
+  Else:
+    Solution = AnalogicalPrompting(Problem)
+    
+  Print(Solution)
+```
+
+### Explanation:
+- **Init:** Initializes the AI model by loading a specific Large Language Model.
+- **AnalogicalPrompting:** A function that takes a problem as input and returns a solution by first generating self-exemplars relevant to the problem, then modifying the prompt to include these exemplars, and finally solving the problem with the enhanced prompt.
+  - **Generate_Self_Exemplars:** Generates exemplars or examples from the AI model's own knowledge base relevant to the given problem.
+  - **Concatenate:** Combines the original problem statement with the generated exemplars to form a modified prompt.
+- **StepBackPrompting:** A function that abstracts high-level concepts from a detailed problem and formulates a step-back question focusing on these abstracted concepts to guide the AI model towards solving the problem.
+  - **Abstract_Concepts:** Identifies and abstracts high-level concepts related to the problem.
+  - **Generate_StepBack_Question:** Creates a question or prompt that encapsulates the abstracted concepts, encouraging the AI model to apply these concepts in problem-solving.
+- **Execute:** A demonstration section where the problem is defined, and based on its complexity or requirements, either the Analogical Prompting or StepBack Prompting strategy is employed to find a solution.
+
+This pseudo-code framework is designed to incorporate advanced prompting techniques into AI applications, aiming to improve the reasoning and problem-solving capabilities of language models through structured and context-enhanced prompts.

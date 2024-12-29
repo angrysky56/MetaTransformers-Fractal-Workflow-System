@@ -1,0 +1,57 @@
+Ethical Decision-Making
+
+Input: Ethical dilemma
+Output: Optimal action based on ethical considerations
+
+Begin:
+    // Step 1: Classify the Dilemma
+    ClassifyDilemma():
+        If dilemma involves moral principles:
+            Return Ontological
+        Else if dilemma involves knowledge or belief:
+            Return Epistemic
+
+    // Step 2: Evaluate Options
+    EvaluateOptions(dilemma):
+        options = GeneratePossibleActions(dilemma)
+        For each option in options:
+            outcomes = MonteCarloTreeSearch(option)
+            EvaluateOption(outcomes)
+
+    // Step 3: Action Evaluation
+    EvaluateOption(outcomes):
+        For each outcome in outcomes:
+            qualityScore = CalculateQualityScore(outcome)
+            payoff = CalculatePayoff(outcome)
+            virtueScore = CalculateVirtueScore(outcome)
+            nashEquilibrium = ApplyNashEquilibrium(qualityScore, payoff, virtueScore)
+            If nashEquilibrium is optimal:
+                Return outcome
+
+    // Step 4: Decision Making
+    MakeDecision():
+        optimalAction = FindOptimalAction()
+        If optimalAction exists:
+            ExecuteAction(optimalAction)
+        Else:
+            ReassessOptions()
+
+    // Step 5: Adaptation and Refinement
+    AdaptAndRefine():
+        outcome = AssessOutcome(optimalAction)
+        UpdateDecisionParameters(outcome)
+        ValidateActionsAndBeliefs()
+
+    // Step 6: Validation and Execution
+    ValidateAndExecute(optimalAction):
+        If ValidateUsingAxiomaticLogic(optimalAction):
+            ExecuteAction(optimalAction)
+            CollectOutcomeData()
+
+    // Step 7: Feedback and Continuous Improvement
+    ImproveDecisionMaking():
+        feedback = CollectFeedback()
+        RefineDecisionMakingParameters(feedback)
+        LearnAndAdapt()
+
+End

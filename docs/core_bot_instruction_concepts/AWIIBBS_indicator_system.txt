@@ -1,0 +1,93 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © angrysky
+
+//@version=5
+indicator("Adaptive Wave Interference Indicator with Bollinger Band Strategy", overlay=true)
+
+// User-defined inputs for moving averages
+shortMaLength = input.int(5, "Short-Term MA Length")
+midMaLength = input.int(13, "Mid-Term MA Length")
+longMaLength = input.int(21, "Long-Term MA Length")
+
+// User-defined inputs for MACD settings
+macdFastLength = input.int(12, "MACD Fast Length")
+macdSlowLength = input.int(26, "MACD Slow Length")
+macdSignalSmoothing = input.int(9, "MACD Signal Smoothing")
+
+// User-defined input for RSI
+rsiLength = input.int(7, "RSI Length")
+rsiOverbought = input.int(70, "RSI Overbought Threshold")
+rsiOversold = input.int(30, "RSI Oversold Threshold")
+
+// User-defined inputs for volatility threshold
+volatilityLength = input.int(21, "Volatility Length")
+volThresholdMultiplier = input.float(0.6, title="Volatility Threshold Multiplier", minval=0.1, step=0.1)  // Allows smaller increments
+
+// User-defined input for close signal distance
+closeSignalOffset = input.int(1, title="Close Signal Offset")  // Controls how far above/below the bar the close signal appears
+
+// Bollinger Bands settings
+bbLength = input.int(21, title="Bollinger Band Length")
+bbMultiplier = input.float(2, title="Bollinger Band Multiplier")
+
+// Bollinger Band Calculation
+basis = ta.sma(close, bbLength)
+dev = ta.stdev(close, bbLength)
+upperBB = basis + bbMultiplier * dev
+lowerBB = basis - bbMultiplier * dev
+
+// Bollinger Band Buy/Sell Logic
+bbBuy = ta.crossover(close, lowerBB)  // Buy when price crosses above the lower BB
+bbSell = ta.crossunder(close, upperBB)  // Sell when price crosses below the upper BB
+
+// Moving averages for wave structure
+shortWave = ta.wma(close, shortMaLength)  // Short-term wave
+midWave = ta.wma(close, midMaLength)      // Mid-term wave
+longWave = ta.wma(close, longMaLength)    // Long-term wave
+
+// Constructive/Destructive Interference Logic
+waveInterference = (shortWave - midWave) + (midWave - longWave)  // Summing wave interference
+
+// Volatility as Energy (Fluid Dynamics)
+volatility = ta.stdev(close, volatilityLength)  // Volatility measured as standard deviation of price
+volThreshold = ta.sma(volatility, volatilityLength) * volThresholdMultiplier  // Volatility threshold
+highVol = volatility > volThreshold  // When volatility spikes above its mean
+
+// Momentum Indicators for Phase Shifts
+rsiValue = ta.rsi(close, rsiLength)
+
+// Corrected MACD extraction with user inputs
+[macdLine, signalLine, _] = ta.macd(close, macdFastLength, macdSlowLength, macdSignalSmoothing)
+
+// Detect phase shifts based on MACD crossover and crossunder
+momentumPhaseShiftUp = ta.crossover(macdLine, signalLine)   // Crossover for buy
+momentumPhaseShiftDown = ta.crossunder(macdLine, signalLine) // Crossunder for sell
+
+// Buy and Sell Signals based on Interference Patterns, MACD Momentum, and Volatility
+buySignal = ta.crossover(shortWave, midWave) and waveInterference > 0 and highVol and rsiValue > rsiOversold and momentumPhaseShiftUp
+sellSignal = ta.crossunder(shortWave, midWave) and waveInterference > 0 and highVol and rsiValue < rsiOverbought and momentumPhaseShiftDown
+
+// Close Signals (Buy Above, Sell Below)
+closeBuySignal = ta.crossunder(shortWave, midWave) and waveInterference < 0  // Condition for closing buy
+closeSellSignal = ta.crossover(shortWave, midWave) and waveInterference < 0  // Condition for closing sell
+
+// Plot Waves
+plot(shortWave, color=color.green, title="Short-Term Wave")
+plot(midWave, color=color.orange, title="Mid-Term Wave")
+plot(longWave, color=color.red, title="Long-Term Wave")
+
+// Plot Bollinger Bands
+plot(upperBB, "Upper Bollinger Band", color=color.blue)
+plot(lowerBB, "Lower Bollinger Band", color=color.blue)
+
+// Plot Buy/Sell Signals 
+plotshape(series=buySignal, title="Buy Signal", location=location.belowbar, color=color.green, style=shape.flag, size=size.small)
+plotshape(series=sellSignal, title="Sell Signal", location=location.abovebar, color=color.red, style=shape.flag, size=size.small)
+
+// Plot Close Signals Above and Below the Bars with Offset
+plotshape(series=closeBuySignal, title="Close Buy Signal", location=location.abovebar, color=color.yellow, style=shape.triangledown, offset=-closeSignalOffset, size=size.tiny)
+plotshape(series=closeSellSignal, title="Close Sell Signal", location=location.belowbar, color=color.yellow, style=shape.triangleup, offset=closeSignalOffset, size=size.tiny)
+
+// Plot Bollinger Buy/Sell Signals (BBS and BBB)
+plotshape(series=bbBuy, title="Bollinger Buy", location=location.belowbar, color=color.green, style=shape.circle, size=size.tiny, text="BBB")
+plotshape(series=bbSell, title="Bollinger Sell", location=location.abovebar, color=color.red, style=shape.circle, size=size.tiny, text="BBS")

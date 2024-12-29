@@ -1,0 +1,21 @@
+1. Define the Node’s Purpose
+Core Function: Clearly establish the primary function of the node. For example, is it for encoding text, loading a model, applying a filter, or concatenating text? Examples from the uploaded workflows include nodes like CLIPTextEncode for encoding text​, ImageToMask for mask generation​, and SaveImage for image output​.
+Use Case Integration: Ensure the node is adaptable for broader use cases or customized for a specific purpose. For instance, ImageUpscaleWithModel is specifically configured to upscale images​.
+2. Define Node Inputs and Outputs
+Input and Output Types: Choose data types that fit the purpose, such as IMAGE, MASK, or STRING. Nodes like KSamplerSelect output a SAMPLER type useful in sampling workflows​.
+Optional Inputs: If the node supports conditional processing, consider making some inputs optional. This is common for text or model nodes that may work with varied setups​.
+3. Set Properties and Widgets
+Widget Configuration: Add widgets with adjustable parameters that control the node's behavior, like text inputs in a concatenation node or font_size in a text overlay​.
+Default Values: Define defaults that simplify user setup. For instance, a HelloWorldOverlayText node can have defaults like text="Hello World" and font_size=50​​.
+4. Visual Design and Positioning
+Color and Icon: Choose intuitive colors or icons that make the node’s function clear at a glance, like using different colors for IMAGE vs. MASK types​.
+Positioning Logic: Arrange nodes logically for the user’s convenience, ensuring the input-output sequence matches typical workflow designs observed in nodes like CLIPTextEncode positioned above sampling or decoding stages​.
+5. Develop Node Logic
+Class Structure: Use classes for modularity, such as PrintHelloWorld and ConcatenateHelloWorld which isolate functionality and make the node reusable across workflows​.
+Function Implementation: Define core functions under the node’s class that execute the primary task. For instance, concatenate_text in ConcatenateHelloWorld combines two text inputs for string operations​.
+6. Optimize for Flexibility and Performance
+Conditionally Adjustable Parameters: Provide flexibility, such as choosing between CPU/GPU for model processing​.
+Collapsed View: Allow nodes to be collapsed, which can simplify the UI for complex workflows, as seen in nodes like FL_SDUltimate_Slices for image slicing​.
+7. Documentation and Testing
+Tooltips and Help Text: Include tooltips or help text within the node to guide users on usage, especially for complex configurations​.
+Output Testing: Test node outputs in workflows to ensure compatibility and expected results, especially if the node will integrate with other modular nodes like upscalers or samplers​.

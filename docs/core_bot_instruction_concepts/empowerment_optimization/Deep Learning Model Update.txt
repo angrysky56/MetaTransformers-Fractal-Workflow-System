@@ -1,0 +1,5 @@
+10. Update the deep learning model M for each agent:
+    - Sample transitions from replay buffer: (s_i, a_i, E_i)
+    - Train the neural network M to predict empowerment more accurately based on state-action pairs:
+      Loss = Mean Squared Error between predicted empowerment and observed empowerment
+      M(s_i, a_i) ← M(s_i, a_i) - β * gradient (Loss)

@@ -1,0 +1,23 @@
+Initialize environment for N agents
+Initialize model M (neural network) and policies π_i for each agent
+
+while not terminal_state:
+    for each agent i:
+        state s_i = get_current_state(i)
+        possible_actions A_i = sample_actions(π_i, s_i)
+        for each action a_i^j in A_i:
+            future_state s'_i = simulate_environment(s_i, a_i^j)
+            empowerment E_i(s_i, a_i^j) = model_estimate(M, s_i, a_i^j)
+        select action a_i* = argmax(E_i(s_i, a_i^j))
+    
+    execute actions {a_1*, a_2*, ..., a_N*} in environment
+    transition to new state s'
+    
+    for each agent i:
+        reward r_i = (1 - λ) * E_i + λ * E_group
+        store_transition(s_i, a_i*, r_i, s'_i) in replay buffer
+        update_policy(π_i, replay_buffer)
+    
+    update_model(M, replay_buffer)
+
+output optimized policies π_i and trained model M

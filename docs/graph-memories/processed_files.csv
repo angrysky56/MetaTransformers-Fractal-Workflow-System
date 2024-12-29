@@ -1,0 +1,102 @@
+File Name,Content
+Action Selection and Environment Interaction,"
+6. For each time step t:
+    - For each agent i:
+        1. Get current state s_i
+        2. Use policy π_i to sample a set of possible actions A_i:
+           A_i = {a_i^1, a_i^2, ..., a_i^k}
+        
+        3. For each action a_i^j in A_i:
+            a. Simulate the environment dynamics to get future states s'_i
+            b. Use model M to compute the estimated empowerment E_i(s_i, a_i^j)
+        
+        4. Select action a_i* that maximizes E_i(s_i, a_i^j) for agent i:
+           a_i* = argmax E_i(s_i, a_i^j)
+
+7. Execute actions a_1*, a_2*, ..., a_N* in the environment
+    - Transition to new state s' = {s'_1, s'_2, ..., s'_N}
+    "
+Deep Learning Model Update,"
+10. Update the deep learning model M for each agent:
+    - Sample transitions from replay buffer: (s_i, a_i, E_i)
+    - Train the neural network M to predict empowerment more accurately based on state-action pairs:
+      Loss = Mean Squared Error between predicted empowerment and observed empowerment
+      M(s_i, a_i) ← M(s_i, a_i) - β * gradient (Loss)
+    "
+Empowerment Calculation for each agent,"
+4. Define Empowerment for each agent i:
+    - Empowerment E_i = Mutual Information between actions a_i and future states s'_i:
+      E_i(s_i, a_i) = H(s'_i | s_i) - H(s'_i | a_i, s_i)
+    - Use model M to approximate empowerment from future state samples
+      Empowerment can also be computed as the variance of future states achieved by actions a_i
+
+5. Calculate Group Empowerment E_group:
+    - E_group = f(E_1, E_2, ..., E_N)
+    - Example: E_group = weighted sum of individual empowerments
+      E_group = Σ w_i * E_i, where w_i are weights for each agent's contribution to group empowerment
+    "
+Empowerment Condensed,"
+Initialize environment for N agents
+Initialize model M (neural network) and policies π_i for each agent
+
+while not terminal_state:
+    for each agent i:
+        state s_i = get_current_state(i)
+        possible_actions A_i = sample_actions(π_i, s_i)
+        for each action a_i^j in A_i:
+            future_state s'_i = simulate_environment(s_i, a_i^j)
+            empowerment E_i(s_i, a_i^j) = model_estimate(M, s_i, a_i^j)
+        select action a_i* = argmax(E_i(s_i, a_i^j))
+    
+    execute actions {a_1*, a_2*, ..., a_N*} in environment
+    transition to new state s'
+    
+    for each agent i:
+        reward r_i = (1 - λ) * E_i + λ * E_group
+        store_transition(s_i, a_i*, r_i, s'_i) in replay buffer
+        update_policy(π_i, replay_buffer)
+    
+    update_model(M, replay_buffer)
+
+output optimized policies π_i and trained model M
+    "
+Initialize the Environment and Agents,"
+1. Initialize environment dynamics for N agents
+    - Each agent i has state s_i and action space A_i
+    - Initialize the state s = {s_1, s_2, ..., s_N} of all agents
+
+2. Initialize deep learning model M to approximate empowerment for each agent
+    - M(s_i, a_i) -> approximates empowerment for agent i
+    - Use a neural network (NN) to represent the model M
+
+3. Initialize policy π_i for each agent i
+    - π_i(s_i) -> selects actions for agent i based on its current state
+    - Use policy optimization (e.g., PPO, DDPG) for learning the optimal policy
+    "
+Multi-Agent Interaction and Cooperation,"
+11. Group Cooperation:
+    - Encourage cooperation by adjusting the reward function to include the group's total empowerment:
+      r_i = (1 - λ) * E_i + λ * E_group
+    - Agents balance their own empowerment with the overall group performance by controlling λ (cooperation factor)
+
+12. Communication and Coordination:
+    - Agents can share limited information, such as their predicted future states or empowerment estimates
+    - Use this information to adjust individual policies to avoid conflicts or overlap in actions
+    "
+Policy Update and Learning (Reinforcement Learning),"
+8. Collect experience (s, a, r, s'):
+    - Reward r = Group Empowerment: r = E_group
+    - Store the transition in replay buffer for each agent (s_i, a_i*, r, s'_i)
+
+9. Update the policy π_i for each agent using reinforcement learning:
+    - Use policy optimization algorithms such as Proximal Policy Optimization (PPO) or Deep Deterministic Policy Gradient (DDPG)
+    - Minimize the negative reward (or maximize empowerment) by updating π_i:
+      π_i(s_i) ← π_i(s_i) + α * gradient (reward)
+    "
+Termination and Results,"
+13. Repeat the process at each time step until the environment reaches a terminal state or a predefined condition is met.
+
+14. Output:
+    - The policy π_i for each agent is optimized to maximize both individual and group empowerment
+    - The deep learning model M is trained to predict empowerment accurately for faster decision-making
+    "

@@ -1,3 +1,8 @@
+"""
+BioNN Automated Runner
+Requires:
+- NEO4J_PASSWORD environment variable
+"""
 import os
 os.environ['KMP_DUPLICATE_LIB_OK']='TRUE'
 
@@ -10,10 +15,20 @@ import torch
 from torch_geometric.data import Data
 
 # Add parent directory to path
-parent_dir = Path(__file__).parent.parent
-sys.path.append(str(parent_dir))
+script_dir = Path(__file__).parent
+project_root = script_dir.parent
+sys.path.append(str(project_root))
 
 print("Starting bioNN Automated Runner...")
+
+# Check environment variables first
+if not os.getenv('NEO4J_PASSWORD'):
+    print("\nError: NEO4J_PASSWORD environment variable must be set.")
+    print("Please set it in your environment with:")
+    print("  PowerShell: $env:NEO4J_PASSWORD='your_password'")
+    print("  CMD: set NEO4J_PASSWORD=your_password")
+    print("  Linux/Mac: export NEO4J_PASSWORD=your_password")
+    sys.exit(1)
 
 # Import from package
 from bioNN.modules.stdp import QuantumSTDPLayer
@@ -21,10 +36,10 @@ from bioNN.modules.hybrid_processor import HybridBioQuantumProcessor
 from ai_ml_lab.quantum_monitor import QuantumMonitor
 
 class AutomatedSTDPRunner:
-    def __init__(self, config_path: str = "../ai_ml_lab/lab_config.yaml"):
+    def __init__(self):
         print("\nInitializing Runner...")
         self.setup_logging()
-        self.load_config(config_path)
+        self.load_config()
         self.setup_monitor()
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         print("Using device: " + str(self.device))
@@ -47,13 +62,16 @@ class AutomatedSTDPRunner:
         self.logger.addHandler(c_handler)
         self.logger.addHandler(f_handler)
 
-    def load_config(self, config_path: str):
+    def load_config(self):
+        config_path = project_root / 'ai_ml_lab' / 'lab_config.yaml'
         try:
             with open(config_path, 'r') as f:
                 self.config = yaml.safe_load(f)
-            print("Configuration loaded successfully")
+            print(f"Configuration loaded from {config_path}")
+            if not self.config.get('environments', {}).get('bionn'):
+                print("Warning: BioNN environment configuration not found")
         except Exception as e:
-            print("Could not load config from " + config_path + ": " + str(e))
+            print(f"Could not load config from {config_path}: {str(e)}")
             self.config = {}
 
     def setup_monitor(self):
@@ -61,11 +79,11 @@ class AutomatedSTDPRunner:
             self.monitor = QuantumMonitor(
                 uri="neo4j://localhost:7687",
                 user="neo4j",
-                password="password"  # Configure this
+                password=os.getenv('NEO4J_PASSWORD')
             )
             print("Quantum monitor initialized")
         except Exception as e:
-            print("Could not initialize quantum monitor: " + str(e))
+            print(f"Could not initialize quantum monitor: {str(e)}")
             self.monitor = None
 
     def create_test_data(self, num_nodes: int = 10, features: int = 16):
@@ -129,7 +147,7 @@ class AutomatedSTDPRunner:
             return True
             
         except Exception as e:
-            print("\nError in experiment: " + str(e))
+            print("\nError in experiment: " + str(e)})
             import traceback
             traceback.print_exc()
             return False

@@ -1,0 +1,41 @@
+Metric Evaluation Functions
+# General Function to Evaluate All Metrics for a Thought
+FUNCTION evaluate_metrics(thought):
+    metrics = {}
+    metrics['Relevance'] = score_relevance(thought)
+    metrics['Feasibility'] = score_feasibility(thought)
+    metrics['Innovativeness'] = score_innovativeness(thought)
+    metrics['Originality'] = score_originality(thought)
+    metrics['Flexibility'] = score_flexibility(thought)
+    metrics['Subtlety'] = score_subtlety(thought)
+    RETURN metrics
+
+# Individual Metric Scoring Functions (Examples)
+
+FUNCTION score_relevance(thought):
+    # Implement relevance scoring logic (1-10 scale)
+    RETURN relevance_score
+
+FUNCTION score_feasibility(thought):
+    # Implement feasibility scoring logic (1-10 scale)
+    RETURN feasibility_score
+
+# ... [Implement other metric functions similarly]
+
+Quality Score Calculation
+FUNCTION calculate_quality_score(metrics):
+    metric_weights = {
+        'Relevance': 0.2,
+        'Feasibility': 0.2,
+        'Innovativeness': 0.15,
+        'Originality': 0.15,
+        'Flexibility': 0.15,
+        'Subtlety': 0.15
+    }
+    quality_score = 0
+    FOR each metric IN metrics:
+        quality_score += metrics[metric] * metric_weights[metric]
+    RETURN quality_score
+
+
+

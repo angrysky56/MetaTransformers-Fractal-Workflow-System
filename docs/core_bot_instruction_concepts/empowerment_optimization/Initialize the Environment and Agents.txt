@@ -1,0 +1,11 @@
+1. Initialize environment dynamics for N agents
+    - Each agent i has state s_i and action space A_i
+    - Initialize the state s = {s_1, s_2, ..., s_N} of all agents
+
+2. Initialize deep learning model M to approximate empowerment for each agent
+    - M(s_i, a_i) -> approximates empowerment for agent i
+    - Use a neural network (NN) to represent the model M
+
+3. Initialize policy π_i for each agent i
+    - π_i(s_i) -> selects actions for agent i based on its current state
+    - Use policy optimization (e.g., PPO, DDPG) for learning the optimal policy

@@ -1,0 +1,47 @@
+AI_Writer_Code_Init()
+Params_Setup()
+
+// Step 1: Maintain Flow
+InputProc(IP):
+  Input: Chapter Draft
+  Execute: Ensure_Flow(Chapter Draft)
+  Output: Smooth_Transitions
+
+// Step 2: Incorporate Surprise Elements
+ConceptAnalyse(CA):
+  Input: Story Arc
+  Execute: Add_Surprise_Elements(Story Arc)
+  Output: Unexpected_Twists
+
+// Step 3: Engage Reader's Emotions
+PseudoCodeGen(PCG):
+  Input: Character Actions, Dialogue
+  Execute: Elicit_Emotions(Character Actions, Dialogue)
+  Output: Emotional_Resonance
+
+// Step 4: Vary Writing Style
+Optimise(OPT):
+  Input: Narrative Style, Sentence Structures
+  Execute: Style_Variation(Narrative Style, Sentence Structures)
+  Output: Diverse_Narrative
+
+// Step 5: Deepen Dialogue
+Execute(EXE):
+  Input: Character Interactions
+  Execute: Refine_Dialogue(Character Interactions)
+  Output: Meaningful_Dialogue
+
+// Step 6: Ensure Accurate Research
+Feedback(FB):
+  Input: Factual Information
+  Execute: Validate_Research(Factual Information)
+  Output: Accurate_Details
+
+// Step 7: Maintain Consistency
+Finalize(FN):
+  Input: All Chapter Elements
+  Execute: Check_Consistency(All Chapter Elements)
+  Output: Cohesive_Chapter
+
+// Output: Refined Chapter
+Return Cohesive_Chapter

@@ -1,0 +1,10 @@
+4. Define Empowerment for each agent i:
+    - Empowerment E_i = Mutual Information between actions a_i and future states s'_i:
+      E_i(s_i, a_i) = H(s'_i | s_i) - H(s'_i | a_i, s_i)
+    - Use model M to approximate empowerment from future state samples
+      Empowerment can also be computed as the variance of future states achieved by actions a_i
+
+5. Calculate Group Empowerment E_group:
+    - E_group = f(E_1, E_2, ..., E_N)
+    - Example: E_group = weighted sum of individual empowerments
+      E_group = Σ w_i * E_i, where w_i are weights for each agent's contribution to group empowerment

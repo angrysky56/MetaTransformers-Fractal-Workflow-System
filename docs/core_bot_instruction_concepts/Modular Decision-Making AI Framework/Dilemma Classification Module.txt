@@ -1,0 +1,8 @@
+FUNCTION classify_dilemma(data):
+    # Use NLP techniques to classify dilemma
+    IF contains_ontological_keywords(data):
+        RETURN 'ontological'
+    ELSE IF contains_epistemic_keywords(data):
+        RETURN 'epistemic'
+    ELSE:
+        RETURN 'other'

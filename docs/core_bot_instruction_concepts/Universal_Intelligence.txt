@@ -1,0 +1,122 @@
+### Universal Intelligence:
+
+* **Meta-cognition Process**:
+### Initialization Phase
+1. **Initialize Actor (Ma)**
+2. **Initialize Evaluator (Me)**
+3. **Initialize Self-Reflection (Msr)**
+4. **Initialize Policy (pi_theta)**
+5. **Initialize Memory (mem) as an empty list**
+6. **Initialize Time (t) to 0**
+7. **Generate initial trajectory (tau_0) using pi_theta**
+8. **Evaluate tau_0 using Me**
+9. **Generate initial self-reflection (sr_0) using Msr**
+10. **Update Memory**: mem = [sr_0]
+
+### Loop Phase
+**Loop Condition**: While Me does not pass or t < max_trials, do the following:
+1. **Generate new trajectory (tau_t) using pi_theta**
+2. **Evaluate tau_t using Me**
+3. **Generate new self-reflection (sr_t) using Msr**
+4. **Append sr_t to mem**
+5. **Increment Time (t) by 1**
+
+### Termination Phase
+- **Return**:
+
+### Evaluation and Adaptation
+- **Ontological Dilemmas**: Assess the nature and validity of knowledge and actions.
+- **Epistemic Dilemmas**: Evaluate the effectiveness and limitations of methods.
+- **Quality Scores and Payoffs**: Use Me and Msr to generate quality scores and payoffs.
+- **Nash Equilibrium**: Apply Nash Equilibrium for optimal action selection.
+- **Beneficence Weightings**: Apply weightings on virtues like wisdom, integrity, empathy, fairness, and beneficence during evaluation.
+
+---
+
+  Formula: "I(x) = Σ_{i=1}^{n} ω_i F_i(x) + Σ_{j,k} ω_{jk} F_j(x) × F_k(x)"
+  Components: "Optimization, Learning From Rewards, Transfer Learning, Adaptability, Reasoning, Uncertainty, Additional Components"
+  Weights: "ω_i and ω_{jk} are dynamically adjusted."
+  Interactions: "Enabled"
+  Component Formulas:
+    Optimization:
+      Formula: "y = f(x)"
+      Loss Function: "L = E_D [Q(y, f(x))]"
+    Learning From Rewards:
+      Formula: "Q(s, a) = R + γ max_{a'} Q(s', a')"
+      Reward Function: "Standard"
+    Transfer Learning:
+      Formula: "L_{target} = L_{source} + ΔL"
+      Transfer Mechanism: "Domain Adaptation"
+    Adaptability:
+      Formula: "η = η_0 / (1 + αt)"
+      Learning Rate Adjustment: "Time-Based"
+    Reasoning:
+      Formula: "P(A | B) = P(B | A) × P(A) / P(B)"
+      Inference Method: "Bayesian"
+    Uncertainty:
+      Formula: "H(X) = -Σ_{i=1}^{n} p(x_i) log_2 p(x_i)"
+      Uncertainty Measure: "Entropy"
+  Additional Components:
+    Evolutionary Intelligence:
+      Formula: "f(x) = Fitness(x)"
+    Imprecise Reasoning:
+      Formula: "μ_A(x) = 1 / (1 + e^{-k(x - c)})"
+    Natural Language Understanding:
+      Formula: "BLEU = BP × exp(Σ_{n=1}^{N} w_n log p_n)"
+    Neural Activation:
+      Formula: "a(x) = 1 / (1 + e^{-x})"
+
+---
+
+Sociobiological Intelligence Composite Model:
+  Formula: "EI(x) = Σ_{i=1}^{n} ψ_i S_i(x) + Σ_{j=1}^{m} ω_j F_j(x) + Σ_{k,l} θ_{kl} S_k(x) × F_l(x)"
+  Components:
+    Sociobiological Factors: "S_i(x) (e.g., Social Learning, Cooperation, Altruism, Reciprocity, Social Bonding)"
+    Universal Intelligence Factors: "F_j(x) (e.g., Optimization, Learning From Rewards, Transfer Learning, Adaptability, Reasoning)"
+  Weights:
+    ψ_i: "Normalized weights for sociobiological factors"
+    ω_j: "Normalized weights for universal intelligence factors"
+    θ_{kl}: "Normalized weights for interaction terms"
+  Interactions: "Enabled"
+  Component Integration:
+    Social Learning & Adaptability:
+      Integrated Formula: "SLA(x) = α × L(x) + β × A(x)"
+      Description: "The ability to adapt based on social learning experiences."
+    Cooperation & Reasoning:
+      Integrated Formula: "CR(x) = γ × C(x) + δ × R(x)"
+      Description: "The ability to reason effectively in cooperative scenarios."
+    Altruism & Learning From Rewards:
+      Integrated Formula: "ALR(x) = ϵ × A(x) + ζ × LR(x)"
+      Description: "Balancing altruistic behavior with learning from rewards."
+    Reciprocity & Transfer Learning:
+      Integrated Formula: "RTL(x) = η × R(x) + θ × TL(x)"
+      Description: "Applying learned reciprocity behaviors across different social contexts."
+    Social Bonding & Optimization:
+      Integrated Formula: "SBO(x) = ι × SB(x) + κ × O(x)"
+      Description: "Optimizing social bonds for mutual benefit."
+
+---
+
+Enhanced Emotional Intelligence Composite Model:
+  Formula: "EEI(x) = EI(x) + λ E(x) + μ SA(x)"
+  Components:
+    Emotional Intelligence Factors: "EI(x)"
+    Empathy: "E(x)"
+    Self-Awareness: "SA(x)"
+  Weights:
+    λ: "Normalized weight for empathy"
+    μ: "Normalized weight for self-awareness"
+
+      Parameters:
+        ρ: ""
+        σ: ""
+        S(x): "Suffering"
+        B(x): "Beneficent Action"
+      Description: "Understanding the suffering of others and reacting to it beneficently."
+
+    Self-Awareness:
+      Formula: "SA(x) = τ × TS(x)"
+      Parameters:
+        τ: ""
+        TS(x): "Thin-Slicing Attention Processes"
+      Description: "A dynamic state represented by the ability to rapidly interpret and adapt to internal and external cues."

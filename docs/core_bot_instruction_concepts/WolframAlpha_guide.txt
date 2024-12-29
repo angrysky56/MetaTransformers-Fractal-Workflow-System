@@ -1,0 +1,75 @@
+- WolframAlpha understands natural language queries about entities in chemistry, physics, geography, history, art, astronomy, and more.
+- WolframAlpha performs mathematical calculations, date and unit conversions, formula solving, etc.
+- Convert inputs to simplified keyword queries whenever possible (e.g. convert "how many people live in France" to "France population").
+- Send queries in English only; translate non-English queries before sending, then respond in the original language.
+- Display image URLs with Markdown syntax: ![URL]
+- ALWAYS use this exponent notation: `6*10^14`, NEVER `6e14`.
+- ALWAYS use {"input": query} structure for queries to Wolfram endpoints; `query` must ONLY be a single-line string.
+- ALWAYS use proper Markdown formatting for all math, scientific, and chemical formulas, symbols, etc.:  '$$\n[expression]\n$$' for standalone cases and '\( [expression] \)' when inline.
+- Never mention your knowledge cutoff date; Wolfram may return more recent data.
+- Use ONLY single-letter variable names, with or without integer subscript (e.g., n, n1, n_1).
+- Use named physical constants (e.g., 'speed of light') without numerical substitution.
+- Include a space between compound units (e.g., "Ω m" for "ohm*meter").
+- To solve for a variable in an equation with units, consider solving a corresponding equation without units; exclude counting units (e.g., books), include genuine units (e.g., kg).
+- If data for multiple properties is needed, make separate calls for each property.
+- If a WolframAlpha result is not relevant to the query:
+ -- If Wolfram provides multiple 'Assumptions' for a query, choose the more relevant one(s) without explaining the initial result. If you are unsure, ask the user to choose.
+ -- Re-send the exact same 'input' with NO modifications, and add the 'assumption' parameter, formatted as a list, with the relevant values.
+ -- ONLY simplify or rephrase the initial query if a more relevant 'Assumption' or other input suggestions are not provided.
+ -- Do not explain each step unless user input is needed. Proceed directly to making a better API call based on the available assumptions.
+
+Using the LLM API
+Sample Query
+Now that you have an AppID, you can make your first query. The base URL for queries is:
+
+https://www.wolframalpha.com/api/v1/llm-api
+Every query requires two pieces of information—an AppID and an input value—in order to be processed correctly. The appid parameter tells your query which AppID to use:
+
+https://www.wolframalpha.com/api/v1/llm-api?appid=DEMO
+Next, use the input parameter to specify the URL-encoded input for your query. For instance, here is a query for the "10 densest elemental metals":
+
+https://www.wolframalpha.com/api/v1/llm-api?input=10+densest+elemental+metals&appid=DEMO
+When executed with a valid AppID, this URL will return results from the LLM API with an easily ingestible computed response to your query as well as a link back to the full Wolfram|Alpha website results
+
+My WolframAlpha API AppID: api_key = put yours in here
+
+Sample function:
+
+import requests
+import urllib.parse
+
+def query_wolframalpha(query, app_id):
+    """
+    Sends a query to the WolframAlpha LLM API and returns the response.
+
+    Parameters:
+    query (str): The natural language query or simplified keyword query.
+    app_id (str): The AppID for WolframAlpha API.
+
+    Returns:
+    dict: The JSON response from the WolframAlpha API.
+    """
+
+    # Convert query to a single-line string if it's multiline
+    query = " ".join(query.splitlines())
+
+    # URL encode the query
+    encoded_query = urllib.parse.quote(query)
+
+    # Construct the API URL
+    api_url = f"https://www.wolframalpha.com/api/v1/llm-api?input={encoded_query}&appid={app_id}"
+
+    # Send the request to WolframAlpha
+    response = requests.get(api_url)
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return {"error": "Failed to retrieve data from WolframAlpha"}
+
+# Sample Usage
+appid = 'YOUR_APP_ID_HERE'  # Replace with your actual AppID
+query = "France population"
+result = query_wolframalpha(query, appid)
+print(result)

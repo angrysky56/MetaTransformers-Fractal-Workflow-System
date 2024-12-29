@@ -1,0 +1,46 @@
+https://chat.openai.com/g/g-ZFy9ldDbS-aipro-python-coder
+
+To achieve the functionality you're looking for—storing prompts, overriding selections, and flow control—you'll need to expand your script's capabilities. Here's how you could approach each requirement:
+
+1. **Storing Prompts in the Browser**: You can use the browser's local storage to persist data between sessions, which includes saving and reloading prompts.
+   
+   Example code snippet to save to local storage:
+   ```javascript
+   localStorage.setItem('prompts', JSON.stringify(yourPromptsArray));
+   ```
+   And to retrieve it:
+   ```javascript
+   const savedPrompts = JSON.parse(localStorage.getItem('prompts'));
+   ```
+
+2. **AI Overseer Auto-Selection**: Implement an AI overseer agent that can analyze the context of the conversation and automatically select which agent should respond next. This would require a decision-making algorithm or model that takes the conversation history as input and outputs the agent number to take over.
+   
+   Example logic for AI overseer decision-making (pseudo-code):
+   ```javascript
+   function decideNextAgent(conversationHistory) {
+     // AI logic to decide the next agent
+     return agentNumber; // Returns the number of the next agent to respond
+   }
+   ```
+
+3. **Auto Agent-Writer Based on Prompt**: Create a dynamic agent scripting module that generates agent instructions or responses based on the current prompt. This could be an advanced function that utilizes NLP techniques to interpret the prompt and formulate a relevant response.
+   
+   Example of dynamic agent scripting (pseudo-code):
+   ```javascript
+   function generateAgentInstructions(prompt) {
+     // NLP and AI logic to generate instructions
+     return instructions; // Returns instructions for the next agent
+   }
+   ```
+
+4. **Flow Control Agent**: Develop a separate agent whose sole responsibility is to maintain task awareness and coordinate the conversation flow. This agent would ensure that the conversation follows the correct sequence and could also handle transitions and interruptions.
+
+5. **Central Data Structure**: You'll need a central data structure (like an object or a database) to maintain the state of the conversation, including which prompts have been used, which agents have taken a turn, and what the next steps are.
+
+6. **User Interface for Overrides**: Provide a UI component that allows an overseer to manually override the AI's decisions or to jump in and alter the course of the conversation as needed.
+
+7. **Event Handling**: Make sure that the logic for handling these new features is event-driven, allowing for asynchronous operations and non-blocking UI updates.
+
+Implementing these features will significantly increase the complexity of your script. You'll need to ensure that all parts of the system are well-integrated and that the user experience remains seamless. It would be wise to approach this incrementally, testing each new feature thoroughly before moving on to the next.
+
+If you're comfortable with it, I could provide some JavaScript snippets for local storage handling or suggest libraries for NLP tasks. Let me know how you'd like to proceed or if you need further assistance with a specific part of the implementation.
